@@ -1,8 +1,8 @@
 
 # 联系方式
 
-- Mail:    [1795668994@qq.com]
-- Host:   [个人主页](http://huiyebaby.github.io) 
+- Mail:    [1795668994@qq.com](mailto:1795668994@qq.com)
+- Host:   [huiyebaby.github.io](http://huiyebaby.github.io) 
 
 ## 个人信息
 
@@ -34,4 +34,4 @@
 
 ### 历史开发项目
 - [海运官网](http://www.zhonggushipping.com)  
-****
+
