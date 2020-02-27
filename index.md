@@ -2,6 +2,7 @@
 ## 联系方式
 
 Mail:1795668994@qq.com
+Host：https://huiyebaby.github.io/
 
 ## 个人信息
 
