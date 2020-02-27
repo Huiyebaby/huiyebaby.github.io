@@ -1,8 +1,8 @@
 
 ## 联系方式
 
-Mail:1795668994@qq.com
-Host：https://huiyebaby.github.io/
+- Mail:1795668994@qq.com
+- Host：https://huiyebaby.github.io/
 
 ## 个人信息
 
@@ -12,7 +12,7 @@ Host：https://huiyebaby.github.io/
 
 目前研究方向：跨平台，以及Xamarin开发
 
-# 项目经验
+## 项目经验
 ### 海运项目的全国系统海运系统
 -	精通业务运营模式以及改进漏洞和风险点
 -	针对风险点和漏洞制作报表，以及根据政策要求（COVID-19）受影响做出实时的数据调整
