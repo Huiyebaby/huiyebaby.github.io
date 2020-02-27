@@ -1,37 +1,29 @@
+
+## 联系方式
+
+Mail:1795668994@qq.com
+
 ## 个人信息
 
-You can use the [editor on GitHub](https://github.com/Huiyebaby/huiyebaby.github.com/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+本人性格开朗、乐观，乐于研究新型技术架构。也也从github 收获了很多大牛的思想以及目前主流阿里巴巴，美团，微博等后台技术架构。也明白大家都是从无到有。很多困难不是程序开发预计能考虑到的。很多都是开发过程/运维过程 碰见的棘手困难。所以不管基于哪个层面都需要考虑可扩展。哪怕这件事情再小。也能成为压死骆驼的最后一颗稻草
 
 ### 最新消息
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+目前研究方向：跨平台，以及Xamarin开发
 
-```markdown
-Syntax highlighted code block
-
-# 研究方向
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+# 项目经验
+##  海运项目的全国系统海运系统
+-	精通业务运营模式以及改进漏洞和风险点
+-	针对风险点和漏洞制作报表，以及根据政策要求（COVID-19）受影响做出实时的数据调整
+-	自述： 因为系统框架零散有较多自己扩展的项目实践经验
+## 工卡结构管理系统
+-	基于业务调研以及做出任务调度等队列推送以及开发
+## 应急指挥管理协调系统
+-	基于在线文档编辑,历史记录修订，等 应急预案修订。以及在线发送救援信息。通知最近最优先的人去救援等  一系列奇妙的思想化为现实的系统
+-	自述：项目紧张，压力大，但是同事之间互相帮助，以及加班后公司的人文关怀让我倍感欣慰
 
 ### 荣誉奖励
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/Huiyebaby/huiyebaby.github.com/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+在校期间多次获得一等奖学金
+工作期间多次获得领导表扬。获得优秀职员提名。以及各种公司团组织活动奖励
 
-### 联系方式
-
-1795668994@qq.com
