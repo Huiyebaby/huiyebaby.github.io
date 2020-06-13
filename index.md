@@ -1,7 +1,7 @@
 
 # 联系方式
 
-- Mail:    [1795668994@qq.com](mailto:1795668994@qq.com)
+- Mail:    [huiye123baby@gmail.com](mailto:huiye123baby@gmail.com)
 - Host:   [huiyebaby.github.io](http://huiyebaby.github.io) 
 
 ## 个人信息
