@@ -1,7 +1,7 @@
 
 # 联系方式
 
-- Mail:    [huiye123baby@gmail.com](mailto:huiye123baby@gmail.com)
+- Mail:    [huiye123cn@gmail.com](mailto:huiye123cn@gmail.com)
 - Host:   [huiyebaby.github.io](http://huiyebaby.github.io) 
 
 ## 个人信息
