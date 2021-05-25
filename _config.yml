@@ -1,17 +1,17 @@
 # Site settings
-title: Website Title
-description: Website short description
-baseurl: "" 
+title: HuiYe123
+description: 欢迎来到Huiye123的世界
+baseurl: "huiye123.cn" 
 #change the baseurl to "" if you are using it as your user GitHub Pages
-url: "https://yk-liu.github.io"  
+url: "https://huiyebaby.github.io"  
 
 
 # GitHub User settings
-username: Username
-github_username: github_username
-user_description: user_description
-user_title: user_title
-email: 
+username: HuiYe123
+github_username: HuiyeBaby
+user_description: 一个喜欢钻研技术的老咸鱼
+user_title: HuiyeBaby
+email: huiye123cn@Gmail.com
 
 # Blog Author settings
 author:
