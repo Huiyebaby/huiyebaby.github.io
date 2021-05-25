@@ -8,9 +8,37 @@ protected: true
 mathjax: true
 ---
 
-# Me
+
+## 个人信息
+
+本人性格开朗、乐观，乐于研究新型技术架构。也从github 收获了很多大牛的思想以及目前主流阿里巴巴，美团，微博等后台技术架构。明白大家都是从无到有。很多困难不是程序开发预计能考虑到的。很多都是开发过程/运维过程 碰见的棘手困难。所以不管基于哪个层面都需要考虑可扩展。哪怕这件事情再小。也能成为压死骆驼的最后一颗稻草
+
+### 最新消息
+
+目前研究方向：跨平台，以及Xamarin开发
+
+# 项目经验
+
+## 海运项目的全国系统海运系统
+
+-	精通业务运营模式以及改进漏洞和风险点
+-	针对风险点和漏洞制作报表，以及根据政策要求（COVID-19）受影响做出实时的数据调整
+-	自述： 因为系统框架零散有较多自己扩展的项目实践经验
+
+## 工卡结构管理系统
+
+-	基于业务调研以及做出任务调度等队列推送以及开发
 
 
+## 应急指挥管理协调系统
+
+-	基于在线文档编辑,历史记录修订，等 应急预案修订。以及在线发送救援信息。通知最近最优先的人去救援等  一系列奇妙的思想化为现实的系统
+-	自述：项目紧张，压力大，但是同事之间互相帮助，以及加班后公司的人文关怀让我倍感欣慰
+
+### 荣誉奖励
+
+- 在校期间多次获得一等奖学金
+- 工作期间多次获得领导表扬。获得优秀职员提名。以及各种公司团组织活动奖励
 
 # This Site
 
@@ -48,20 +76,8 @@ This website uses these sources:
 
 Additional licensing information can be found YOUR WEBSITE LINK.
 
-# The Name
 
-I named this website "A Finger Pointing to the Moon", as in the Buddhism story:
+# 联系方式
 
-> **佛告阿难。汝等尚以缘心听法。此法亦缘。非得法性。**
->
-> **若复观指以为月体。此人岂唯亡失月轮。亦亡其指。何以故。以所标指为明月故。**
->
-> **岂唯亡指。亦复不识明之与暗。何以故。即以指体。为月明性。明暗二性。无所了故。**
-
-Which has been beautifully put by Bruce Lee:
-
->It's like a finger pointing away to the moon. Don't concentrate on the finger or you will all that heavenly glory.
-
-# Contact
-
-The best way to reach me is via email: $namer$ @ $web.com$
+- Mail:    [huiye123cn@gmail.com](mailto:huiye123cn@gmail.com)
+- Host:   [huiyebaby.github.io](http://huiyebaby.github.io) 
