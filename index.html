@@ -2,16 +2,16 @@
 layout: home
 ---
 <div class="user-details">
-<h2> Me and this website </h2>
-<p style="text-align: justify;"> Your description </p>
+<h2> 自我的介绍 </h2>
+<p style="text-align: justify;"> 爱好 java / py / C# /破解 /装机 等 欢迎带问题来讨论。所学不精，但是希望能帮助到你 ，也可以加入Huiye123 俱乐部，一起钻研赚钱之道</p>
 <div class="analytics"  style="border: solid lightgrey; border-radius: 5px;">
-	<h3> Analytics </h3>
+	<h3> 镇楼图 </h3>
 	{% include clustrmap.html style="js" %}
-	<p> <small> If you are not seeing a map, please disable Ad block </small></p>
+	<p> <small> 如果您没有看到地图，请禁用广告块 </small></p>
 </div>
 </div>
 <div class="permlinks">
-<h2>Recent Posts</h2>
+<h2>帖子</h2>
 <dl>
 	{% for post in site.posts limit:3 %}
 	<dt><code>{{ post.date | date_to_string }} </code><i class="fas fa-angle-double-right" aria-hidden="true"></i><a href="{{ post.url }}">{{ post.title }}</a> &nbsp;{% include status-indicator.html status=post.status%}
@@ -20,13 +20,13 @@ layout: home
     </dd>
 	{% endif %}
 	{% endfor %}
-	<p>... <a href="/blog">Full Posts List</a> </p>
+	<p>... <a href="/blog">更多>>></a> </p>
 </dl>
 
-<h2>Upcoming Posts (edit me at /index.html )</h2>
+<h2>项目简历</h2>
 <ul>
-	<li>Post 1</li>
-	<li>Post 2</li>
+	<li>微服务</li>
+	<li>CMS</li>
 </ul>
 
 </div >
