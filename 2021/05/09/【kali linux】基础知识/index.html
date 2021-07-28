@@ -89,7 +89,7 @@
 
 
 
-  <meta name="keywords" content="Hexo个人博客,NexT美化优化,哈林摇,Mac Panel特效,Leaf,北宸,Java程序员,北京,旅行,摄像,Github Pages,搭建教程,demo,博客相册,文章排行榜,网站SEO" />
+  <meta name="keywords" content="kali基础," />
 
 
 
@@ -102,15 +102,31 @@
 
 
 
-<meta name="description" content="生活分享">
-<meta property="og:type" content="website">
-<meta property="og:title" content="孤桜懶契">
-<meta property="og:url" content="https://gylq.gitee.io/index.html">
+<meta name="description" content="认识linuxSHELL和终端 查看shells：  cat &#x2F;etc&#x2F;shells 查看当前shell   ：  echo $SHELL  linux区分大小写  vim编译器 VM编辑器是所有unix及linux系统下标准的编辑器。  vi&#x2F;vim编辑器模式  命令模式：刚进入vim的时候，默认就是命令模式，可以复制行，删除行等。 输入模式：可以输入内容 输入模式 -&gt; 命令模式  快键">
+<meta property="og:type" content="article">
+<meta property="og:title" content="【kali linux】基础知识">
+<meta property="og:url" content="https://gylq.gitee.io/2021/05/09/%E3%80%90kali%20linux%E3%80%91%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/index.html">
 <meta property="og:site_name" content="孤桜懶契">
-<meta property="og:description" content="生活分享">
+<meta property="og:description" content="认识linuxSHELL和终端 查看shells：  cat &#x2F;etc&#x2F;shells 查看当前shell   ：  echo $SHELL  linux区分大小写  vim编译器 VM编辑器是所有unix及linux系统下标准的编辑器。  vi&#x2F;vim编辑器模式  命令模式：刚进入vim的时候，默认就是命令模式，可以复制行，删除行等。 输入模式：可以输入内容 输入模式 -&gt; 命令模式  快键">
+<meta property="og:image" content="https://i.loli.net/2021/05/10/MtPYLGax89qWcvB.png">
+<meta property="og:image" content="https://gitee.com/gylq/cloudimages/raw/master/img/image-20210618100927656.png">
+<meta property="og:image" content="https://gitee.com/gylq/cloudimages/raw/master/img/image-20210618111728037.png">
+<meta property="og:image" content="https://gitee.com/gylq/cloudimages/raw/master/img/image-20210618111751408.png">
+<meta property="og:image" content="https://gitee.com/gylq/cloudimages/raw/master/img/image-20210618111807807.png">
+<meta property="og:image" content="https://gitee.com/gylq/cloudimages/raw/master/img/image-20210614090034157.png">
+<meta property="og:image" content="https://gitee.com/gylq/cloudimages/raw/master/img/image-20210614091754143.png">
+<meta property="og:image" content="https://gitee.com/gylq/cloudimages/raw/master/img/image-20210614093742007.png">
+<meta property="og:image" content="https://gitee.com/gylq/cloudimages/raw/master/img/image-20210614094910000.png">
+<meta property="og:image" content="https://gitee.com/gylq/cloudimages/raw/master/img/image-20210614095935874.png">
+<meta property="og:image" content="https://gitee.com/gylq/cloudimages/raw/master/img/image-20210614100242163.png">
+<meta property="og:image" content="https://gitee.com/gylq/cloudimages/raw/master/img/image-20210614125233290.png">
+<meta property="og:image" content="https://gitee.com/gylq/cloudimages/raw/master/img/image-20210614130156032.png">
+<meta property="article:published_time" content="2021-05-09T11:38:57.189Z">
+<meta property="article:modified_time" content="2021-06-19T01:44:02.315Z">
 <meta property="article:author" content="孤桜懶契">
-<meta property="article:tag" content="孤桜懶契 技术 知识">
+<meta property="article:tag" content="kali基础">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://i.loli.net/2021/05/10/MtPYLGax89qWcvB.png">
 
 
 
@@ -140,7 +156,7 @@
 
 
 
-  <link rel="canonical" href="https://gylq.gitee.io/"/>
+  <link rel="canonical" href="https://gylq.gitee.io/2021/05/09/【kali linux】基础知识/"/>
 
 
 
@@ -158,7 +174,7 @@
     })();
 </script>
 
-  <title>孤桜懶契 - Run</title>
+  <title>【kali linux】基础知识 | 孤桜懶契</title>
   
 
 
@@ -200,8 +216,7 @@ var _hmt = _hmt || [];
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <!--fork me from github-->
@@ -388,2587 +403,620 @@ var _hmt = _hmt || [];
           <div id="content" class="content">
             
 
-  <!--轮播图-->
+  <div id="posts" class="posts-expand">
+    
+
   
 
-<!--
-<script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
-<script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
--->
+  
+  
+  
 
-<script src="https://cdn.jsdelivr.net/npm/jquery@2.1.3/dist/jquery.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap.min.js@3.3.5/bootstrap.min.js"></script>
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://gylq.gitee.io/2021/05/09/%E3%80%90kali%20linux%E3%80%91%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/">
 
-<style type="text/css">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="孤桜懶契">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/qq.png">
+    </span>
 
-.glyphicon-chevron-left:before{
-	/* content: "《" */
-}
-.glyphicon-chevron-right:before{
-	/* content: "》" */
-}
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="孤桜懶契">
+    </span>
 
-.right-siders{
-   border-radius: 5px;
-   /*margin-top: 5px;
-   margin-bottom: 10px;*/
-}
+    
+      <header class="post-header">
 
-.my-carousel{
-    /*height: 10%;*/
-    margin-bottom: 12px;
-}
-
-.my-carousel:hover{
-  margin-left: 5px;
-  //padding: 5px 1px;
-  border-radius: 5px;
-  transform: scale(1.1);
-  box-shadow: 10px 10px 15px 2px rgba(0,0,0,.12), 0 0 6px 0 rgba(104, 104, 105, 0.1);
-}
-
-@media (max-width: 767px){
-	.rights{
-		display: none;
-	}
-	.carousel{
-		width: 100% !important;
-		height: 100% !important;
-	}
-	.slide{
-		width: 100% !important;
-		height: 100% !important;
-	}
-
-	.carousel-control .glyphicon-chevron-left,
-  .carousel-control .glyphicon-chevron-right,
-  .carousel-control .icon-prev,
-  .carousel-control .icon-next {
-    width: 30px;
-    height: 30px;
-    margin-top: -10px;
-    font-size: 30px;
-  }
-  .carousel-control .glyphicon-chevron-left,
-  .carousel-control .icon-prev {
-    margin-left: -10px;
-  }
-  .carousel-control .glyphicon-chevron-right,
-  .carousel-control .icon-next {
-   /* margin-right: -10px; */
-  }
-
-}
-
-.carousel{
-	width: 65%;
-	height: 100%;
-	position: relative;
-}
-
-.carousel-inner {
-  position: relative;
-  overflow: hidden;
-  width: 100%;
-}
-.carousel-inner > .item {
-  display: none;
-  position: relative;
-  -webkit-transition: 0.6s ease-in-out left;
-  -o-transition: 0.6s ease-in-out left;
-  transition: 0.6s ease-in-out left;
-}
-.carousel-inner > .item > img,
-.carousel-inner > .item > a > img {
-  line-height: 1;
-}
-@media all and (transform-3d), (-webkit-transform-3d) {
-  .carousel-inner > .item {
-    -webkit-transition: -webkit-transform 0.6s ease-in-out;
-    -moz-transition: -moz-transform 0.6s ease-in-out;
-    -o-transition: -o-transform 0.6s ease-in-out;
-    transition: transform 0.6s ease-in-out;
-    -webkit-backface-visibility: hidden;
-    -moz-backface-visibility: hidden;
-    backface-visibility: hidden;
-    -webkit-perspective: 1000px;
-    -moz-perspective: 1000px;
-    perspective: 1000px;
-  }
-  .carousel-inner > .item.next,
-  .carousel-inner > .item.active.right {
-    -webkit-transform: translate3d(100%, 0, 0);
-    transform: translate3d(100%, 0, 0);
-    left: 0;
-  }
-  .carousel-inner > .item.prev,
-  .carousel-inner > .item.active.left {
-    -webkit-transform: translate3d(-100%, 0, 0);
-    transform: translate3d(-100%, 0, 0);
-    left: 0;
-  }
-  .carousel-inner > .item.next.left,
-  .carousel-inner > .item.prev.right,
-  .carousel-inner > .item.active {
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-    left: 0;
-  }
-}
-.carousel-inner > .active,
-.carousel-inner > .next,
-.carousel-inner > .prev {
-  display: block;
-}
-.carousel-inner > .active {
-  left: 0;
-}
-.carousel-inner > .next,
-.carousel-inner > .prev {
-  position: absolute;
-  top: 0;
-  width: 100%;
-}
-.carousel-inner > .next {
-  left: 100%;
-}
-.carousel-inner > .prev {
-  left: -100%;
-}
-.carousel-inner > .next.left,
-.carousel-inner > .prev.right {
-  left: 0;
-}
-.carousel-inner > .active.left {
-  left: -100%;
-}
-.carousel-inner > .active.right {
-  left: 100%;
-}
-.carousel-control {
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  /*width: 5%;*/
-  opacity: 0.5;
-  filter: alpha(opacity=50);
-  font-size: 20px;
-  color: #fff;
-  text-align: center;
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
-  background-color: rgba(0, 0, 0, 0);
-}
-.carousel-control.left {
-  background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.0001) 100%);
-  background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.0001) 100%);
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.0001) 100%);
-  background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#80000000, endColorstr=#00000000, GradientType=1);
-}
-.carousel-control.right {
-  left: auto;
-  right: 0;
-  background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.5) 100%);
-  background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.5) 100%);
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.5) 100%);
-  background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#00000000, endColorstr=#80000000, GradientType=1);
-}
-.carousel-control:hover,
-.carousel-control:focus {
-  outline: 0;
-  color: #fff;
-  text-decoration: none;
-  opacity: 0.9;
-  filter: alpha(opacity=90);
-}
-.carousel-control .icon-prev,
-.carousel-control .icon-next,
-.carousel-control .glyphicon-chevron-left,
-.carousel-control .glyphicon-chevron-right {
-  position: absolute;
-  top: 50%;
-  margin-top: -10px;
-  z-index: 5;
-  display: inline-block;
-}
-/*
-.carousel-control .icon-prev,
-.carousel-control .glyphicon-chevron-left {
-  left: 50%;
-  margin-left: -10px;
-}
-*/
-
-.carousel-control .icon-prev,
-.carousel-control .glyphicon-chevron-left {
-  background: url('/images/icon-slides.png');
-  background-position-y: -20px;
-  left: 9px;
-}
-
-/*
-.carousel-control .icon-next,
-.carousel-control .glyphicon-chevron-right {
-  right: 50%;
-  margin-right: -10px;
-}
-*/
-
-.carousel-control .icon-next,
-.carousel-control .glyphicon-chevron-right {
-  background: url('/images/icon-slides.png');
-  background-position-x: -50px;
-  background-position-y: -20px;
-  right: 0px;
-}
-
-.carousel-control .icon-prev,
-.carousel-control .icon-next {
-  width: 20px;
-  height: 20px;
-  line-height: 1;
-  font-family: serif;
-}
-
-.carousel-control .icon-prev:before {
-  content: 2039;
-}
-.carousel-control .icon-next:before {
-  content: 203a;
-}
-
-.carousel-indicators {
-  opacity: 0.5;
-  position: absolute;
-  bottom: -15px;
-  left: 50%;
-  z-index: 15;
-  width: 60%;
-  margin-left: -30%;
-  padding-left: 0;
-  list-style: none;
-  text-align: center;
-}
-.carousel-indicators li {
-  display: inline-block;
-  width: 30px;
-  height: 3px;
-  margin: 5px;
-  text-indent: -999px;
-  border: 1px solid #bbb;
-  border-radius: 10px;
-  cursor: pointer;
-  background-color: rgba(0, 0, 0, .24);
-}
-.carousel-indicators .active {
-  width: 30px;
-  height: 3px;
-  background-color: #fff;
-}
-.carousel-caption {
-  position: absolute;
-  left: 15%;
-  right: 15%;
-  bottom: 20px;
-  z-index: 10;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  color: #fff;
-  text-align: center;
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
-}
-.carousel-caption .btn {
-  text-shadow: none;
-}
-@media screen and (min-width: 768px) {
-  .carousel-control .glyphicon-chevron-left,
-  .carousel-control .glyphicon-chevron-right,
-  .carousel-control .icon-prev,
-  .carousel-control .icon-next {
-    width: 30px;
-    height: 30px;
-    margin-top: -10px;
-    font-size: 30px;
-  }
-  .carousel-control .glyphicon-chevron-left,
-  .carousel-control .icon-prev {
-    margin-left: -10px;
-  }
-  .carousel-control .glyphicon-chevron-right,
-  .carousel-control .icon-next {
-   /* margin-right: -10px; */
-  }
-  .carousel-caption {
-    left: 20%;
-    right: 20%;
-    padding-bottom: 30px;
-  }
-  .carousel-indicators {
-    bottom: -20px;
-  }
-}
-</style>
-
-<div width="100%" height="24%" style="border: 0px; overflow: hidden; border-radius: 10px; margin-bottom: 25px;" scrolling="no">
-
-	<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="3500" style="float:left">
-
-      <!-- 轮播（Carousel）指标 -->
-      <ol class="carousel-indicators">
-      
-      
-        <li data-target="#myCarousel" data-slide-to="0"></li>
         
-      
-        <li data-target="#myCarousel" data-slide-to="1"></li>
         
-      
-        <li data-target="#myCarousel" data-slide-to="2"></li>
+          <h2 class="post-title" itemprop="name headline">【kali linux】基础知识</h2>
         
-      
-      </ol>
 
-      <!-- 轮播（Carousel）项目 -->
-      <div class="carousel-inner" style="height: 24%; border-radius: 10px; width: 100%;">
-       
-       
-          
-          <a class="item active" href="https://gylq.gitee.io/" target="_blank" style="height: 100%;">
+        <div class="post-meta">
+          <span class="post-time">
+
+             
+
+             
+
             
-            <img src="https://s1.ax1x.com/2020/10/05/0JH77T.png" class="nofancybox"  style="width: 100%; height: 100%" >
-          </a>
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2021-05-09T19:38:57+08:00">
+                2021-05-09
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/kali/" itemprop="url" rel="index">
+                    <span itemprop="name">kali</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2021/05/09/%E3%80%90kali%20linux%E3%80%91%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2021/05/09/%E3%80%90kali%20linux%E3%80%91%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
           
           
+             <span id="/2021/05/09/%E3%80%90kali%20linux%E3%80%91%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/" class="leancloud_visitors" data-flag-title="【kali linux】基础知识">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          <!--
+          
+          -->
+
+          
+            <span class="post-wordcount">
+              
+                
+                  <span class="post-meta-divider">|</span>
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                <span title="字数">
+                  3.2k
+                </span>
+              
+
+              
+
+              
+            </span>
+          
+
+          <!-- 隐藏文章内标题下，内容描述
+          
+          -->
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
       
-          
-            <a class="item" href="https://gylq.gitee.io/time/" target="_blank" style="height: 100%;">
-              <img src="https://s1.ax1x.com/2020/10/05/0J76JJ.png" class="nofancybox"  style="width: 100%; height: 100%;" >
-            </a>
+      
+
+      
+        <h1 id="认识linux"><a href="#认识linux" class="headerlink" title="认识linux"></a>认识linux</h1><h2 id="SHELL和终端"><a href="#SHELL和终端" class="headerlink" title="SHELL和终端"></a>SHELL和终端</h2><blockquote>
+<p>查看shells：  cat /etc/shells</p>
+<p>查看当前shell   ：  echo $SHELL  linux区分大小写</p>
+</blockquote>
+<h2 id="vim编译器"><a href="#vim编译器" class="headerlink" title="vim编译器"></a><strong>vim编译器</strong></h2><blockquote>
+<p>VM编辑器是所有unix及linux系统下标准的编辑器。</p>
+</blockquote>
+<p><strong>vi/vim编辑器模式</strong></p>
+<blockquote>
+<p><strong>命令模式</strong>：刚进入vim的时候，默认就是命令模式，可以复制行，删除行等。</p>
+<p><strong>输入模式</strong>：可以输入内容</p>
+<p>输入模式 -&gt; 命令模式  快键键 ESC键</p>
+<p><strong>关闭、保存文件</strong><br><strong>冒号“：”开头</strong><br><strong>命令模式下</strong>：</p>
+<p>w: 保存<br>q:退出<br>wq和x都是保存退出<br>q! :强制退出<br>w!: 强制保存，管理员才有权限</p>
+<p><strong>例如      :q!</strong></p>
+<p><strong>查找</strong><br>普通模式：<br>/PATTERN: 从当前位置向后查找<br>?PATTERN: 从当前位置向前查找</p>
+<p><strong>模式转换</strong><br>使用insert键切换进输入模式<br><strong>命令模式 -&gt; 输入模式</strong>：</p>
+<p><strong>i：在当前光标所在字符的前面，转换为输入模式</strong><br><strong>I：在当前光标所在行的行首转换为输入模式</strong><br><strong>a：在当前光标所在字符的后面，转换为输入模式</strong><br><strong>A：在当前光标所在行的行尾，转换为输入模式</strong><br><strong>o：在当前光标所在行的下方，新建一行，并转为输入模式</strong><br><strong>O：在当前光标所在行的上方，新建一行，并转为输入模式</strong><br><strong>s：删除光标所在字符</strong><br><strong>r：替换光标处字符</strong></p>
+</blockquote>
+<h1 id="Linux常用命令"><a href="#Linux常用命令" class="headerlink" title="Linux常用命令"></a>Linux常用命令</h1><blockquote>
+<p><strong>echo命令</strong>： echo $SHELL<br>echo命令用于在终端输出字符串或变量提取后的值</p>
+<p><strong>date命令</strong><br>date命令用于显示及设置系统的时间或日期</p>
+<p>poweroff命令<br>poweroff命令用于关闭系统</p>
+<p>top命令<br>显示当前系统正在执行的进程的相关信息，包括进程id、内存占用率等</p>
+</blockquote>
+<h2 id="系统检测命令"><a href="#系统检测命令" class="headerlink" title="系统检测命令"></a>系统检测命令</h2><blockquote>
+<p><strong>ifconfig命令</strong><br>ifconfig命令用于获取网卡配置与网络状态等信息</p>
+<p>*<em>uname命令 *</em> : uname -a<br>uname命令用于查看系统内核与系统版本等信息</p>
+<p><strong>who命令</strong><br>who用于查看当前登入主机的用户终端信息</p>
+<p><strong>history命令</strong> : history<br>history命令用于显示历史执行过的命令</p>
+</blockquote>
+<h2 id="工作目录切换命令"><a href="#工作目录切换命令" class="headerlink" title="工作目录切换命令"></a>工作目录切换命令</h2><blockquote>
+<p><strong>pwd命令</strong><br>pwd命令用于显示用户当前所处的工作目录</p>
+<p><strong>cd命令</strong><br>cd命令用于切换工作路径</p>
+<p><strong>ls命令</strong><br>ls命令用于显示目录中的文件信息</p>
+</blockquote>
+<h1 id="了解VMware网络基本配置"><a href="#了解VMware网络基本配置" class="headerlink" title="了解VMware网络基本配置"></a>了解VMware网络基本配置</h1><blockquote>
+<p>briged（桥接模式）：虚拟机和主机好比在同一个网络环境下的两台电脑</p>
+<p>Nat（网络地址转换模拟）：NAT模式虚拟机通过主机进行联网。</p>
+<p>Host-Only（主机模式）：主机模式将虚拟机与外网隔开，只能让虚拟机和虚拟机之间联网</p>
+</blockquote>
+<h1 id="kali的更新"><a href="#kali的更新" class="headerlink" title="kali的更新"></a>kali的更新</h1><h2 id="系统源"><a href="#系统源" class="headerlink" title="系统源"></a>系统源</h2><p><strong>源配置（软件源）概念</strong>：源就是来源。就是你安装软件时，程序从哪里获取软件包（安装程序在你的机器上，但需要安装的东西却在软件源服务器上）。其实你可以把它称为<strong>软件仓库</strong>。安装软件时，就是从仓库里面调取数据放在你的机器上。</p>
+<h2 id="Linux下载软件的两种方式："><a href="#Linux下载软件的两种方式：" class="headerlink" title="Linux下载软件的两种方式："></a>Linux下载软件的两种方式：</h2><blockquote>
+<p>1、<strong>从源配置（软件源）所在服务器上通过特定命令获取JDK，Tomcat之类的软件包</strong></p>
+<p>2、<strong>从官网上下载软件包</strong></p>
+</blockquote>
+<p><strong>第一次更新源的过程就相当于我们刚装好windows系统需要打补丁</strong></p>
+<blockquote>
+<p>1、查看当前系统中所有软件包状态<br>sudo dpkg –get-selections | more<br>可以找到metasploit-framework软件包名为”metasploit-framework”</p>
+<p>2、给metasploit-framework锁定当前版本不更新<br>sudo apt-mark hold metasploit-framework</p>
+<p>3、查看当前已锁定的软件包<br>sudo dpkg –get-selections | grep hold</p>
+<p>4、取消软件保留设置<br>sudo apt-mark unhold metasploit-framework</p>
+</blockquote>
+<h2 id="配置kali系统更新源"><a href="#配置kali系统更新源" class="headerlink" title="配置kali系统更新源"></a>配置kali系统更新源</h2><blockquote>
+<p>1、使用编译器打开系统源文本</p>
+<p>leafpad /etc/apt/sources.list   </p>
+</blockquote>
+<blockquote>
+<p>2、可以更改更新源</p>
+<p>deb <a href="http://mirrors.ustc.edu.cn/kali" target="_blank" rel="noopener">http://mirrors.ustc.edu.cn/kali</a> kali-rolling main non-free contrib<br>deb-src <a href="http://mirrors.ustc.edu.cn/kali" target="_blank" rel="noopener">http://mirrors.ustc.edu.cn/kali</a> kali-rolling main non-free contrib</p>
+</blockquote>
+<p><img src="https://i.loli.net/2021/05/10/MtPYLGax89qWcvB.png" alt="image-20210510074625331"></p>
+<blockquote>
+<p>3、使用更新命令</p>
+</blockquote>
+<div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PLAIN"><figure class="iseeu highlight /plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">apt-get updata &amp;&amp; apt-get upgrade &amp;&amp; apt-get dist-upgrade</span><br></pre></td></tr></table></figure></div>
+
+<h2 id="kali系统更新后出现的问题"><a href="#kali系统更新后出现的问题" class="headerlink" title="kali系统更新后出现的问题"></a>kali系统更新后出现的问题</h2><p><strong>如果metasploit-framework无法启动</strong></p>
+<p>进入<strong>cd  /usr/share/metasploit-framework</strong>目录下<br>使用命令</p>
+<div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PLAIN"><figure class="iseeu highlight /plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">gem install bundler</span><br><span class="line">gem update --system</span><br></pre></td></tr></table></figure></div>
+
+<p>然后成功启动</p>
+<h2 id="SSH服务简介"><a href="#SSH服务简介" class="headerlink" title="SSH服务简介"></a>SSH服务简介</h2><blockquote>
+<p><strong>SHH是标准的网络协议，默认22号端口，采用密文的形式在网络中传输数据，相对于通过明文传输的telnet，更具有更高的安全性</strong></p>
+<p><strong>SSH服务目前较可靠，专为远程登录服务器和其他网络服务提供安全性的协议</strong></p>
+<p><strong>SSH提供了口令和密钥两种用户验证方式，这两者都是通过密文传输数据的。</strong></p>
+<p><strong>SSH对我们主要的作用是：能够操作远程服务器系统</strong></p>
+</blockquote>
+<h2 id="kali配置SSH服务和windows配置SSH服务"><a href="#kali配置SSH服务和windows配置SSH服务" class="headerlink" title="kali配置SSH服务和windows配置SSH服务"></a><strong>kali配置SSH服务和windows配置SSH服务</strong></h2><blockquote>
+<p><strong>1、使用编辑器打开ssh配置</strong></p>
+<p><strong>leafpad /etc/ssh/sshd_config</strong></p>
+<p><strong>搜索：</strong><br><strong>#PasswordAuthentication yes  去掉注释</strong><br><strong>#PermitRootLogin prohibit-password   去掉注释并改为PermitRootLogin yes</strong>  </p>
+<p><strong>2、使用命令行模式开启SSH服务</strong><br><strong>service ssh start</strong></p>
+<p><strong>3、查看服务开启状态</strong><br><strong>service ssh status</strong></p>
+<p><strong>3、登陆测试</strong><br><strong>使用</strong></p>
+<p><strong>xshell</strong>蓝奏云： <a href="https://wwr.lanzous.com/b0262213c" target="_blank" rel="noopener">https://wwr.lanzous.com/b0262213c</a> 密码:9hm1</p>
+<p><strong>putty</strong>蓝奏云：[<a href="https://wwr.lanzous.com/ib2cio96gxi" target="_blank" rel="noopener">https://wwr.lanzous.com/ib2cio96gxi</a>   52pj</p>
+<p>openssh使用windows自带命令窗口连接：<a href="https://www.mls-software.com/opensshd.html" target="_blank" rel="noopener">https://www.mls-software.com/opensshd.html</a></p>
+<p><strong>使用方法</strong></p>
+<p><img src="https://gitee.com/gylq/cloudimages/raw/master/img/image-20210618100927656.png" alt="image-20210618100927656"></p>
+<p><strong>等工具测试</strong></p>
+<ul>
+<li><p>windows配置ssh服务</p>
+<ul>
+<li><p>下载地址：<a href="https://links.jianshu.com/go?to=https%3A%2F%2Fgithub.com%2FPowerShell%2FWin32-OpenSSH%2Freleases" target="_blank" rel="noopener">https://github.com/PowerShell/Win32-OpenSSH/releases</a> </p>
+</li>
+<li><p><img src="https://gitee.com/gylq/cloudimages/raw/master/img/image-20210618111728037.png" alt="image-20210618111728037"></p>
+</li>
+<li><p>安装SSH服务</p>
+<div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PLAIN"><figure class="iseeu highlight /plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">powershell.exe -ExecutionPolicy Bypass -File install-sshd.ps1</span><br></pre></td></tr></table></figure></div>
+
+<p><img src="https://gitee.com/gylq/cloudimages/raw/master/img/image-20210618111751408.png" alt="image-20210618111751408"></p>
+<p><img src="https://gitee.com/gylq/cloudimages/raw/master/img/image-20210618111807807.png" alt="image-20210618111807807"></p>
+</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<h1 id="Kali工具包简介"><a href="#Kali工具包简介" class="headerlink" title="Kali工具包简介"></a>Kali工具包简介</h1><p>kali linux 含有可用于渗透测试的工具</p>
+<blockquote>
+<p>信息收集：这类工具主要用来帮助我们收集目标的网站架构、网站脚本语言、网站信息泄露</p>
+<p>漏洞评估：这类工具可以扫描目标系统上的漏洞，扫描主机漏洞，系统漏洞</p>
+<p>漏洞利用：这类工具可以利用在目标系统中发现的漏洞，让我们针对性的去利用攻击</p>
+<p>Web应用：即与web应用有关的工具，关于web方面的扫描器、爆破等工具</p>
+<p>密码攻击：提供在线密码破解或者是离线的密码破解工具给我们使用</p>
+</blockquote>
+<h1 id="Linux常用命令-1"><a href="#Linux常用命令-1" class="headerlink" title="Linux常用命令"></a>Linux常用命令</h1><h2 id="文本文件编辑命令"><a href="#文本文件编辑命令" class="headerlink" title="文本文件编辑命令"></a>文本文件编辑命令</h2><blockquote>
+<p><strong>cat命令</strong><br>cat命令用于查看纯文本文件（内容较少的）</p>
+<p><strong>more命令</strong><br>more命令用于查看纯文本文件（内容较多的）</p>
+<p><strong>ls命令</strong><br>查看当前目录</p>
+<p><strong>head命令</strong><br>head命令用于查看纯文本文档的前N行</p>
+<p><strong>wc命令</strong><br>wc命令用于统计指定文本的行数、字数、字节数</p>
+<p><strong>stat命令</strong>： stat nmap.txt<br>stat命令用于查看文件的具体存储信息和时间等信息</p>
+<p><strong>touch命令</strong>： touch –help    touch -a 05011001 nmap.txt<br>touch命令用于创建空白文件或设置文件的时间</p>
+<p><strong>mkdir命令</strong><br>mkdir命令用于创建空白的目录</p>
+<p><strong>cp命令</strong><br>cp命令用于复制文件或目录</p>
+<p><strong>mv命令</strong><br>mv命令用于移动文件或将文件重命名</p>
+<p><strong>file命令</strong><br>file命令用于查看文件的类型</p>
+<p><strong>tar命令</strong><br>tar命令用于对文件进行打包压缩或解压</p>
+<p><strong>find命令</strong><br>find命令用于按照指定条件来查找文件</p>
+<p><strong>rm命令</strong><br>用于删除文件或者文件夹，删除文件夹要用-r -f</p>
+<p><strong>wget命令</strong>： wget <a href="http://linux.51yip.com/images/logo.png" target="_blank" rel="noopener">http://linux.51yip.com/images/logo.png</a><br>wget命令用于下载</p>
+</blockquote>
+<h2 id="文件管理权限命令"><a href="#文件管理权限命令" class="headerlink" title="文件管理权限命令"></a>文件管理权限命令</h2><blockquote>
+<p><strong>chmod</strong></p>
+<p>文件和目录的权限<br>linux中文件和目录的权限有所不同<br>文件的权限<br>r 可以读文件 数值为4<br>w 可以写文件  2<br>x  可以执行文件 1</p>
+</blockquote>
+<h1 id="用户-用户组"><a href="#用户-用户组" class="headerlink" title="用户/用户组"></a>用户/用户组</h1><blockquote>
+<p>在Linux中，每个文件都是属于一个用户的，每一个用户都属于一个用户组</p>
+<p>可以同时拥有N多个用户，和用户组</p>
+</blockquote>
+<h2 id="保存用户信息"><a href="#保存用户信息" class="headerlink" title="保存用户信息"></a>保存用户信息</h2><blockquote>
+<p>用户信息：cat /etc/passwd</p>
+<div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PLAIN"><figure class="iseeu highlight /plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br></pre></td><td class="code"><pre><span class="line">root:x:0:0:root:&#x2F;root:&#x2F;usr&#x2F;bin&#x2F;zsh</span><br><span class="line">daemon:x:1:1:daemon:&#x2F;usr&#x2F;sbin:&#x2F;usr&#x2F;sbin&#x2F;nologin</span><br><span class="line">bin:x:2:2:bin:&#x2F;bin:&#x2F;usr&#x2F;sbin&#x2F;nologin</span><br><span class="line">sys:x:3:3:sys:&#x2F;dev:&#x2F;usr&#x2F;sbin&#x2F;nologin</span><br><span class="line">sync:x:4:65534:sync:&#x2F;bin:&#x2F;bin&#x2F;sync</span><br><span class="line">games:x:5:60:games:&#x2F;usr&#x2F;games:&#x2F;usr&#x2F;sbin&#x2F;nologin</span><br><span class="line">man:x:6:12:man:&#x2F;var&#x2F;cache&#x2F;man:&#x2F;usr&#x2F;sbin&#x2F;nologin</span><br><span class="line">lp:x:7:7:lp:&#x2F;var&#x2F;spool&#x2F;lpd:&#x2F;usr&#x2F;sbin&#x2F;nologin</span><br><span class="line">mail:x:8:8:mail:&#x2F;var&#x2F;mail:&#x2F;usr&#x2F;sbin&#x2F;nologin</span><br><span class="line">news:x:9:9:news:&#x2F;var&#x2F;spool&#x2F;news:&#x2F;usr&#x2F;sbin&#x2F;nologin</span><br><span class="line">uucp:x:10:10:uucp:&#x2F;var&#x2F;spool&#x2F;uucp:&#x2F;usr&#x2F;sbin&#x2F;nologin</span><br><span class="line">proxy:x:13:13:proxy:&#x2F;bin:&#x2F;usr&#x2F;sbin&#x2F;nologin</span><br><span class="line">www-data:x:33:33:www-data:&#x2F;var&#x2F;www:&#x2F;usr&#x2F;sbin&#x2F;nologin</span><br><span class="line">backup:x:34:34:backup:&#x2F;var&#x2F;backups:&#x2F;usr&#x2F;sbin&#x2F;nologin</span><br><span class="line">list:x:38:38:Mailing List Manager:&#x2F;var&#x2F;list:&#x2F;usr&#x2F;sbin&#x2F;nologin</span><br><span class="line">irc:x:39:39:ircd:&#x2F;run&#x2F;ircd:&#x2F;usr&#x2F;sbin&#x2F;nologin</span><br><span class="line">gnats:x:41:41:Gnats Bug-Reporting System (admin):&#x2F;var&#x2F;lib&#x2F;gnats:&#x2F;usr&#x2F;sbin&#x2F;nologin</span><br><span class="line">nobody:x:65534:65534:nobody:&#x2F;nonexistent:&#x2F;usr&#x2F;sbin&#x2F;nologin</span><br><span class="line">_apt:x:100:65534::&#x2F;nonexistent:&#x2F;usr&#x2F;sbin&#x2F;nologin</span><br><span class="line">systemd-timesync:x:101:101:systemd Time Synchronization,,,:&#x2F;run&#x2F;systemd:&#x2F;usr&#x2F;sbin&#x2F;nologin</span><br><span class="line">systemd-network:x:102:103:systemd Network Management,,,:&#x2F;run&#x2F;systemd:&#x2F;usr&#x2F;sbin&#x2F;nologin</span><br><span class="line">systemd-resolve:x:103:104:systemd Resolver,,,:&#x2F;run&#x2F;systemd:&#x2F;usr&#x2F;sbin&#x2F;nologin</span><br><span class="line">mysql:x:104:110:MySQL Server,,,:&#x2F;nonexistent:&#x2F;bin&#x2F;false</span><br><span class="line">tss:x:105:111:TPM software stack,,,:&#x2F;var&#x2F;lib&#x2F;tpm:&#x2F;bin&#x2F;false</span><br><span class="line">strongswan:x:106:65534::&#x2F;var&#x2F;lib&#x2F;strongswan:&#x2F;usr&#x2F;sbin&#x2F;nologin</span><br><span class="line">ntp:x:107:113::&#x2F;nonexistent:&#x2F;usr&#x2F;sbin&#x2F;nologin</span><br><span class="line">messagebus:x:108:114::&#x2F;nonexistent:&#x2F;usr&#x2F;sbin&#x2F;nologin</span><br><span class="line">redsocks:x:109:115::&#x2F;var&#x2F;run&#x2F;redsocks:&#x2F;usr&#x2F;sbin&#x2F;nologin</span><br><span class="line">rwhod:x:110:65534::&#x2F;var&#x2F;spool&#x2F;rwho:&#x2F;usr&#x2F;sbin&#x2F;nologin</span><br><span class="line">iodine:x:111:65534::&#x2F;run&#x2F;iodine:&#x2F;usr&#x2F;sbin&#x2F;nologin</span><br><span class="line">miredo:x:112:65534::&#x2F;var&#x2F;run&#x2F;miredo:&#x2F;usr&#x2F;sbin&#x2F;nologin</span><br><span class="line">_rpc:x:113:65534::&#x2F;run&#x2F;rpcbind:&#x2F;usr&#x2F;sbin&#x2F;nologin</span><br><span class="line">usbmux:x:114:46:usbmux daemon,,,:&#x2F;var&#x2F;lib&#x2F;usbmux:&#x2F;usr&#x2F;sbin&#x2F;nologin</span><br><span class="line">tcpdump:x:115:120::&#x2F;nonexistent:&#x2F;usr&#x2F;sbin&#x2F;nologin</span><br><span class="line">rtkit:x:116:121:RealtimeKit,,,:&#x2F;proc:&#x2F;usr&#x2F;sbin&#x2F;nologin</span><br><span class="line">sshd:x:117:65534::&#x2F;run&#x2F;sshd:&#x2F;usr&#x2F;sbin&#x2F;nologin</span><br><span class="line">statd:x:118:65534::&#x2F;var&#x2F;lib&#x2F;nfs:&#x2F;usr&#x2F;sbin&#x2F;nologin</span><br><span class="line">postgres:x:119:123:PostgreSQL administrator,,,:&#x2F;var&#x2F;lib&#x2F;postgresql:&#x2F;bin&#x2F;bash</span><br><span class="line">avahi:x:120:125:Avahi mDNS daemon,,,:&#x2F;run&#x2F;avahi-daemon:&#x2F;usr&#x2F;sbin&#x2F;nologin</span><br><span class="line">stunnel4:x:121:126::&#x2F;var&#x2F;run&#x2F;stunnel4:&#x2F;usr&#x2F;sbin&#x2F;nologin</span><br><span class="line">Debian-snmp:x:122:127::&#x2F;var&#x2F;lib&#x2F;snmp:&#x2F;bin&#x2F;false</span><br></pre></td></tr></table></figure></div>
+
+<p><img src="https://gitee.com/gylq/cloudimages/raw/master/img/image-20210614090034157.png" alt=""></p>
+<ul>
+<li><p>用户划分 </p>
+<ul>
+<li>系统用户<ul>
+<li>root</li>
+</ul>
+</li>
+<li>普通用户<ul>
+<li>用户所创建的用户</li>
+</ul>
+</li>
+<li>虚拟用户<ul>
+<li>软件所创建的虚拟用户</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>用户组信息：cat /etc/group</p>
+<div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PLAIN"><figure class="iseeu highlight /plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">scanner:x:133:saned,kali</span><br><span class="line">saned:x:134:</span><br><span class="line">sambashare:x:135:</span><br><span class="line">inetsim:x:136:</span><br><span class="line">colord:x:137:</span><br><span class="line">geoclue:x:138:</span><br><span class="line">lightdm:x:139:</span><br><span class="line">kpadmins:x:140:</span><br><span class="line">kali:x:1000:</span><br><span class="line">kaboxer:x:141:kali,root</span><br><span class="line">systemd-coredump:x:999:</span><br><span class="line">beef-xss:x:142:</span><br></pre></td></tr></table></figure></div>
+
+<p><img src="https://gitee.com/gylq/cloudimages/raw/master/img/image-20210614091754143.png" alt="image-20210614091754143"></p>
+<ul>
+<li><strong>id组名</strong> 查看组信息</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<p>参考：<a href="https://blog.51cto.com/983836259/1634705" target="_blank" rel="noopener">https://blog.51cto.com/983836259/1634705</a></p>
+<blockquote>
+<ul>
+<li><p>用户组</p>
+<ul>
+<li>文件所拥有者   ： 文件的创造者，谁创建的文件，谁就是文件的所有者</li>
+<li>用户所在组      ： 当linux当前用户创建了一个文件后，则这个文件所属的组便是这个用户所在的组</li>
+<li>其他组 ： 除了文件所有者以及所在组的用户外，系统其他的用户都是文件的其他组</li>
+</ul>
+</li>
+<li><p>用户管理</p>
+<ul>
+<li><p>查看用户信息 ： cat /etc/passwd    </p>
+<p><img src="https://gitee.com/gylq/cloudimages/raw/master/img/image-20210614093742007.png" alt="image-20210614093742007"></p>
+</li>
+<li><p>添加用户 </p>
+<ul>
+<li>useradd -m key  ——自动在home文件夹下创建key</li>
+<li>useradd -g 组名 用户名 ——指定添加在某个组里面</li>
+<li>passwd key ——修改key的新密码</li>
+</ul>
+</li>
+<li><p>删除用户 userdel -r key或者不加-r  ——删除目录以及用户</p>
+</li>
+</ul>
+</li>
+<li><p>组管理</p>
+<ul>
+<li><p>查看用户组信息</p>
+<ul>
+<li><p>cat /etc/group</p>
+<p><img src="https://gitee.com/gylq/cloudimages/raw/master/img/image-20210614094910000.png" alt="image-20210614094910000"></p>
+</li>
+</ul>
+</li>
+<li><p>查看用户组归属  —&gt; groups用户名</p>
+</li>
+<li><p>添加组</p>
+<ul>
+<li>usermod -G 组名 用户名</li>
+<li>usermod -a -G 组名 用户名 -&gt;&gt; 追加到新组</li>
+</ul>
+</li>
+<li><p>删除组 –&gt;&gt; groupdel -f 组名</p>
+</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<h1 id="权限管理"><a href="#权限管理" class="headerlink" title="权限管理"></a>权限管理</h1><blockquote>
+<ul>
+<li><p>权限划分</p>
+<ul>
+<li>r 表示读文件 数值为4</li>
+<li>w 表示写文件 数值为2</li>
+<li>x 表示执行文件 数值为1 </li>
+</ul>
+</li>
+<li><p>查看权限 -&gt; 当前目录下 ls -l</p>
+<p><img src="https://gitee.com/gylq/cloudimages/raw/master/img/image-20210614095935874.png" alt="image-20210614095935874"></p>
+<p><img src="https://gitee.com/gylq/cloudimages/raw/master/img/image-20210614100242163.png" alt="image-20210614100242163"></p>
+</li>
+<li><p>设置权限</p>
+<ul>
+<li>chmod命令<ul>
+<li>chmod 777 文件名 —&gt; 给当前文件设置为777权限</li>
+<li>chmod -R 777 目录名  —&gt; 给当前目录递归权限为777</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<h1 id="软件安装管理"><a href="#软件安装管理" class="headerlink" title="软件安装管理"></a>软件安装管理</h1><blockquote>
+<ul>
+<li>dpkg —-&gt; dpkg是Debian Package缩写，是一个Debian的命令行工具，它可以用来安装、删除、构建和管理Debian的软件包<ul>
+<li>安装软件 dpkg -i xxx.deb</li>
+<li>卸载软件<ul>
+<li>dpkg -r xxx.deb  —&gt;删除软件包</li>
+<li>dpkg -r –purge xxx.deb —&gt;连通配置文件一起删除</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>gdebi —&gt; gdebi是一个轻量级的deb安装工具，它能代替臃肿的ubuntu软件中心安装deb<ul>
+<li>安装gdebi<ul>
+<li>sudo apt-get update</li>
+<li>sudo apt-get install gedbi</li>
+</ul>
+</li>
+<li>安装软件 sudo gdebi sogoupinyin.deb 选择y即可</li>
+<li>图形化安装</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<h1 id="压缩命令"><a href="#压缩命令" class="headerlink" title="压缩命令"></a>压缩命令</h1><blockquote>
+<ul>
+<li><p>linux下常用压缩文件格式</p>
+<ul>
+<li>.zip</li>
+<li>.gz</li>
+<li>.bz2</li>
+<li>.tar.gz</li>
+<li>.tar.bz2</li>
+</ul>
+</li>
+<li><p>tar命令</p>
+<ul>
+<li><p>打包命令 ： tar -czvf 打包之后的文件名 源文件名 e.g. tar -czvf 123.tar 123.txt</p>
+</li>
+<li><p>解压命令： tar -xzvf 指定解包文件<img src="https://gitee.com/gylq/cloudimages/raw/master/img/image-20210614125233290.png" alt="image-20210614125233290"></p>
+<p><img src="https://gitee.com/gylq/cloudimages/raw/master/img/image-20210614130156032.png" alt="image-20210614130156032"></p>
+</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<h1 id="搜索命令"><a href="#搜索命令" class="headerlink" title="搜索命令"></a>搜索命令</h1><blockquote>
+<ul>
+<li>find命令 —&gt; find命令所查找的目录路径<ul>
+<li>指定目录查找并输出内容 —&gt; find ./kali/ -print</li>
+<li>指定目录以shell脚本运行输出 —&gt;  find ./etc -exec ls {} ;</li>
+<li>分支主题</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<p>欢迎来到我的博客<a href="http://gylq.github.io" target="_blank" rel="noopener">http://gylq.github.io</a></p>
+
+
         
+
       
+    </div>
+
+      <!-- 相关文章推荐 -->
+     
           
-            <a class="item" href="http://gylq.gitee.io/daily/" target="_blank" style="height: 100%;">
-              <img src="https://s1.ax1x.com/2020/10/05/0J7yi4.png" class="nofancybox"  style="width: 100%; height: 100%;" >
-            </a>
-        
+
+
+     
+
+    
+    
+    
+
+    <div>
+          
+            
+<div class="my_post_copyright">
+  <script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
+
+  <!-- JS库 sweetalert 可修改路径 -->
+  <script src="https://cdn.bootcss.com/jquery/2.0.0/jquery.min.js"></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <p><span>本文标题:</span><a href="/2021/05/09/%E3%80%90kali%20linux%E3%80%91%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/">【kali linux】基础知识</a></p>
+  <p><span>文章作者:</span><a href="/" title="访问 孤桜懶契 的个人博客">孤桜懶契</a></p>
+  <p><span>发布时间:</span>2021年05月09日 - 19:38:57</p>
+  <p><span>最后更新:</span>2021年06月19日 - 09:44:02</p>
+  <p><span>原始链接:</span><a href="/2021/05/09/%E3%80%90kali%20linux%E3%80%91%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/" title="【kali linux】基础知识">https://gylq.gitee.io/2021/05/09/%E3%80%90kali%20linux%E3%80%91%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/</a>
+    <span class="copy-path"  title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="https://gylq.gitee.io/2021/05/09/%E3%80%90kali%20linux%E3%80%91%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/"  aria-label="复制成功！"></i></span>
+  </p>
+  <p><span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" title="Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)">署名-非商业性使用-禁止演绎 4.0 国际</a> 转载请保留原文链接及作者。</p>
+</div>
+<script>
+    var clipboard = new Clipboard('.fa-clipboard');
+    $(".fa-clipboard").click(function(){
+      clipboard.on('success', function(){
+        swal({
+          title: "",
+          text: '复制成功',
+          icon: "success",
+          showConfirmButton: true
+          });
+    });
+    });
+</script>
+
+
+          
+    </div>
+
+    
+
+    <div>
       
+        <div>
+    
+        <div class="read-over">-------------------本文结束 <i class="fa fa-paw"></i> 感谢您的阅读-------------------</div>
+    
+</div>
+
+      
+    </div>
+
+    
+      <div>
+        <div class="share_reward">
+  <div>坚持原创技术分享，感谢您的支持和鼓励！</div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>打赏</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="/images/wechatpay.jpg" alt="孤桜懶契 微信支付"/>
+        <p>微信支付</p>
       </div>
+    
 
-      <!-- 轮播（Carousel）导航 -->
-      <a class="left carousel-control" data-target="#myCarousel" href="javascript:void(0);" role="button" data-slide="prev">
-          <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-      </a>
-      <a class="right carousel-control" data-target="#myCarousel" href="javascript:void(0);" role="button" data-slide="next">
-          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-      </a>
+    
+      <div id="alipay" style="display: inline-block">
+        <img id="alipay_qr" src="/images/alipay.jpg" alt="孤桜懶契 支付宝"/>
+        <p>支付宝</p>
+      </div>
+    
 
-	  </div>
+    
 
-	<div  class="rights" style="width: 30%; height: 24%; margin-right: 15px;margin-left: 0px;float: right;">
+  </div>
+</div>
 
-  	   <!-- 天气插件 -->
-  	   <!-- 会有http的链接
-       <iframe width="300px" scrolling="no" height="50px" frameborder="0" allowtransparency="true" src="https://i.tianqi.com/index.php?c=code&id=12&color=%23&bdc=%23&icon=1&py=beijing&num=2&site=12"></iframe>
-       -->
+      </div>
+    
 
-       <!-- https://tianqi.2345.com/plugin/setting.htm -->
-       <!-- <iframe allowtransparency="true" frameborder="0" width="290" height="75" scrolling="no" src="//tianqi.2345.com/plugin/widget/index.htm?s=2&z=2&t=0&v=0&d=2&bd=0&k=000000&f=&ltf=009944&htf=cc0000&q=1&e=1&a=1&c=54511&w=290&h=75&align=left"></iframe> -->
-       <iframe allowtransparency="true" frameborder="0" width="300" height="55" scrolling="no" src="//tianqi.2345.com/plugin/widget/index.htm?s=2&z=3&t=1&v=2&d=1&bd=0&k=000000&f=&ltf=009944&htf=cc0000&q=1&e=1&a=1&c=54511&w=300&h=55&align=left"></iframe>
+    
 
-  	   <!-- 时光留影 -->
-  	   <div class="my-carousel">
-         <a href="http://gylq.gitee.io/time/" target="_blank">
-            <img class="right-siders nofancybox" src="https://s1.ax1x.com/2020/07/26/apz9mD.jpg" width="100%"/>
-         </a>
-  	   </div>
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/kali%E5%9F%BA%E7%A1%80/" rel="tag"> <i class="fa fa-tag"></i> kali基础</a>
+          
+        </div>
+      
 
-  	   <!-- 个人日志-->
-  	   <div class="my-carousel">
-         <a href="http://gylq.gitee.io/daily/" target="_blank">
-           <img class="right-siders nofancybox" src="https://s1.ax1x.com/2020/10/05/0JoB60.png"/>
-         </a>
-  	   </div>
+      
+      
+      
 
-  	  <!-- 每日一句 -->
-  	  <div class="my-carousel">
-        <a href="http://gylq.gitee.io/blog/" target="_blank">
-          <img class="right-siders nofancybox" src="https://s1.ax1x.com/2020/07/26/apzC0e.png"/>
-        </a>
-  	  </div>
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2021/05/12/Movavi%20Screen%20Recorder%20v21.2.0%E6%B1%89%E5%8C%96%E7%A0%B4%E8%A7%A3/" rel="prev" title="Movavi Screen Recorder v21.2.0汉化破解">
+                <i class="fa fa-chevron-left"></i> Movavi Screen Recorder v21.2.0汉化破解
+              </a>
+            
+          </div>
 
-      <!-- 知识技术 -->
-      <div class="my-carousel">
-        <a href="https://gylq.gitee.io/"_blank">
-          <img class="right-siders nofancybox" src="https://s1.ax1x.com/2020/07/26/a96lZQ.png"/>
-        </a>
-     </div>
+          <span class="post-nav-divider"></span>
 
-   </div>
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2021/05/07/%E7%BD%91%E7%BB%9C%E6%94%BB%E9%98%B2%E5%B7%A5%E5%85%B7/" rel="next" title="网络攻防工具">
+                网络攻防工具 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
 
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+         <div
+  data-weibo-title="分享到微博"
+  data-qq-title="分享到QQ"
+  data-douban-title="分享到豆瓣"
+  class="social-share"
+  class="share-component"
+
+
+
+  data-disabled="qzone,google+,linkedin"
+  data-description="Share.js - 一键分享到微博，QQ空间，腾讯微博，人人，豆瓣...">
+   分享到：
 </div>
 
 
-
-
-  <section id="posts" class="posts-expand">
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://gylq.gitee.io/2021/07/13/%E3%80%90ctfshow%E3%80%91web%E7%AF%87wp%E8%AE%B0%E5%BD%95%EF%BC%88%E6%8C%81%E7%BB%AD%E6%9B%B4%E6%96%B0%EF%BC%89/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="孤桜懶契">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/qq.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="孤桜懶契">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h2 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2021/07/13/%E3%80%90ctfshow%E3%80%91web%E7%AF%87wp%E8%AE%B0%E5%BD%95%EF%BC%88%E6%8C%81%E7%BB%AD%E6%9B%B4%E6%96%B0%EF%BC%89/" itemprop="url">【ctfshow】web篇wp记录（持续更新）</a></h2>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-             
-                 <i class="fa fa-thumb-tack"></i>
-                 <font color=7D26CD>置顶</font>
-                 <span class="post-meta-divider">|</span>
-             
-
-             
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2021-07-13T08:18:08+08:00">
-                2021-07-13
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/CTF/" itemprop="url" rel="index">
-                    <span itemprop="name">CTF</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2021/07/13/%E3%80%90ctfshow%E3%80%91web%E7%AF%87wp%E8%AE%B0%E5%BD%95%EF%BC%88%E6%8C%81%E7%BB%AD%E6%9B%B4%E6%96%B0%EF%BC%89/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2021/07/13/%E3%80%90ctfshow%E3%80%91web%E7%AF%87wp%E8%AE%B0%E5%BD%95%EF%BC%88%E6%8C%81%E7%BB%AD%E6%9B%B4%E6%96%B0%EF%BC%89/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-             <span id="/2021/07/13/%E3%80%90ctfshow%E3%80%91web%E7%AF%87wp%E8%AE%B0%E5%BD%95%EF%BC%88%E6%8C%81%E7%BB%AD%E6%9B%B4%E6%96%B0%EF%BC%89/" class="leancloud_visitors" data-flag-title="【ctfshow】web篇wp记录（持续更新）">
-               <span class="post-meta-divider">|</span>
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               
-                 <span class="leancloud-visitors-count"></span>
-             </span>
-          
-
-          <!--
-          
-          -->
-
-          
-            <span class="post-wordcount">
-              
-                
-                  <span class="post-meta-divider">|</span>
-                
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                <span title="字数">
-                  5.4k
-                </span>
-              
-
-              
-
-              
-            </span>
-          
-
-          <!-- 隐藏文章内标题下，内容描述
-          
-          -->
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-        <div class="post-gallery" itemscope itemtype="http://schema.org/ImageGallery">
-          
-          
-            <div class="post-gallery-row">
-              <a class="post-gallery-img fancybox"
-                 href="https://gitee.com/gylq/cloudimages/raw/master/img/image-20210706204027073~1.jpg" rel="gallery_ckra7euqs004j68u3g1ithxmw"
-                 itemscope itemtype="http://schema.org/ImageObject" itemprop="url">
-                <img src="https://gitee.com/gylq/cloudimages/raw/master/img/image-20210706204027073~1.jpg" itemprop="contentUrl"/>
-              </a>
-            
-          
-
-          
-          </div>
-        </div>
-      
-
-      
-        
-          
-          前言
-记录web的题目wp，慢慢变强，铸剑。
-
-信息搜集web1
-右键查看源代码即可
-ctrl+u
-
-web2
-1、关掉javascript然后查看源码
-2、ctrl+shift+i
-3、view-source:
-4、点击更过工具，开发者工具查看元素获得页面注释通过开发者工具查看网络response
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2021/07/13/%E3%80%90ctfshow%E3%80%91web%E7%AF%87wp%E8%AE%B0%E5%BD%95%EF%BC%88%E6%8C%81%E7%BB%AD%E6%9B%B4%E6%96%B0%EF%BC%89/" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
       
     </div>
-
-      <!-- 相关文章推荐 -->
-     
-
-    
-    
-    
-
-    <div>
-          
-    </div>
-
-    
-
-    <div>
-      
-    </div>
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
   </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://gylq.gitee.io/2021/07/25/%E3%80%90%E5%B0%81%E7%A5%9E%E5%8F%B0%E3%80%91%E6%95%B0%E6%8D%AE%E5%BA%93%E6%B3%A8%E5%85%A5%20wp/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="孤桜懶契">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/qq.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="孤桜懶契">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h2 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2021/07/25/%E3%80%90%E5%B0%81%E7%A5%9E%E5%8F%B0%E3%80%91%E6%95%B0%E6%8D%AE%E5%BA%93%E6%B3%A8%E5%85%A5%20wp/" itemprop="url">【封神台】数据库注入 wp</a></h2>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-             
-
-             
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2021-07-25T19:32:12+08:00">
-                2021-07-25
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/CTF/" itemprop="url" rel="index">
-                    <span itemprop="name">CTF</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2021/07/25/%E3%80%90%E5%B0%81%E7%A5%9E%E5%8F%B0%E3%80%91%E6%95%B0%E6%8D%AE%E5%BA%93%E6%B3%A8%E5%85%A5%20wp/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2021/07/25/%E3%80%90%E5%B0%81%E7%A5%9E%E5%8F%B0%E3%80%91%E6%95%B0%E6%8D%AE%E5%BA%93%E6%B3%A8%E5%85%A5%20wp/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-             <span id="/2021/07/25/%E3%80%90%E5%B0%81%E7%A5%9E%E5%8F%B0%E3%80%91%E6%95%B0%E6%8D%AE%E5%BA%93%E6%B3%A8%E5%85%A5%20wp/" class="leancloud_visitors" data-flag-title="【封神台】数据库注入 wp">
-               <span class="post-meta-divider">|</span>
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               
-                 <span class="leancloud-visitors-count"></span>
-             </span>
-          
-
-          <!--
-          
-          -->
-
-          
-            <span class="post-wordcount">
-              
-                
-                  <span class="post-meta-divider">|</span>
-                
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                <span title="字数">
-                  2.6k
-                </span>
-              
-
-              
-
-              
-            </span>
-          
-
-          <!-- 隐藏文章内标题下，内容描述
-          
-          -->
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-          前言
-
-掌控安全里面的靶场数据库注入，练练手！
-
-
-Access——Cookie注入
-
-环境http://59.63.200.79:8004/
-
-
-
-正常情况Cookie注入是可以通过post传参测试的
-
-
-
-
-
-上面通过改id的参数发现可以cookie注入，废话不多说，抓包，sqlmap走起
-
-
-
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2021/07/25/%E3%80%90%E5%B0%81%E7%A5%9E%E5%8F%B0%E3%80%91%E6%95%B0%E6%8D%AE%E5%BA%93%E6%B3%A8%E5%85%A5%20wp/" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-      <!-- 相关文章推荐 -->
-     
-
-    
-    
-    
-
-    <div>
-          
-    </div>
-
-    
-
-    <div>
-      
-    </div>
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://gylq.gitee.io/2021/07/25/%E3%80%90%E5%B0%81%E7%A5%9E%E5%8F%B0%E3%80%91Sql-Labs%20wp/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="孤桜懶契">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/qq.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="孤桜懶契">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h2 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2021/07/25/%E3%80%90%E5%B0%81%E7%A5%9E%E5%8F%B0%E3%80%91Sql-Labs%20wp/" itemprop="url">【封神台】Sql-Labs wp</a></h2>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-             
-
-             
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2021-07-25T13:14:05+08:00">
-                2021-07-25
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/CTF/" itemprop="url" rel="index">
-                    <span itemprop="name">CTF</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2021/07/25/%E3%80%90%E5%B0%81%E7%A5%9E%E5%8F%B0%E3%80%91Sql-Labs%20wp/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2021/07/25/%E3%80%90%E5%B0%81%E7%A5%9E%E5%8F%B0%E3%80%91Sql-Labs%20wp/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-             <span id="/2021/07/25/%E3%80%90%E5%B0%81%E7%A5%9E%E5%8F%B0%E3%80%91Sql-Labs%20wp/" class="leancloud_visitors" data-flag-title="【封神台】Sql-Labs wp">
-               <span class="post-meta-divider">|</span>
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               
-                 <span class="leancloud-visitors-count"></span>
-             </span>
-          
-
-          <!--
-          
-          -->
-
-          
-            <span class="post-wordcount">
-              
-                
-                  <span class="post-meta-divider">|</span>
-                
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                <span title="字数">
-                  2.7k
-                </span>
-              
-
-              
-
-              
-            </span>
-          
-
-          <!-- 隐藏文章内标题下，内容描述
-          
-          -->
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-        <div class="post-gallery" itemscope itemtype="http://schema.org/ImageGallery">
-          
-          
-            <div class="post-gallery-row">
-              <a class="post-gallery-img fancybox"
-                 href="https://gitee.com/gylq/cloudimages/raw/master/img/image-20210725191329168.png" rel="gallery_ckrj3sryw00002wu31kba97nr"
-                 itemscope itemtype="http://schema.org/ImageObject" itemprop="url">
-                <img src="https://gitee.com/gylq/cloudimages/raw/master/img/image-20210725191329168.png" itemprop="contentUrl"/>
-              </a>
-            
-          
-
-          
-          </div>
-        </div>
-      
-
-      
-        
-          
-          前言
-
-掌控安全里面的靶场Sql-Labs，练练手！
-环境：http://inject2.lab.aqlab.cn:81/
-
-
-pass-01123456789101112$username = '';$password = '';@$id = $_GET['id'];@$sql = 'select
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2021/07/25/%E3%80%90%E5%B0%81%E7%A5%9E%E5%8F%B0%E3%80%91Sql-Labs%20wp/" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-      <!-- 相关文章推荐 -->
-     
-
-    
-    
-    
-
-    <div>
-          
-    </div>
-
-    
-
-    <div>
-      
-    </div>
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://gylq.gitee.io/2021/07/21/%E3%80%90%E5%B0%81%E7%A5%9E%E5%8F%B0%E3%80%91Upload-Labs%20wp/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="孤桜懶契">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/qq.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="孤桜懶契">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h2 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2021/07/21/%E3%80%90%E5%B0%81%E7%A5%9E%E5%8F%B0%E3%80%91Upload-Labs%20wp/" itemprop="url">【封神台】Upload-Labs wp</a></h2>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-             
-
-             
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2021-07-21T18:04:55+08:00">
-                2021-07-21
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/CTF/" itemprop="url" rel="index">
-                    <span itemprop="name">CTF</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2021/07/21/%E3%80%90%E5%B0%81%E7%A5%9E%E5%8F%B0%E3%80%91Upload-Labs%20wp/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2021/07/21/%E3%80%90%E5%B0%81%E7%A5%9E%E5%8F%B0%E3%80%91Upload-Labs%20wp/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-             <span id="/2021/07/21/%E3%80%90%E5%B0%81%E7%A5%9E%E5%8F%B0%E3%80%91Upload-Labs%20wp/" class="leancloud_visitors" data-flag-title="【封神台】Upload-Labs wp">
-               <span class="post-meta-divider">|</span>
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               
-                 <span class="leancloud-visitors-count"></span>
-             </span>
-          
-
-          <!--
-          
-          -->
-
-          
-            <span class="post-wordcount">
-              
-                
-                  <span class="post-meta-divider">|</span>
-                
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                <span title="字数">
-                  4.2k
-                </span>
-              
-
-              
-
-              
-            </span>
-          
-
-          <!-- 隐藏文章内标题下，内容描述
-          
-          -->
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-        <div class="post-gallery" itemscope itemtype="http://schema.org/ImageGallery">
-          
-          
-            <div class="post-gallery-row">
-              <a class="post-gallery-img fancybox"
-                 href="https://gitee.com/gylq/cloudimages/raw/master/img/image-20210723113705017.png" rel="gallery_ckrj3ss1k00052wu3gz2bh9ua"
-                 itemscope itemtype="http://schema.org/ImageObject" itemprop="url">
-                <img src="https://gitee.com/gylq/cloudimages/raw/master/img/image-20210723113705017.png" itemprop="contentUrl"/>
-              </a>
-            
-          
-
-          
-          </div>
-        </div>
-      
-
-      
-        
-          
-          前言
-
-掌控安全里面的靶场upload-labs，练练手！
-环境：http://59.63.200.79:8016/
-
-
-pass-011234567891011121314151617function checkFile() &#123;    var file = document.getEle
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2021/07/21/%E3%80%90%E5%B0%81%E7%A5%9E%E5%8F%B0%E3%80%91Upload-Labs%20wp/" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-      <!-- 相关文章推荐 -->
-     
-
-    
-    
-    
-
-    <div>
-          
-    </div>
-
-    
-
-    <div>
-      
-    </div>
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://gylq.gitee.io/2021/07/19/%E3%80%90%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E3%80%91%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86-%E5%A4%87%E5%BF%98%E5%8D%95/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="孤桜懶契">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/qq.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="孤桜懶契">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h2 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2021/07/19/%E3%80%90%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E3%80%91%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86-%E5%A4%87%E5%BF%98%E5%8D%95/" itemprop="url">【渗透测试】信息收集-备忘单</a></h2>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-             
-
-             
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2021-07-19T21:49:46+08:00">
-                2021-07-19
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E9%BB%91%E5%AE%A2%E5%B7%A5%E5%85%B7/" itemprop="url" rel="index">
-                    <span itemprop="name">黑客工具</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2021/07/19/%E3%80%90%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E3%80%91%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86-%E5%A4%87%E5%BF%98%E5%8D%95/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2021/07/19/%E3%80%90%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E3%80%91%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86-%E5%A4%87%E5%BF%98%E5%8D%95/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-             <span id="/2021/07/19/%E3%80%90%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E3%80%91%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86-%E5%A4%87%E5%BF%98%E5%8D%95/" class="leancloud_visitors" data-flag-title="【渗透测试】信息收集-备忘单">
-               <span class="post-meta-divider">|</span>
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               
-                 <span class="leancloud-visitors-count"></span>
-             </span>
-          
-
-          <!--
-          
-          -->
-
-          
-            <span class="post-wordcount">
-              
-                
-                  <span class="post-meta-divider">|</span>
-                
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                <span title="字数">
-                  178
-                </span>
-              
-
-              
-
-              
-            </span>
-          
-
-          <!-- 隐藏文章内标题下，内容描述
-          
-          -->
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-          信息收集
-
-目录扫描
-御剑目录扫描
-kali dirbuster
-
-
-子域名收集
-Layer子域名挖掘机
-
-subDomainsBrute
-
-
-
-
-1python2 subDomainsBrute.py qq.com -f subnames_full.txt -o qq.com.csv
-
-常用的子域
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2021/07/19/%E3%80%90%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E3%80%91%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86-%E5%A4%87%E5%BF%98%E5%8D%95/" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-      <!-- 相关文章推荐 -->
-     
-
-    
-    
-    
-
-    <div>
-          
-    </div>
-
-    
-
-    <div>
-      
-    </div>
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://gylq.gitee.io/2021/07/19/%E3%80%90GITHUB%E3%80%91Github%E4%B8%8A%E4%BC%A0%E6%9C%AC%E5%9C%B0%E9%A1%B9%E7%9B%AE/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="孤桜懶契">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/qq.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="孤桜懶契">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h2 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2021/07/19/%E3%80%90GITHUB%E3%80%91Github%E4%B8%8A%E4%BC%A0%E6%9C%AC%E5%9C%B0%E9%A1%B9%E7%9B%AE/" itemprop="url">【GITHUB】Github上传本地项目</a></h2>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-             
-
-             
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2021-07-19T15:45:21+08:00">
-                2021-07-19
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Github/" itemprop="url" rel="index">
-                    <span itemprop="name">Github</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2021/07/19/%E3%80%90GITHUB%E3%80%91Github%E4%B8%8A%E4%BC%A0%E6%9C%AC%E5%9C%B0%E9%A1%B9%E7%9B%AE/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2021/07/19/%E3%80%90GITHUB%E3%80%91Github%E4%B8%8A%E4%BC%A0%E6%9C%AC%E5%9C%B0%E9%A1%B9%E7%9B%AE/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-             <span id="/2021/07/19/%E3%80%90GITHUB%E3%80%91Github%E4%B8%8A%E4%BC%A0%E6%9C%AC%E5%9C%B0%E9%A1%B9%E7%9B%AE/" class="leancloud_visitors" data-flag-title="【GITHUB】Github上传本地项目">
-               <span class="post-meta-divider">|</span>
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               
-                 <span class="leancloud-visitors-count"></span>
-             </span>
-          
-
-          <!--
-          
-          -->
-
-          
-            <span class="post-wordcount">
-              
-                
-                  <span class="post-meta-divider">|</span>
-                
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                <span title="字数">
-                  590
-                </span>
-              
-
-              
-
-              
-            </span>
-          
-
-          <!-- 隐藏文章内标题下，内容描述
-          
-          -->
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-          Github简介
-GitHub是基于git实现的代码托管。git是目前最好用的版本控制系统了，非常受欢迎，比之svn更好。
-GitHub可以免费使用，并且快速稳定。即使是付费帐户，每个月不超过10美刀的费用也非常便宜。
-利用GitHub，你可以将项目存档，与其他人分享交流，并让其他开发者帮助你一起完
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2021/07/19/%E3%80%90GITHUB%E3%80%91Github%E4%B8%8A%E4%BC%A0%E6%9C%AC%E5%9C%B0%E9%A1%B9%E7%9B%AE/" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-      <!-- 相关文章推荐 -->
-     
-
-    
-    
-    
-
-    <div>
-          
-    </div>
-
-    
-
-    <div>
-      
-    </div>
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://gylq.gitee.io/2021/07/18/%E3%80%90PHP%E3%80%91%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E6%95%B4%E7%90%86/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="孤桜懶契">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/qq.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="孤桜懶契">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h2 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2021/07/18/%E3%80%90PHP%E3%80%91%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E6%95%B4%E7%90%86/" itemprop="url">【PHP】基础知识整理</a></h2>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-             
-
-             
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2021-07-18T17:56:34+08:00">
-                2021-07-18
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/php/" itemprop="url" rel="index">
-                    <span itemprop="name">php</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2021/07/18/%E3%80%90PHP%E3%80%91%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E6%95%B4%E7%90%86/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2021/07/18/%E3%80%90PHP%E3%80%91%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E6%95%B4%E7%90%86/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-             <span id="/2021/07/18/%E3%80%90PHP%E3%80%91%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E6%95%B4%E7%90%86/" class="leancloud_visitors" data-flag-title="【PHP】基础知识整理">
-               <span class="post-meta-divider">|</span>
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               
-                 <span class="leancloud-visitors-count"></span>
-             </span>
-          
-
-          <!--
-          
-          -->
-
-          
-            <span class="post-wordcount">
-              
-                
-                  <span class="post-meta-divider">|</span>
-                
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                <span title="字数">
-                  2.7k
-                </span>
-              
-
-              
-
-              
-            </span>
-          
-
-          <!-- 隐藏文章内标题下，内容描述
-          
-          -->
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-          变量基本类型测试代码12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152&lt;?php	//echo "Hello World!";	#单行注释	/*	多行注释
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2021/07/18/%E3%80%90PHP%E3%80%91%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E6%95%B4%E7%90%86/" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-      <!-- 相关文章推荐 -->
-     
-
-    
-    
-    
-
-    <div>
-          
-    </div>
-
-    
-
-    <div>
-      
-    </div>
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://gylq.gitee.io/2021/07/13/%E3%80%90HTML%E3%80%91%E5%AE%9E%E6%88%98%E9%98%BF%E9%87%8C%E4%BA%91src%E9%A1%B5%E9%9D%A2css%E6%A8%A1%E4%BB%BF%E5%9F%BA%E7%A1%80%E5%AD%A6%E4%B9%A0/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="孤桜懶契">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/qq.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="孤桜懶契">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h2 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2021/07/13/%E3%80%90HTML%E3%80%91%E5%AE%9E%E6%88%98%E9%98%BF%E9%87%8C%E4%BA%91src%E9%A1%B5%E9%9D%A2css%E6%A8%A1%E4%BB%BF%E5%9F%BA%E7%A1%80%E5%AD%A6%E4%B9%A0/" itemprop="url">【HTML】实战阿里云src页面css模仿基础学习</a></h2>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-             
-
-             
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2021-07-13T05:21:39+08:00">
-                2021-07-13
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/HTML/" itemprop="url" rel="index">
-                    <span itemprop="name">HTML</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2021/07/13/%E3%80%90HTML%E3%80%91%E5%AE%9E%E6%88%98%E9%98%BF%E9%87%8C%E4%BA%91src%E9%A1%B5%E9%9D%A2css%E6%A8%A1%E4%BB%BF%E5%9F%BA%E7%A1%80%E5%AD%A6%E4%B9%A0/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2021/07/13/%E3%80%90HTML%E3%80%91%E5%AE%9E%E6%88%98%E9%98%BF%E9%87%8C%E4%BA%91src%E9%A1%B5%E9%9D%A2css%E6%A8%A1%E4%BB%BF%E5%9F%BA%E7%A1%80%E5%AD%A6%E4%B9%A0/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-             <span id="/2021/07/13/%E3%80%90HTML%E3%80%91%E5%AE%9E%E6%88%98%E9%98%BF%E9%87%8C%E4%BA%91src%E9%A1%B5%E9%9D%A2css%E6%A8%A1%E4%BB%BF%E5%9F%BA%E7%A1%80%E5%AD%A6%E4%B9%A0/" class="leancloud_visitors" data-flag-title="【HTML】实战阿里云src页面css模仿基础学习">
-               <span class="post-meta-divider">|</span>
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               
-                 <span class="leancloud-visitors-count"></span>
-             </span>
-          
-
-          <!--
-          
-          -->
-
-          
-            <span class="post-wordcount">
-              
-                
-                  <span class="post-meta-divider">|</span>
-                
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                <span title="字数">
-                  3.4k
-                </span>
-              
-
-              
-
-              
-            </span>
-          
-
-          <!-- 隐藏文章内标题下，内容描述
-          
-          -->
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-          实战结果页面gif图片去我博客园看：https://www.cnblogs.com/GYLQ/p/15004744.html
-阿里云src首页模仿完整代码（500行左右）12345678910111213141516171819202122232425262728293031323334353637
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2021/07/13/%E3%80%90HTML%E3%80%91%E5%AE%9E%E6%88%98%E9%98%BF%E9%87%8C%E4%BA%91src%E9%A1%B5%E9%9D%A2css%E6%A8%A1%E4%BB%BF%E5%9F%BA%E7%A1%80%E5%AD%A6%E4%B9%A0/" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-      <!-- 相关文章推荐 -->
-     
-
-    
-    
-    
-
-    <div>
-          
-    </div>
-
-    
-
-    <div>
-      
-    </div>
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://gylq.gitee.io/2021/07/09/%E3%80%90HTML%E3%80%91CSS%E5%9F%BA%E7%A1%80%E5%AD%A6%E4%B9%A0%E4%B9%8Bfloat%E6%B5%AE%E5%8A%A8%E5%9D%97%E7%BA%A7%E5%85%83%E7%B4%A0%E8%A1%8C%E5%86%85%E5%85%83%E7%B4%A0/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="孤桜懶契">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/qq.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="孤桜懶契">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h2 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2021/07/09/%E3%80%90HTML%E3%80%91CSS%E5%9F%BA%E7%A1%80%E5%AD%A6%E4%B9%A0%E4%B9%8Bfloat%E6%B5%AE%E5%8A%A8%E5%9D%97%E7%BA%A7%E5%85%83%E7%B4%A0%E8%A1%8C%E5%86%85%E5%85%83%E7%B4%A0/" itemprop="url">【HTML】CSS基础学习之float浮动块级元素行内元素</a></h2>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-             
-
-             
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2021-07-09T11:48:07+08:00">
-                2021-07-09
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/HTML/" itemprop="url" rel="index">
-                    <span itemprop="name">HTML</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2021/07/09/%E3%80%90HTML%E3%80%91CSS%E5%9F%BA%E7%A1%80%E5%AD%A6%E4%B9%A0%E4%B9%8Bfloat%E6%B5%AE%E5%8A%A8%E5%9D%97%E7%BA%A7%E5%85%83%E7%B4%A0%E8%A1%8C%E5%86%85%E5%85%83%E7%B4%A0/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2021/07/09/%E3%80%90HTML%E3%80%91CSS%E5%9F%BA%E7%A1%80%E5%AD%A6%E4%B9%A0%E4%B9%8Bfloat%E6%B5%AE%E5%8A%A8%E5%9D%97%E7%BA%A7%E5%85%83%E7%B4%A0%E8%A1%8C%E5%86%85%E5%85%83%E7%B4%A0/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-             <span id="/2021/07/09/%E3%80%90HTML%E3%80%91CSS%E5%9F%BA%E7%A1%80%E5%AD%A6%E4%B9%A0%E4%B9%8Bfloat%E6%B5%AE%E5%8A%A8%E5%9D%97%E7%BA%A7%E5%85%83%E7%B4%A0%E8%A1%8C%E5%86%85%E5%85%83%E7%B4%A0/" class="leancloud_visitors" data-flag-title="【HTML】CSS基础学习之float浮动块级元素行内元素">
-               <span class="post-meta-divider">|</span>
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               
-                 <span class="leancloud-visitors-count"></span>
-             </span>
-          
-
-          <!--
-          
-          -->
-
-          
-            <span class="post-wordcount">
-              
-                
-                  <span class="post-meta-divider">|</span>
-                
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                <span title="字数">
-                  426
-                </span>
-              
-
-              
-
-              
-            </span>
-          
-
-          <!-- 隐藏文章内标题下，内容描述
-          
-          -->
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-          CSS基础学习之float浮动块级元素行内元素
-demo8（margin设置代码）1234567891011121314151617181920212223242526272829303132333435363738394041&lt;!DOCTYPE html&gt;&lt;html&gt; &l
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2021/07/09/%E3%80%90HTML%E3%80%91CSS%E5%9F%BA%E7%A1%80%E5%AD%A6%E4%B9%A0%E4%B9%8Bfloat%E6%B5%AE%E5%8A%A8%E5%9D%97%E7%BA%A7%E5%85%83%E7%B4%A0%E8%A1%8C%E5%86%85%E5%85%83%E7%B4%A0/" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-      <!-- 相关文章推荐 -->
-     
-
-    
-    
-    
-
-    <div>
-          
-    </div>
-
-    
-
-    <div>
-      
-    </div>
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://gylq.gitee.io/2021/07/09/%E3%80%90HTML%E3%80%91CSS%E5%9F%BA%E7%A1%80%E5%AD%A6%E4%B9%A0%E4%B9%8B%E7%9B%92%E5%AD%90%E6%A8%A1%E5%9E%8Bmargin%E5%92%8Cpadding%E7%9A%84%E4%BD%BF%E7%94%A8/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="孤桜懶契">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/qq.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="孤桜懶契">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h2 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2021/07/09/%E3%80%90HTML%E3%80%91CSS%E5%9F%BA%E7%A1%80%E5%AD%A6%E4%B9%A0%E4%B9%8B%E7%9B%92%E5%AD%90%E6%A8%A1%E5%9E%8Bmargin%E5%92%8Cpadding%E7%9A%84%E4%BD%BF%E7%94%A8/" itemprop="url">【HTML】CSS基础学习之盒子模型margin和padding的使用</a></h2>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-             
-
-             
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2021-07-09T10:45:02+08:00">
-                2021-07-09
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/HTML/" itemprop="url" rel="index">
-                    <span itemprop="name">HTML</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2021/07/09/%E3%80%90HTML%E3%80%91CSS%E5%9F%BA%E7%A1%80%E5%AD%A6%E4%B9%A0%E4%B9%8B%E7%9B%92%E5%AD%90%E6%A8%A1%E5%9E%8Bmargin%E5%92%8Cpadding%E7%9A%84%E4%BD%BF%E7%94%A8/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2021/07/09/%E3%80%90HTML%E3%80%91CSS%E5%9F%BA%E7%A1%80%E5%AD%A6%E4%B9%A0%E4%B9%8B%E7%9B%92%E5%AD%90%E6%A8%A1%E5%9E%8Bmargin%E5%92%8Cpadding%E7%9A%84%E4%BD%BF%E7%94%A8/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-             <span id="/2021/07/09/%E3%80%90HTML%E3%80%91CSS%E5%9F%BA%E7%A1%80%E5%AD%A6%E4%B9%A0%E4%B9%8B%E7%9B%92%E5%AD%90%E6%A8%A1%E5%9E%8Bmargin%E5%92%8Cpadding%E7%9A%84%E4%BD%BF%E7%94%A8/" class="leancloud_visitors" data-flag-title="【HTML】CSS基础学习之盒子模型margin和padding的使用">
-               <span class="post-meta-divider">|</span>
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               
-                 <span class="leancloud-visitors-count"></span>
-             </span>
-          
-
-          <!--
-          
-          -->
-
-          
-            <span class="post-wordcount">
-              
-                
-                  <span class="post-meta-divider">|</span>
-                
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                <span title="字数">
-                  267
-                </span>
-              
-
-              
-
-              
-            </span>
-          
-
-          <!-- 隐藏文章内标题下，内容描述
-          
-          -->
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-          CSS基础学习四盒子模型margin和padding的使用
-demo5（margin设置代码）12345678910111213141516171819202122232425262728293031323334353637383940&lt;!DOCTYPE html&gt;&lt;html&gt
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2021/07/09/%E3%80%90HTML%E3%80%91CSS%E5%9F%BA%E7%A1%80%E5%AD%A6%E4%B9%A0%E4%B9%8B%E7%9B%92%E5%AD%90%E6%A8%A1%E5%9E%8Bmargin%E5%92%8Cpadding%E7%9A%84%E4%BD%BF%E7%94%A8/" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-      <!-- 相关文章推荐 -->
-     
-
-    
-    
-    
-
-    <div>
-          
-    </div>
-
-    
-
-    <div>
-      
-    </div>
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-  </section>
-
-  
-  <nav class="pagination">
-    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><span class="space">&hellip;</span><a class="page-number" href="/page/10/">10</a><a class="extend next" rel="next" href="/page/2/">下一页</a>
-  </nav>
-
 
 
           </div>
@@ -2976,6 +1024,13 @@ demo5（margin设置代码）123456789101112131415161718192021222324252627282930
 
 
           
+
+  
+    <div class="comments" id="comments">
+    </div>
+  
+
+
 
 
 
@@ -3000,8 +1055,17 @@ demo5（margin设置代码）123456789101112131415161718192021222324252627282930
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -3481,6 +1545,22 @@ demo5（margin设置代码）123456789101112131415161718192021222324252627282930
       </section>
 
       
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#认识linux"><span class="nav-number">1.</span> <span class="nav-text">认识linux</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#SHELL和终端"><span class="nav-number">1.1.</span> <span class="nav-text">SHELL和终端</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#vim编译器"><span class="nav-number">1.2.</span> <span class="nav-text">vim编译器</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Linux常用命令"><span class="nav-number">2.</span> <span class="nav-text">Linux常用命令</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#系统检测命令"><span class="nav-number">2.1.</span> <span class="nav-text">系统检测命令</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#工作目录切换命令"><span class="nav-number">2.2.</span> <span class="nav-text">工作目录切换命令</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#了解VMware网络基本配置"><span class="nav-number">3.</span> <span class="nav-text">了解VMware网络基本配置</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#kali的更新"><span class="nav-number">4.</span> <span class="nav-text">kali的更新</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#系统源"><span class="nav-number">4.1.</span> <span class="nav-text">系统源</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Linux下载软件的两种方式："><span class="nav-number">4.2.</span> <span class="nav-text">Linux下载软件的两种方式：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#配置kali系统更新源"><span class="nav-number">4.3.</span> <span class="nav-text">配置kali系统更新源</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#kali系统更新后出现的问题"><span class="nav-number">4.4.</span> <span class="nav-text">kali系统更新后出现的问题</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#SSH服务简介"><span class="nav-number">4.5.</span> <span class="nav-text">SSH服务简介</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#kali配置SSH服务和windows配置SSH服务"><span class="nav-number">4.6.</span> <span class="nav-text">kali配置SSH服务和windows配置SSH服务</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Kali工具包简介"><span class="nav-number">5.</span> <span class="nav-text">Kali工具包简介</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Linux常用命令-1"><span class="nav-number">6.</span> <span class="nav-text">Linux常用命令</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#文本文件编辑命令"><span class="nav-number">6.1.</span> <span class="nav-text">文本文件编辑命令</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#文件管理权限命令"><span class="nav-number">6.2.</span> <span class="nav-text">文件管理权限命令</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#用户-用户组"><span class="nav-number">7.</span> <span class="nav-text">用户&#x2F;用户组</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#保存用户信息"><span class="nav-number">7.1.</span> <span class="nav-text">保存用户信息</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#权限管理"><span class="nav-number">8.</span> <span class="nav-text">权限管理</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#软件安装管理"><span class="nav-number">9.</span> <span class="nav-text">软件安装管理</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#压缩命令"><span class="nav-number">10.</span> <span class="nav-text">压缩命令</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#搜索命令"><span class="nav-number">11.</span> <span class="nav-text">搜索命令</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
 
       
 
@@ -3680,6 +1760,10 @@ demo5（margin设置代码）123456789101112131415161718192021222324252627282930
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
@@ -4076,7 +2160,7 @@ demo5（margin设置代码）123456789101112131415161718192021222324252627282930
 
 
 
-    <script> function showTime(Counter){var entries=[];var $visitors=$('.leancloud_visitors');$visitors.each(function(){entries.push($(this).attr('id').trim());});Counter('get','/classes/Counter',{where:JSON.stringify({url:{'$in':entries}})}).done(function({results}){var COUNT_CONTAINER_REF='.leancloud-visitors-count';if(results.length===0){$visitors.find(COUNT_CONTAINER_REF).text(0);return;}for(var i=0;i<results.length;i++){var item=results[i];var url=item.url;var time=item.time;var element=document.getElementById(url);$(element).find(COUNT_CONTAINER_REF).text(time);}for(var i=0;i<entries.length;i++){var url=entries[i];var element=document.getElementById(url);var countSpan=$(element).find(COUNT_CONTAINER_REF);if(countSpan.text()==''){countSpan.text(0);}}}).fail(function({responseJSON}){console.log('LeanCloud Counter Error: '+responseJSON.code+' '+responseJSON.error);});}$(function(){$.get('https://app-router.leancloud.cn/2/route?appId='+'HzU5gDhBUYHF8QTF8DmbGhjD-gzGzoHsz').done(function({api_server}){var Counter=function(method,url,data){return $.ajax({method:method,url:'https://'+api_server+'/1.1'+url,headers:{'X-LC-Id':'HzU5gDhBUYHF8QTF8DmbGhjD-gzGzoHsz','X-LC-Key':'wp1HNJ17SdpnE0wIFq99eTKH','Content-Type':'application/json',},data:data});}; if($('.post-title-link').length>=1){showTime(Counter);}});});</script>
+    <script>  function addCount(Counter){var $visitors=$('.leancloud_visitors');var url=$visitors.attr('id').trim();var title=$visitors.attr('data-flag-title').trim();Counter('get','/classes/Counter',{where:JSON.stringify({url})}).done(function({results}){if(results.length>0){var counter=results[0]; var $element=$(document.getElementById(url));$element.find('.leancloud-visitors-count').text(counter.time+1);Counter('put','/classes/Counter/'+counter.objectId,JSON.stringify({time:{'__op':'Increment','amount':1}})) .fail(function({responseJSON}){console.log('Failed to save Visitor num, with error message: '+responseJSON.error);})}else{ Counter('post','/classes/Counter',JSON.stringify({title:title,url:url,time:1})).done(function(){var $element=$(document.getElementById(url));$element.find('.leancloud-visitors-count').text(1);}).fail(function(){console.log('Failed to create');});}}).fail(function({responseJSON}){console.log('LeanCloud Counter Error: '+responseJSON.code+' '+responseJSON.error);});}$(function(){$.get('https://app-router.leancloud.cn/2/route?appId='+'HzU5gDhBUYHF8QTF8DmbGhjD-gzGzoHsz').done(function({api_server}){var Counter=function(method,url,data){return $.ajax({method:method,url:'https://'+api_server+'/1.1'+url,headers:{'X-LC-Id':'HzU5gDhBUYHF8QTF8DmbGhjD-gzGzoHsz','X-LC-Key':'wp1HNJ17SdpnE0wIFq99eTKH','Content-Type':'application/json',},data:data});};  const localhost=/http:\/\/(localhost|127.0.0.1|0.0.0.0)/;if(localhost.test(document.URL))return;addCount(Counter);});});</script>
 
   
 

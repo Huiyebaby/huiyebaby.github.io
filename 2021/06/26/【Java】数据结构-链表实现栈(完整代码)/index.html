@@ -89,7 +89,7 @@
 
 
 
-  <meta name="keywords" content="Hexo个人博客,NexT美化优化,哈林摇,Mac Panel特效,Leaf,北宸,Java程序员,北京,旅行,摄像,Github Pages,搭建教程,demo,博客相册,文章排行榜,网站SEO" />
+  <meta name="keywords" content="成长之路,数据结构,JAVA,插入排序," />
 
 
 
@@ -102,15 +102,24 @@
 
 
 
-<meta name="description" content="生活分享">
-<meta property="og:type" content="website">
-<meta property="og:title" content="孤桜懶契">
-<meta property="og:url" content="https://gylq.gitee.io/index.html">
+<meta name="description" content="我的个人博客 孤桜懶契：http:&#x2F;&#x2F;gylq.github.io 链表实现栈的接口 链表实现栈操作执行结果 链表实现栈的完整代码Stack.java12345678public interface Stack&lt;E&gt; &amp;#123;    int getSize();    boolean isEmpty();    void push(E e);    E pop();    E pe">
+<meta property="og:type" content="article">
+<meta property="og:title" content="【Java】数据结构-链表实现栈(完整代码)">
+<meta property="og:url" content="https://gylq.gitee.io/2021/06/26/%E3%80%90Java%E3%80%91%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-%E9%93%BE%E8%A1%A8%E5%AE%9E%E7%8E%B0%E6%A0%88(%E5%AE%8C%E6%95%B4%E4%BB%A3%E7%A0%81)/index.html">
 <meta property="og:site_name" content="孤桜懶契">
-<meta property="og:description" content="生活分享">
+<meta property="og:description" content="我的个人博客 孤桜懶契：http:&#x2F;&#x2F;gylq.github.io 链表实现栈的接口 链表实现栈操作执行结果 链表实现栈的完整代码Stack.java12345678public interface Stack&lt;E&gt; &amp;#123;    int getSize();    boolean isEmpty();    void push(E e);    E pop();    E pe">
+<meta property="og:image" content="https://gitee.com/gylq/cloudimages/raw/master/img/image-20210626155905712.png">
+<meta property="og:image" content="https://gitee.com/gylq/cloudimages/raw/master/img/image-20210626162121811.png">
+<meta property="og:image" content="https://gitee.com/gylq/cloudimages/raw/master/img/image-20210626162529124.png">
+<meta property="article:published_time" content="2021-06-26T07:58:58.755Z">
+<meta property="article:modified_time" content="2021-06-26T08:25:57.395Z">
 <meta property="article:author" content="孤桜懶契">
-<meta property="article:tag" content="孤桜懶契 技术 知识">
+<meta property="article:tag" content="成长之路">
+<meta property="article:tag" content="数据结构">
+<meta property="article:tag" content="JAVA">
+<meta property="article:tag" content="插入排序">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://gitee.com/gylq/cloudimages/raw/master/img/image-20210626155905712.png">
 
 
 
@@ -140,7 +149,7 @@
 
 
 
-  <link rel="canonical" href="https://gylq.gitee.io/"/>
+  <link rel="canonical" href="https://gylq.gitee.io/2021/06/26/【Java】数据结构-链表实现栈(完整代码)/"/>
 
 
 
@@ -158,7 +167,7 @@
     })();
 </script>
 
-  <title>孤桜懶契 - Run</title>
+  <title>【Java】数据结构-链表实现栈(完整代码) | 孤桜懶契</title>
   
 
 
@@ -200,8 +209,7 @@ var _hmt = _hmt || [];
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <!--fork me from github-->
@@ -388,2587 +396,342 @@ var _hmt = _hmt || [];
           <div id="content" class="content">
             
 
-  <!--轮播图-->
+  <div id="posts" class="posts-expand">
+    
+
   
 
-<!--
-<script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
-<script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
--->
+  
+  
+  
 
-<script src="https://cdn.jsdelivr.net/npm/jquery@2.1.3/dist/jquery.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap.min.js@3.3.5/bootstrap.min.js"></script>
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://gylq.gitee.io/2021/06/26/%E3%80%90Java%E3%80%91%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-%E9%93%BE%E8%A1%A8%E5%AE%9E%E7%8E%B0%E6%A0%88(%E5%AE%8C%E6%95%B4%E4%BB%A3%E7%A0%81)/">
 
-<style type="text/css">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="孤桜懶契">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/qq.png">
+    </span>
 
-.glyphicon-chevron-left:before{
-	/* content: "《" */
-}
-.glyphicon-chevron-right:before{
-	/* content: "》" */
-}
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="孤桜懶契">
+    </span>
 
-.right-siders{
-   border-radius: 5px;
-   /*margin-top: 5px;
-   margin-bottom: 10px;*/
-}
+    
+      <header class="post-header">
 
-.my-carousel{
-    /*height: 10%;*/
-    margin-bottom: 12px;
-}
-
-.my-carousel:hover{
-  margin-left: 5px;
-  //padding: 5px 1px;
-  border-radius: 5px;
-  transform: scale(1.1);
-  box-shadow: 10px 10px 15px 2px rgba(0,0,0,.12), 0 0 6px 0 rgba(104, 104, 105, 0.1);
-}
-
-@media (max-width: 767px){
-	.rights{
-		display: none;
-	}
-	.carousel{
-		width: 100% !important;
-		height: 100% !important;
-	}
-	.slide{
-		width: 100% !important;
-		height: 100% !important;
-	}
-
-	.carousel-control .glyphicon-chevron-left,
-  .carousel-control .glyphicon-chevron-right,
-  .carousel-control .icon-prev,
-  .carousel-control .icon-next {
-    width: 30px;
-    height: 30px;
-    margin-top: -10px;
-    font-size: 30px;
-  }
-  .carousel-control .glyphicon-chevron-left,
-  .carousel-control .icon-prev {
-    margin-left: -10px;
-  }
-  .carousel-control .glyphicon-chevron-right,
-  .carousel-control .icon-next {
-   /* margin-right: -10px; */
-  }
-
-}
-
-.carousel{
-	width: 65%;
-	height: 100%;
-	position: relative;
-}
-
-.carousel-inner {
-  position: relative;
-  overflow: hidden;
-  width: 100%;
-}
-.carousel-inner > .item {
-  display: none;
-  position: relative;
-  -webkit-transition: 0.6s ease-in-out left;
-  -o-transition: 0.6s ease-in-out left;
-  transition: 0.6s ease-in-out left;
-}
-.carousel-inner > .item > img,
-.carousel-inner > .item > a > img {
-  line-height: 1;
-}
-@media all and (transform-3d), (-webkit-transform-3d) {
-  .carousel-inner > .item {
-    -webkit-transition: -webkit-transform 0.6s ease-in-out;
-    -moz-transition: -moz-transform 0.6s ease-in-out;
-    -o-transition: -o-transform 0.6s ease-in-out;
-    transition: transform 0.6s ease-in-out;
-    -webkit-backface-visibility: hidden;
-    -moz-backface-visibility: hidden;
-    backface-visibility: hidden;
-    -webkit-perspective: 1000px;
-    -moz-perspective: 1000px;
-    perspective: 1000px;
-  }
-  .carousel-inner > .item.next,
-  .carousel-inner > .item.active.right {
-    -webkit-transform: translate3d(100%, 0, 0);
-    transform: translate3d(100%, 0, 0);
-    left: 0;
-  }
-  .carousel-inner > .item.prev,
-  .carousel-inner > .item.active.left {
-    -webkit-transform: translate3d(-100%, 0, 0);
-    transform: translate3d(-100%, 0, 0);
-    left: 0;
-  }
-  .carousel-inner > .item.next.left,
-  .carousel-inner > .item.prev.right,
-  .carousel-inner > .item.active {
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-    left: 0;
-  }
-}
-.carousel-inner > .active,
-.carousel-inner > .next,
-.carousel-inner > .prev {
-  display: block;
-}
-.carousel-inner > .active {
-  left: 0;
-}
-.carousel-inner > .next,
-.carousel-inner > .prev {
-  position: absolute;
-  top: 0;
-  width: 100%;
-}
-.carousel-inner > .next {
-  left: 100%;
-}
-.carousel-inner > .prev {
-  left: -100%;
-}
-.carousel-inner > .next.left,
-.carousel-inner > .prev.right {
-  left: 0;
-}
-.carousel-inner > .active.left {
-  left: -100%;
-}
-.carousel-inner > .active.right {
-  left: 100%;
-}
-.carousel-control {
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  /*width: 5%;*/
-  opacity: 0.5;
-  filter: alpha(opacity=50);
-  font-size: 20px;
-  color: #fff;
-  text-align: center;
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
-  background-color: rgba(0, 0, 0, 0);
-}
-.carousel-control.left {
-  background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.0001) 100%);
-  background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.0001) 100%);
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.0001) 100%);
-  background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#80000000, endColorstr=#00000000, GradientType=1);
-}
-.carousel-control.right {
-  left: auto;
-  right: 0;
-  background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.5) 100%);
-  background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.5) 100%);
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.5) 100%);
-  background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#00000000, endColorstr=#80000000, GradientType=1);
-}
-.carousel-control:hover,
-.carousel-control:focus {
-  outline: 0;
-  color: #fff;
-  text-decoration: none;
-  opacity: 0.9;
-  filter: alpha(opacity=90);
-}
-.carousel-control .icon-prev,
-.carousel-control .icon-next,
-.carousel-control .glyphicon-chevron-left,
-.carousel-control .glyphicon-chevron-right {
-  position: absolute;
-  top: 50%;
-  margin-top: -10px;
-  z-index: 5;
-  display: inline-block;
-}
-/*
-.carousel-control .icon-prev,
-.carousel-control .glyphicon-chevron-left {
-  left: 50%;
-  margin-left: -10px;
-}
-*/
-
-.carousel-control .icon-prev,
-.carousel-control .glyphicon-chevron-left {
-  background: url('/images/icon-slides.png');
-  background-position-y: -20px;
-  left: 9px;
-}
-
-/*
-.carousel-control .icon-next,
-.carousel-control .glyphicon-chevron-right {
-  right: 50%;
-  margin-right: -10px;
-}
-*/
-
-.carousel-control .icon-next,
-.carousel-control .glyphicon-chevron-right {
-  background: url('/images/icon-slides.png');
-  background-position-x: -50px;
-  background-position-y: -20px;
-  right: 0px;
-}
-
-.carousel-control .icon-prev,
-.carousel-control .icon-next {
-  width: 20px;
-  height: 20px;
-  line-height: 1;
-  font-family: serif;
-}
-
-.carousel-control .icon-prev:before {
-  content: 2039;
-}
-.carousel-control .icon-next:before {
-  content: 203a;
-}
-
-.carousel-indicators {
-  opacity: 0.5;
-  position: absolute;
-  bottom: -15px;
-  left: 50%;
-  z-index: 15;
-  width: 60%;
-  margin-left: -30%;
-  padding-left: 0;
-  list-style: none;
-  text-align: center;
-}
-.carousel-indicators li {
-  display: inline-block;
-  width: 30px;
-  height: 3px;
-  margin: 5px;
-  text-indent: -999px;
-  border: 1px solid #bbb;
-  border-radius: 10px;
-  cursor: pointer;
-  background-color: rgba(0, 0, 0, .24);
-}
-.carousel-indicators .active {
-  width: 30px;
-  height: 3px;
-  background-color: #fff;
-}
-.carousel-caption {
-  position: absolute;
-  left: 15%;
-  right: 15%;
-  bottom: 20px;
-  z-index: 10;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  color: #fff;
-  text-align: center;
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
-}
-.carousel-caption .btn {
-  text-shadow: none;
-}
-@media screen and (min-width: 768px) {
-  .carousel-control .glyphicon-chevron-left,
-  .carousel-control .glyphicon-chevron-right,
-  .carousel-control .icon-prev,
-  .carousel-control .icon-next {
-    width: 30px;
-    height: 30px;
-    margin-top: -10px;
-    font-size: 30px;
-  }
-  .carousel-control .glyphicon-chevron-left,
-  .carousel-control .icon-prev {
-    margin-left: -10px;
-  }
-  .carousel-control .glyphicon-chevron-right,
-  .carousel-control .icon-next {
-   /* margin-right: -10px; */
-  }
-  .carousel-caption {
-    left: 20%;
-    right: 20%;
-    padding-bottom: 30px;
-  }
-  .carousel-indicators {
-    bottom: -20px;
-  }
-}
-</style>
-
-<div width="100%" height="24%" style="border: 0px; overflow: hidden; border-radius: 10px; margin-bottom: 25px;" scrolling="no">
-
-	<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="3500" style="float:left">
-
-      <!-- 轮播（Carousel）指标 -->
-      <ol class="carousel-indicators">
-      
-      
-        <li data-target="#myCarousel" data-slide-to="0"></li>
         
-      
-        <li data-target="#myCarousel" data-slide-to="1"></li>
         
-      
-        <li data-target="#myCarousel" data-slide-to="2"></li>
+          <h2 class="post-title" itemprop="name headline">【Java】数据结构-链表实现栈(完整代码)</h2>
         
-      
-      </ol>
 
-      <!-- 轮播（Carousel）项目 -->
-      <div class="carousel-inner" style="height: 24%; border-radius: 10px; width: 100%;">
-       
-       
-          
-          <a class="item active" href="https://gylq.gitee.io/" target="_blank" style="height: 100%;">
+        <div class="post-meta">
+          <span class="post-time">
+
+             
+
+             
+
             
-            <img src="https://s1.ax1x.com/2020/10/05/0JH77T.png" class="nofancybox"  style="width: 100%; height: 100%" >
-          </a>
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2021-06-26T15:58:58+08:00">
+                2021-06-26
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/" itemprop="url" rel="index">
+                    <span itemprop="name">算法与数据结构</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2021/06/26/%E3%80%90Java%E3%80%91%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-%E9%93%BE%E8%A1%A8%E5%AE%9E%E7%8E%B0%E6%A0%88(%E5%AE%8C%E6%95%B4%E4%BB%A3%E7%A0%81)/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2021/06/26/%E3%80%90Java%E3%80%91%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-%E9%93%BE%E8%A1%A8%E5%AE%9E%E7%8E%B0%E6%A0%88(%E5%AE%8C%E6%95%B4%E4%BB%A3%E7%A0%81)/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
           
           
+             <span id="/2021/06/26/%E3%80%90Java%E3%80%91%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-%E9%93%BE%E8%A1%A8%E5%AE%9E%E7%8E%B0%E6%A0%88(%E5%AE%8C%E6%95%B4%E4%BB%A3%E7%A0%81)/" class="leancloud_visitors" data-flag-title="【Java】数据结构-链表实现栈(完整代码)">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          <!--
+          
+          -->
+
+          
+            <span class="post-wordcount">
+              
+                
+                  <span class="post-meta-divider">|</span>
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                <span title="字数">
+                  1k
+                </span>
+              
+
+              
+
+              
+            </span>
+          
+
+          <!-- 隐藏文章内标题下，内容描述
+          
+          -->
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
       
-          
-            <a class="item" href="https://gylq.gitee.io/time/" target="_blank" style="height: 100%;">
-              <img src="https://s1.ax1x.com/2020/10/05/0J76JJ.png" class="nofancybox"  style="width: 100%; height: 100%;" >
-            </a>
+      
+
+      
+        <h1 id="我的个人博客"><a href="#我的个人博客" class="headerlink" title="我的个人博客"></a>我的个人博客</h1><blockquote>
+<h2 id="孤桜懶契：http-gylq-github-io"><a href="#孤桜懶契：http-gylq-github-io" class="headerlink" title="孤桜懶契：http://gylq.github.io"></a>孤桜懶契：<a href="http://gylq.github.io" target="_blank" rel="noopener">http://gylq.github.io</a></h2></blockquote>
+<h1 id="链表实现栈的接口"><a href="#链表实现栈的接口" class="headerlink" title="链表实现栈的接口"></a>链表实现栈的接口</h1><p><img src="https://gitee.com/gylq/cloudimages/raw/master/img/image-20210626155905712.png" alt="image-20210626155905712"></p>
+<h1 id="链表实现栈操作执行结果"><a href="#链表实现栈操作执行结果" class="headerlink" title="链表实现栈操作执行结果"></a>链表实现栈操作执行结果</h1><p><img src="https://gitee.com/gylq/cloudimages/raw/master/img/image-20210626162121811.png" alt="image-20210626162121811"></p>
+<h1 id="链表实现栈的完整代码"><a href="#链表实现栈的完整代码" class="headerlink" title="链表实现栈的完整代码"></a>链表实现栈的完整代码</h1><h2 id="Stack-java"><a href="#Stack-java" class="headerlink" title="Stack.java"></a>Stack.java</h2><div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="JAVA"><figure class="iseeu highlight /java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">interface</span> <span class="title">Stack</span>&lt;<span class="title">E</span>&gt; </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">int</span> <span class="title">getSize</span><span class="params">()</span></span>;</span><br><span class="line">    <span class="function"><span class="keyword">boolean</span> <span class="title">isEmpty</span><span class="params">()</span></span>;</span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">push</span><span class="params">(E e)</span></span>;</span><br><span class="line">    <span class="function">E <span class="title">pop</span><span class="params">()</span></span>;</span><br><span class="line">    <span class="function">E <span class="title">peek</span><span class="params">()</span></span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
+
+<h2 id="LinkedList-java-上一个发的文章实现链表的内容"><a href="#LinkedList-java-上一个发的文章实现链表的内容" class="headerlink" title="LinkedList.java(上一个发的文章实现链表的内容)"></a>LinkedList.java(上一个发的文章实现链表的内容)</h2><div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="JAVA"><figure class="iseeu highlight /java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br><span class="line">153</span><br><span class="line">154</span><br><span class="line">155</span><br><span class="line">156</span><br><span class="line">157</span><br><span class="line">158</span><br><span class="line">159</span><br><span class="line">160</span><br><span class="line">161</span><br><span class="line">162</span><br><span class="line">163</span><br><span class="line">164</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">LinkedList</span>&lt;<span class="title">E</span>&gt; </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">private</span> <span class="class"><span class="keyword">class</span> <span class="title">Node</span></span>&#123;</span><br><span class="line">        <span class="keyword">public</span> E e;</span><br><span class="line">        <span class="keyword">public</span> Node next;</span><br><span class="line"></span><br><span class="line">        <span class="function"><span class="keyword">public</span> <span class="title">Node</span><span class="params">(E e, Node next)</span></span>&#123;</span><br><span class="line">            <span class="keyword">this</span>.e = e;</span><br><span class="line">            <span class="keyword">this</span>.next = next;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="function"><span class="keyword">public</span> <span class="title">Node</span><span class="params">(E e)</span></span>&#123;</span><br><span class="line">            <span class="keyword">this</span>(e, <span class="keyword">null</span>);</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="function"><span class="keyword">public</span> <span class="title">Node</span><span class="params">()</span></span>&#123;</span><br><span class="line">            <span class="keyword">this</span>(<span class="keyword">null</span>,<span class="keyword">null</span>);</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="meta">@Override</span></span><br><span class="line">        <span class="function"><span class="keyword">public</span> String <span class="title">toString</span><span class="params">()</span></span>&#123;</span><br><span class="line">            <span class="keyword">return</span> e.toString();</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">private</span> Node dummyHead;</span><br><span class="line">    <span class="keyword">int</span> size;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">LinkedList</span><span class="params">()</span></span>&#123;</span><br><span class="line">        dummyHead = <span class="keyword">new</span> Node(<span class="keyword">null</span>,<span class="keyword">null</span>);</span><br><span class="line">        size = <span class="number">0</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">//  获取链表中的元素个数</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">getSize</span><span class="params">()</span></span>&#123;</span><br><span class="line">        <span class="keyword">return</span> size;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 返回链表是否为空</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">isEmpty</span><span class="params">()</span></span>&#123;</span><br><span class="line">        <span class="keyword">return</span> size == <span class="number">0</span> ;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    <span class="comment">// 在链表的index（0-based）位置添加新的元素e</span></span><br><span class="line">    <span class="comment">// 在链表中不是一个常用的操作，练习用：）</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">add</span><span class="params">(<span class="keyword">int</span> index, E e)</span></span>&#123;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">if</span>(index &lt; <span class="number">0</span> || index &gt; size)</span><br><span class="line">            <span class="keyword">throw</span> <span class="keyword">new</span> IllegalArgumentException(<span class="string">"Add failed. Illegal index."</span>);</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">            Node prev = dummyHead;</span><br><span class="line">            <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; index ; i++) <span class="comment">//dummyHead是0前面的结点</span></span><br><span class="line">                prev = prev.next;</span><br><span class="line"><span class="comment">//            Node node = new Node(e);</span></span><br><span class="line"><span class="comment">//            node.next = prev.next;</span></span><br><span class="line"><span class="comment">//            prev.nxt = node;</span></span><br><span class="line"></span><br><span class="line">            prev.next = <span class="keyword">new</span> Node(e,prev.next);</span><br><span class="line">            size ++;</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 在链表头添加元素e</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">addFirst</span><span class="params">(E e)</span></span>&#123;</span><br><span class="line">        add(<span class="number">0</span>, e);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 在链表末尾添加新的元素e</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">addLast</span><span class="params">(E e)</span></span>&#123;</span><br><span class="line">        add(size, e);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 获得链表第index（0-based）个位置的元素</span></span><br><span class="line">    <span class="comment">// 在链表中不是一个常用的操作，练习用：）</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> E <span class="title">get</span><span class="params">(<span class="keyword">int</span> index)</span></span>&#123;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">if</span>(index &lt; <span class="number">0</span> || index &gt;= size)</span><br><span class="line">            <span class="keyword">throw</span> <span class="keyword">new</span> IllegalArgumentException(<span class="string">"Get failed. Illegal index."</span>);</span><br><span class="line"></span><br><span class="line">        Node cur = dummyHead.next;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span> ; i &lt; index ; i ++)</span><br><span class="line">            cur = cur.next;</span><br><span class="line">        <span class="keyword">return</span> cur.e;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 获得链表的第一个元素</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> E <span class="title">getFirst</span><span class="params">()</span></span>&#123;</span><br><span class="line">        <span class="keyword">return</span> get(<span class="number">0</span>);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 获得链表的最后一个元素</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> E <span class="title">getLast</span><span class="params">()</span></span>&#123;</span><br><span class="line">        <span class="keyword">return</span> get(size - <span class="number">1</span>);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 修改链表的第index（0 - based）个位置的元素为e</span></span><br><span class="line">    <span class="comment">// 在链表中不是一个常用的操作，练习用</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">set</span><span class="params">(<span class="keyword">int</span> index, E e)</span></span>&#123;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">if</span>(index &lt; <span class="number">0</span> || index &gt;= size)</span><br><span class="line">            <span class="keyword">throw</span> <span class="keyword">new</span> IllegalArgumentException(<span class="string">"set failed. Illegal index."</span>);</span><br><span class="line"></span><br><span class="line">        Node cur = dummyHead.next;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span> ; i &lt; index ; i ++)</span><br><span class="line">            cur = cur.next;</span><br><span class="line">        cur.e = e;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 查找链表中是否有元素e</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">contains</span><span class="params">(E e)</span></span>&#123;</span><br><span class="line">        Node cur = dummyHead.next;</span><br><span class="line">        <span class="keyword">while</span>(cur != <span class="keyword">null</span>)&#123;</span><br><span class="line">            <span class="keyword">if</span>(cur.e.equals(e))</span><br><span class="line">                <span class="keyword">return</span> <span class="keyword">true</span>;</span><br><span class="line">            cur = cur.next;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">false</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 从链表中删除index（0-based）位置的元素，返回删除的元素</span></span><br><span class="line">    <span class="comment">// 在链表中不是一个常用的操作，练习用的</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> E <span class="title">remove</span><span class="params">(<span class="keyword">int</span> index)</span></span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(index &lt; <span class="number">0</span> || index &gt;= size)</span><br><span class="line">            <span class="keyword">throw</span> <span class="keyword">new</span> IllegalArgumentException(<span class="string">"Remove failed. Index is illegal."</span>);</span><br><span class="line"></span><br><span class="line">        Node prev = dummyHead;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span> ; i &lt; index; i++)</span><br><span class="line">            prev = prev.next;</span><br><span class="line"></span><br><span class="line">        Node retNode = prev.next;</span><br><span class="line">        prev.next = retNode.next;</span><br><span class="line">        retNode.next = <span class="keyword">null</span>;</span><br><span class="line">        size --;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">return</span> retNode.e;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 从链表中删除第一个元素</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> E <span class="title">removeFirst</span><span class="params">()</span></span>&#123;</span><br><span class="line">        <span class="keyword">return</span> remove(<span class="number">0</span>);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 从链表中删除最后一个元素</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> E <span class="title">removeLast</span><span class="params">()</span></span>&#123;</span><br><span class="line">        <span class="keyword">return</span> remove(size - <span class="number">1</span>);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> String <span class="title">toString</span><span class="params">()</span></span>&#123;</span><br><span class="line">        StringBuilder res = <span class="keyword">new</span> StringBuilder();</span><br><span class="line"><span class="comment">//        Node cur = dummyHead.next;</span></span><br><span class="line"><span class="comment">//        while(cur != null)&#123;</span></span><br><span class="line"><span class="comment">//            res.append(cur + "-&gt;");</span></span><br><span class="line"><span class="comment">//            cur = cur.next;</span></span><br><span class="line"><span class="comment">//        &#125;</span></span><br><span class="line">        <span class="keyword">for</span>(Node cur = dummyHead.next ; cur != <span class="keyword">null</span>; cur = cur.next)</span><br><span class="line">            res.append(cur + <span class="string">"-&gt;"</span>);</span><br><span class="line">        res.append(<span class="string">"Null"</span>);</span><br><span class="line">        <span class="keyword">return</span> res.toString();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
+
+<h2 id="LinkedListStack-java（链表实现栈代码）"><a href="#LinkedListStack-java（链表实现栈代码）" class="headerlink" title="LinkedListStack.java（链表实现栈代码）"></a>LinkedListStack.java（链表实现栈代码）</h2><div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="JAVA"><figure class="iseeu highlight /java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">LinkedListStack</span>&lt;<span class="title">E</span>&gt; <span class="keyword">implements</span> <span class="title">Stack</span>&lt;<span class="title">E</span>&gt; </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">private</span> LinkedList&lt;E&gt; list;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">LinkedListStack</span><span class="params">()</span></span>&#123;</span><br><span class="line">        list = <span class="keyword">new</span> LinkedList&lt;&gt;();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">getSize</span><span class="params">()</span></span>&#123;</span><br><span class="line">        <span class="keyword">return</span> list.getSize();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">isEmpty</span><span class="params">()</span></span>&#123;</span><br><span class="line">        <span class="keyword">return</span> list.isEmpty();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">push</span><span class="params">(E e)</span></span>&#123;</span><br><span class="line">        list.addFirst(e);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> E <span class="title">pop</span><span class="params">()</span></span>&#123;</span><br><span class="line">        <span class="keyword">return</span> list.removeFirst();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> E <span class="title">peek</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> list.getFirst();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> String <span class="title">toString</span><span class="params">()</span></span>&#123;</span><br><span class="line">        StringBuilder res = <span class="keyword">new</span> StringBuilder();</span><br><span class="line">        res.append(<span class="string">"Stack: top "</span>);</span><br><span class="line">        res.append(list);</span><br><span class="line">        <span class="keyword">return</span> res.toString();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span></span>&#123;</span><br><span class="line"></span><br><span class="line">        LinkedListStack&lt;Integer&gt; stack = <span class="keyword">new</span> LinkedListStack&lt;&gt;();</span><br><span class="line"></span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span> ; i &lt; <span class="number">5</span> ; i++)&#123;</span><br><span class="line">            stack.push(i);</span><br><span class="line">            System.out.println(stack);</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        stack.pop();</span><br><span class="line">        System.out.println(stack);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
+
+<h1 id="我对比了一下动态数组栈和链表栈的时间输出结果截图"><a href="#我对比了一下动态数组栈和链表栈的时间输出结果截图" class="headerlink" title="我对比了一下动态数组栈和链表栈的时间输出结果截图"></a>我对比了一下动态数组栈和链表栈的时间输出结果截图</h1><blockquote>
+<ul>
+<li><h2 id="链表的操作中包含更多的new操作，在数值大的时候，会比动态数组的栈速度慢个1-x倍"><a href="#链表的操作中包含更多的new操作，在数值大的时候，会比动态数组的栈速度慢个1-x倍" class="headerlink" title="链表的操作中包含更多的new操作，在数值大的时候，会比动态数组的栈速度慢个1.x倍"></a>链表的操作中包含更多的new操作，在数值大的时候，会比动态数组的栈速度慢个1.x倍</h2></li>
+</ul>
+</blockquote>
+<p><img src="https://gitee.com/gylq/cloudimages/raw/master/img/image-20210626162529124.png" alt="image-20210626162529124"></p>
+<h1 id="测试时间代码"><a href="#测试时间代码" class="headerlink" title="测试时间代码"></a>测试时间代码</h1><div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="JAVA"><figure class="iseeu highlight /java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 测试使用stack运行opCount个push和pop操作所需要的时间，单位：秒</span></span><br><span class="line"><span class="function"><span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">double</span> <span class="title">testStack</span><span class="params">(Stack&lt;Integer&gt; stack, <span class="keyword">int</span> opCount)</span></span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">long</span> startTime = System.nanoTime();</span><br><span class="line"></span><br><span class="line">    Random random = <span class="keyword">new</span> Random();</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span> ; i &lt; opCount; i ++)</span><br><span class="line">        stack.push(random.nextInt(Integer.MAX_VALUE));</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span> ; i &lt; opCount; i ++)</span><br><span class="line">        stack.pop();</span><br><span class="line"></span><br><span class="line">    <span class="keyword">long</span> endTime = System.nanoTime();</span><br><span class="line">    <span class="keyword">return</span> (endTime - startTime) / <span class="number">1000000000.0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
+
+
+
         
+
       
+    </div>
+
+      <!-- 相关文章推荐 -->
+     
           
-            <a class="item" href="http://gylq.gitee.io/daily/" target="_blank" style="height: 100%;">
-              <img src="https://s1.ax1x.com/2020/10/05/0J7yi4.png" class="nofancybox"  style="width: 100%; height: 100%;" >
-            </a>
-        
+
+
+     
+
+    
+    
+    
+
+    <div>
+          
+            
+<div class="my_post_copyright">
+  <script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
+
+  <!-- JS库 sweetalert 可修改路径 -->
+  <script src="https://cdn.bootcss.com/jquery/2.0.0/jquery.min.js"></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <p><span>本文标题:</span><a href="/2021/06/26/%E3%80%90Java%E3%80%91%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-%E9%93%BE%E8%A1%A8%E5%AE%9E%E7%8E%B0%E6%A0%88(%E5%AE%8C%E6%95%B4%E4%BB%A3%E7%A0%81)/">【Java】数据结构-链表实现栈(完整代码)</a></p>
+  <p><span>文章作者:</span><a href="/" title="访问 孤桜懶契 的个人博客">孤桜懶契</a></p>
+  <p><span>发布时间:</span>2021年06月26日 - 15:58:58</p>
+  <p><span>最后更新:</span>2021年06月26日 - 16:25:57</p>
+  <p><span>原始链接:</span><a href="/2021/06/26/%E3%80%90Java%E3%80%91%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-%E9%93%BE%E8%A1%A8%E5%AE%9E%E7%8E%B0%E6%A0%88(%E5%AE%8C%E6%95%B4%E4%BB%A3%E7%A0%81)/" title="【Java】数据结构-链表实现栈(完整代码)">https://gylq.gitee.io/2021/06/26/%E3%80%90Java%E3%80%91%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-%E9%93%BE%E8%A1%A8%E5%AE%9E%E7%8E%B0%E6%A0%88(%E5%AE%8C%E6%95%B4%E4%BB%A3%E7%A0%81)/</a>
+    <span class="copy-path"  title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="https://gylq.gitee.io/2021/06/26/%E3%80%90Java%E3%80%91%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-%E9%93%BE%E8%A1%A8%E5%AE%9E%E7%8E%B0%E6%A0%88(%E5%AE%8C%E6%95%B4%E4%BB%A3%E7%A0%81)/"  aria-label="复制成功！"></i></span>
+  </p>
+  <p><span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" title="Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)">署名-非商业性使用-禁止演绎 4.0 国际</a> 转载请保留原文链接及作者。</p>
+</div>
+<script>
+    var clipboard = new Clipboard('.fa-clipboard');
+    $(".fa-clipboard").click(function(){
+      clipboard.on('success', function(){
+        swal({
+          title: "",
+          text: '复制成功',
+          icon: "success",
+          showConfirmButton: true
+          });
+    });
+    });
+</script>
+
+
+          
+    </div>
+
+    
+
+    <div>
       
+        <div>
+    
+        <div class="read-over">-------------------本文结束 <i class="fa fa-paw"></i> 感谢您的阅读-------------------</div>
+    
+</div>
+
+      
+    </div>
+
+    
+      <div>
+        <div class="share_reward">
+  <div>坚持原创技术分享，感谢您的支持和鼓励！</div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>打赏</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="/images/wechatpay.jpg" alt="孤桜懶契 微信支付"/>
+        <p>微信支付</p>
       </div>
+    
 
-      <!-- 轮播（Carousel）导航 -->
-      <a class="left carousel-control" data-target="#myCarousel" href="javascript:void(0);" role="button" data-slide="prev">
-          <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-      </a>
-      <a class="right carousel-control" data-target="#myCarousel" href="javascript:void(0);" role="button" data-slide="next">
-          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-      </a>
+    
+      <div id="alipay" style="display: inline-block">
+        <img id="alipay_qr" src="/images/alipay.jpg" alt="孤桜懶契 支付宝"/>
+        <p>支付宝</p>
+      </div>
+    
 
-	  </div>
+    
 
-	<div  class="rights" style="width: 30%; height: 24%; margin-right: 15px;margin-left: 0px;float: right;">
+  </div>
+</div>
 
-  	   <!-- 天气插件 -->
-  	   <!-- 会有http的链接
-       <iframe width="300px" scrolling="no" height="50px" frameborder="0" allowtransparency="true" src="https://i.tianqi.com/index.php?c=code&id=12&color=%23&bdc=%23&icon=1&py=beijing&num=2&site=12"></iframe>
-       -->
+      </div>
+    
 
-       <!-- https://tianqi.2345.com/plugin/setting.htm -->
-       <!-- <iframe allowtransparency="true" frameborder="0" width="290" height="75" scrolling="no" src="//tianqi.2345.com/plugin/widget/index.htm?s=2&z=2&t=0&v=0&d=2&bd=0&k=000000&f=&ltf=009944&htf=cc0000&q=1&e=1&a=1&c=54511&w=290&h=75&align=left"></iframe> -->
-       <iframe allowtransparency="true" frameborder="0" width="300" height="55" scrolling="no" src="//tianqi.2345.com/plugin/widget/index.htm?s=2&z=3&t=1&v=2&d=1&bd=0&k=000000&f=&ltf=009944&htf=cc0000&q=1&e=1&a=1&c=54511&w=300&h=55&align=left"></iframe>
+    
 
-  	   <!-- 时光留影 -->
-  	   <div class="my-carousel">
-         <a href="http://gylq.gitee.io/time/" target="_blank">
-            <img class="right-siders nofancybox" src="https://s1.ax1x.com/2020/07/26/apz9mD.jpg" width="100%"/>
-         </a>
-  	   </div>
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/%E6%88%90%E9%95%BF%E4%B9%8B%E8%B7%AF/" rel="tag"> <i class="fa fa-tag"></i> 成长之路</a>
+          
+            <a href="/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/" rel="tag"> <i class="fa fa-tag"></i> 数据结构</a>
+          
+            <a href="/tags/JAVA/" rel="tag"> <i class="fa fa-tag"></i> JAVA</a>
+          
+            <a href="/tags/%E6%8F%92%E5%85%A5%E6%8E%92%E5%BA%8F/" rel="tag"> <i class="fa fa-tag"></i> 插入排序</a>
+          
+        </div>
+      
 
-  	   <!-- 个人日志-->
-  	   <div class="my-carousel">
-         <a href="http://gylq.gitee.io/daily/" target="_blank">
-           <img class="right-siders nofancybox" src="https://s1.ax1x.com/2020/10/05/0JoB60.png"/>
-         </a>
-  	   </div>
+      
+      
+      
 
-  	  <!-- 每日一句 -->
-  	  <div class="my-carousel">
-        <a href="http://gylq.gitee.io/blog/" target="_blank">
-          <img class="right-siders nofancybox" src="https://s1.ax1x.com/2020/07/26/apzC0e.png"/>
-        </a>
-  	  </div>
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2021/06/26/%E3%80%90Java%E3%80%91%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-%E9%93%BE%E8%A1%A8%E5%AE%9E%E7%8E%B0%E9%98%9F%E5%88%97(%E5%AE%8C%E6%95%B4%E4%BB%A3%E7%A0%81)/" rel="prev" title="【Java】数据结构-链表实现队列(完整代码)">
+                <i class="fa fa-chevron-left"></i> 【Java】数据结构-链表实现队列(完整代码)
+              </a>
+            
+          </div>
 
-      <!-- 知识技术 -->
-      <div class="my-carousel">
-        <a href="https://gylq.gitee.io/"_blank">
-          <img class="right-siders nofancybox" src="https://s1.ax1x.com/2020/07/26/a96lZQ.png"/>
-        </a>
-     </div>
+          <span class="post-nav-divider"></span>
 
-   </div>
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2021/06/26/%E3%80%90Java%E3%80%91%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-%E9%93%BE%E8%A1%A8%E7%9A%84%E5%A2%9E%E5%88%A0%E6%94%B9%E6%9F%A5(%E5%AE%8C%E6%95%B4%E4%BB%A3%E7%A0%81)/" rel="next" title="【Java】数据结构-链表的增删改查(完整代码)">
+                【Java】数据结构-链表的增删改查(完整代码) <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
 
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+         <div
+  data-weibo-title="分享到微博"
+  data-qq-title="分享到QQ"
+  data-douban-title="分享到豆瓣"
+  class="social-share"
+  class="share-component"
+
+
+
+  data-disabled="qzone,google+,linkedin"
+  data-description="Share.js - 一键分享到微博，QQ空间，腾讯微博，人人，豆瓣...">
+   分享到：
 </div>
 
 
-
-
-  <section id="posts" class="posts-expand">
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://gylq.gitee.io/2021/07/13/%E3%80%90ctfshow%E3%80%91web%E7%AF%87wp%E8%AE%B0%E5%BD%95%EF%BC%88%E6%8C%81%E7%BB%AD%E6%9B%B4%E6%96%B0%EF%BC%89/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="孤桜懶契">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/qq.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="孤桜懶契">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h2 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2021/07/13/%E3%80%90ctfshow%E3%80%91web%E7%AF%87wp%E8%AE%B0%E5%BD%95%EF%BC%88%E6%8C%81%E7%BB%AD%E6%9B%B4%E6%96%B0%EF%BC%89/" itemprop="url">【ctfshow】web篇wp记录（持续更新）</a></h2>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-             
-                 <i class="fa fa-thumb-tack"></i>
-                 <font color=7D26CD>置顶</font>
-                 <span class="post-meta-divider">|</span>
-             
-
-             
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2021-07-13T08:18:08+08:00">
-                2021-07-13
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/CTF/" itemprop="url" rel="index">
-                    <span itemprop="name">CTF</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2021/07/13/%E3%80%90ctfshow%E3%80%91web%E7%AF%87wp%E8%AE%B0%E5%BD%95%EF%BC%88%E6%8C%81%E7%BB%AD%E6%9B%B4%E6%96%B0%EF%BC%89/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2021/07/13/%E3%80%90ctfshow%E3%80%91web%E7%AF%87wp%E8%AE%B0%E5%BD%95%EF%BC%88%E6%8C%81%E7%BB%AD%E6%9B%B4%E6%96%B0%EF%BC%89/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-             <span id="/2021/07/13/%E3%80%90ctfshow%E3%80%91web%E7%AF%87wp%E8%AE%B0%E5%BD%95%EF%BC%88%E6%8C%81%E7%BB%AD%E6%9B%B4%E6%96%B0%EF%BC%89/" class="leancloud_visitors" data-flag-title="【ctfshow】web篇wp记录（持续更新）">
-               <span class="post-meta-divider">|</span>
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               
-                 <span class="leancloud-visitors-count"></span>
-             </span>
-          
-
-          <!--
-          
-          -->
-
-          
-            <span class="post-wordcount">
-              
-                
-                  <span class="post-meta-divider">|</span>
-                
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                <span title="字数">
-                  5.4k
-                </span>
-              
-
-              
-
-              
-            </span>
-          
-
-          <!-- 隐藏文章内标题下，内容描述
-          
-          -->
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-        <div class="post-gallery" itemscope itemtype="http://schema.org/ImageGallery">
-          
-          
-            <div class="post-gallery-row">
-              <a class="post-gallery-img fancybox"
-                 href="https://gitee.com/gylq/cloudimages/raw/master/img/image-20210706204027073~1.jpg" rel="gallery_ckra7euqs004j68u3g1ithxmw"
-                 itemscope itemtype="http://schema.org/ImageObject" itemprop="url">
-                <img src="https://gitee.com/gylq/cloudimages/raw/master/img/image-20210706204027073~1.jpg" itemprop="contentUrl"/>
-              </a>
-            
-          
-
-          
-          </div>
-        </div>
-      
-
-      
-        
-          
-          前言
-记录web的题目wp，慢慢变强，铸剑。
-
-信息搜集web1
-右键查看源代码即可
-ctrl+u
-
-web2
-1、关掉javascript然后查看源码
-2、ctrl+shift+i
-3、view-source:
-4、点击更过工具，开发者工具查看元素获得页面注释通过开发者工具查看网络response
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2021/07/13/%E3%80%90ctfshow%E3%80%91web%E7%AF%87wp%E8%AE%B0%E5%BD%95%EF%BC%88%E6%8C%81%E7%BB%AD%E6%9B%B4%E6%96%B0%EF%BC%89/" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
       
     </div>
-
-      <!-- 相关文章推荐 -->
-     
-
-    
-    
-    
-
-    <div>
-          
-    </div>
-
-    
-
-    <div>
-      
-    </div>
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
   </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://gylq.gitee.io/2021/07/25/%E3%80%90%E5%B0%81%E7%A5%9E%E5%8F%B0%E3%80%91%E6%95%B0%E6%8D%AE%E5%BA%93%E6%B3%A8%E5%85%A5%20wp/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="孤桜懶契">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/qq.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="孤桜懶契">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h2 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2021/07/25/%E3%80%90%E5%B0%81%E7%A5%9E%E5%8F%B0%E3%80%91%E6%95%B0%E6%8D%AE%E5%BA%93%E6%B3%A8%E5%85%A5%20wp/" itemprop="url">【封神台】数据库注入 wp</a></h2>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-             
-
-             
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2021-07-25T19:32:12+08:00">
-                2021-07-25
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/CTF/" itemprop="url" rel="index">
-                    <span itemprop="name">CTF</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2021/07/25/%E3%80%90%E5%B0%81%E7%A5%9E%E5%8F%B0%E3%80%91%E6%95%B0%E6%8D%AE%E5%BA%93%E6%B3%A8%E5%85%A5%20wp/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2021/07/25/%E3%80%90%E5%B0%81%E7%A5%9E%E5%8F%B0%E3%80%91%E6%95%B0%E6%8D%AE%E5%BA%93%E6%B3%A8%E5%85%A5%20wp/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-             <span id="/2021/07/25/%E3%80%90%E5%B0%81%E7%A5%9E%E5%8F%B0%E3%80%91%E6%95%B0%E6%8D%AE%E5%BA%93%E6%B3%A8%E5%85%A5%20wp/" class="leancloud_visitors" data-flag-title="【封神台】数据库注入 wp">
-               <span class="post-meta-divider">|</span>
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               
-                 <span class="leancloud-visitors-count"></span>
-             </span>
-          
-
-          <!--
-          
-          -->
-
-          
-            <span class="post-wordcount">
-              
-                
-                  <span class="post-meta-divider">|</span>
-                
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                <span title="字数">
-                  2.6k
-                </span>
-              
-
-              
-
-              
-            </span>
-          
-
-          <!-- 隐藏文章内标题下，内容描述
-          
-          -->
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-          前言
-
-掌控安全里面的靶场数据库注入，练练手！
-
-
-Access——Cookie注入
-
-环境http://59.63.200.79:8004/
-
-
-
-正常情况Cookie注入是可以通过post传参测试的
-
-
-
-
-
-上面通过改id的参数发现可以cookie注入，废话不多说，抓包，sqlmap走起
-
-
-
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2021/07/25/%E3%80%90%E5%B0%81%E7%A5%9E%E5%8F%B0%E3%80%91%E6%95%B0%E6%8D%AE%E5%BA%93%E6%B3%A8%E5%85%A5%20wp/" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-      <!-- 相关文章推荐 -->
-     
-
-    
-    
-    
-
-    <div>
-          
-    </div>
-
-    
-
-    <div>
-      
-    </div>
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://gylq.gitee.io/2021/07/25/%E3%80%90%E5%B0%81%E7%A5%9E%E5%8F%B0%E3%80%91Sql-Labs%20wp/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="孤桜懶契">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/qq.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="孤桜懶契">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h2 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2021/07/25/%E3%80%90%E5%B0%81%E7%A5%9E%E5%8F%B0%E3%80%91Sql-Labs%20wp/" itemprop="url">【封神台】Sql-Labs wp</a></h2>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-             
-
-             
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2021-07-25T13:14:05+08:00">
-                2021-07-25
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/CTF/" itemprop="url" rel="index">
-                    <span itemprop="name">CTF</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2021/07/25/%E3%80%90%E5%B0%81%E7%A5%9E%E5%8F%B0%E3%80%91Sql-Labs%20wp/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2021/07/25/%E3%80%90%E5%B0%81%E7%A5%9E%E5%8F%B0%E3%80%91Sql-Labs%20wp/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-             <span id="/2021/07/25/%E3%80%90%E5%B0%81%E7%A5%9E%E5%8F%B0%E3%80%91Sql-Labs%20wp/" class="leancloud_visitors" data-flag-title="【封神台】Sql-Labs wp">
-               <span class="post-meta-divider">|</span>
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               
-                 <span class="leancloud-visitors-count"></span>
-             </span>
-          
-
-          <!--
-          
-          -->
-
-          
-            <span class="post-wordcount">
-              
-                
-                  <span class="post-meta-divider">|</span>
-                
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                <span title="字数">
-                  2.7k
-                </span>
-              
-
-              
-
-              
-            </span>
-          
-
-          <!-- 隐藏文章内标题下，内容描述
-          
-          -->
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-        <div class="post-gallery" itemscope itemtype="http://schema.org/ImageGallery">
-          
-          
-            <div class="post-gallery-row">
-              <a class="post-gallery-img fancybox"
-                 href="https://gitee.com/gylq/cloudimages/raw/master/img/image-20210725191329168.png" rel="gallery_ckrj3sryw00002wu31kba97nr"
-                 itemscope itemtype="http://schema.org/ImageObject" itemprop="url">
-                <img src="https://gitee.com/gylq/cloudimages/raw/master/img/image-20210725191329168.png" itemprop="contentUrl"/>
-              </a>
-            
-          
-
-          
-          </div>
-        </div>
-      
-
-      
-        
-          
-          前言
-
-掌控安全里面的靶场Sql-Labs，练练手！
-环境：http://inject2.lab.aqlab.cn:81/
-
-
-pass-01123456789101112$username = '';$password = '';@$id = $_GET['id'];@$sql = 'select
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2021/07/25/%E3%80%90%E5%B0%81%E7%A5%9E%E5%8F%B0%E3%80%91Sql-Labs%20wp/" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-      <!-- 相关文章推荐 -->
-     
-
-    
-    
-    
-
-    <div>
-          
-    </div>
-
-    
-
-    <div>
-      
-    </div>
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://gylq.gitee.io/2021/07/21/%E3%80%90%E5%B0%81%E7%A5%9E%E5%8F%B0%E3%80%91Upload-Labs%20wp/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="孤桜懶契">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/qq.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="孤桜懶契">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h2 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2021/07/21/%E3%80%90%E5%B0%81%E7%A5%9E%E5%8F%B0%E3%80%91Upload-Labs%20wp/" itemprop="url">【封神台】Upload-Labs wp</a></h2>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-             
-
-             
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2021-07-21T18:04:55+08:00">
-                2021-07-21
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/CTF/" itemprop="url" rel="index">
-                    <span itemprop="name">CTF</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2021/07/21/%E3%80%90%E5%B0%81%E7%A5%9E%E5%8F%B0%E3%80%91Upload-Labs%20wp/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2021/07/21/%E3%80%90%E5%B0%81%E7%A5%9E%E5%8F%B0%E3%80%91Upload-Labs%20wp/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-             <span id="/2021/07/21/%E3%80%90%E5%B0%81%E7%A5%9E%E5%8F%B0%E3%80%91Upload-Labs%20wp/" class="leancloud_visitors" data-flag-title="【封神台】Upload-Labs wp">
-               <span class="post-meta-divider">|</span>
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               
-                 <span class="leancloud-visitors-count"></span>
-             </span>
-          
-
-          <!--
-          
-          -->
-
-          
-            <span class="post-wordcount">
-              
-                
-                  <span class="post-meta-divider">|</span>
-                
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                <span title="字数">
-                  4.2k
-                </span>
-              
-
-              
-
-              
-            </span>
-          
-
-          <!-- 隐藏文章内标题下，内容描述
-          
-          -->
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-        <div class="post-gallery" itemscope itemtype="http://schema.org/ImageGallery">
-          
-          
-            <div class="post-gallery-row">
-              <a class="post-gallery-img fancybox"
-                 href="https://gitee.com/gylq/cloudimages/raw/master/img/image-20210723113705017.png" rel="gallery_ckrj3ss1k00052wu3gz2bh9ua"
-                 itemscope itemtype="http://schema.org/ImageObject" itemprop="url">
-                <img src="https://gitee.com/gylq/cloudimages/raw/master/img/image-20210723113705017.png" itemprop="contentUrl"/>
-              </a>
-            
-          
-
-          
-          </div>
-        </div>
-      
-
-      
-        
-          
-          前言
-
-掌控安全里面的靶场upload-labs，练练手！
-环境：http://59.63.200.79:8016/
-
-
-pass-011234567891011121314151617function checkFile() &#123;    var file = document.getEle
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2021/07/21/%E3%80%90%E5%B0%81%E7%A5%9E%E5%8F%B0%E3%80%91Upload-Labs%20wp/" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-      <!-- 相关文章推荐 -->
-     
-
-    
-    
-    
-
-    <div>
-          
-    </div>
-
-    
-
-    <div>
-      
-    </div>
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://gylq.gitee.io/2021/07/19/%E3%80%90%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E3%80%91%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86-%E5%A4%87%E5%BF%98%E5%8D%95/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="孤桜懶契">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/qq.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="孤桜懶契">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h2 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2021/07/19/%E3%80%90%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E3%80%91%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86-%E5%A4%87%E5%BF%98%E5%8D%95/" itemprop="url">【渗透测试】信息收集-备忘单</a></h2>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-             
-
-             
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2021-07-19T21:49:46+08:00">
-                2021-07-19
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E9%BB%91%E5%AE%A2%E5%B7%A5%E5%85%B7/" itemprop="url" rel="index">
-                    <span itemprop="name">黑客工具</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2021/07/19/%E3%80%90%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E3%80%91%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86-%E5%A4%87%E5%BF%98%E5%8D%95/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2021/07/19/%E3%80%90%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E3%80%91%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86-%E5%A4%87%E5%BF%98%E5%8D%95/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-             <span id="/2021/07/19/%E3%80%90%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E3%80%91%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86-%E5%A4%87%E5%BF%98%E5%8D%95/" class="leancloud_visitors" data-flag-title="【渗透测试】信息收集-备忘单">
-               <span class="post-meta-divider">|</span>
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               
-                 <span class="leancloud-visitors-count"></span>
-             </span>
-          
-
-          <!--
-          
-          -->
-
-          
-            <span class="post-wordcount">
-              
-                
-                  <span class="post-meta-divider">|</span>
-                
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                <span title="字数">
-                  178
-                </span>
-              
-
-              
-
-              
-            </span>
-          
-
-          <!-- 隐藏文章内标题下，内容描述
-          
-          -->
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-          信息收集
-
-目录扫描
-御剑目录扫描
-kali dirbuster
-
-
-子域名收集
-Layer子域名挖掘机
-
-subDomainsBrute
-
-
-
-
-1python2 subDomainsBrute.py qq.com -f subnames_full.txt -o qq.com.csv
-
-常用的子域
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2021/07/19/%E3%80%90%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E3%80%91%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86-%E5%A4%87%E5%BF%98%E5%8D%95/" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-      <!-- 相关文章推荐 -->
-     
-
-    
-    
-    
-
-    <div>
-          
-    </div>
-
-    
-
-    <div>
-      
-    </div>
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://gylq.gitee.io/2021/07/19/%E3%80%90GITHUB%E3%80%91Github%E4%B8%8A%E4%BC%A0%E6%9C%AC%E5%9C%B0%E9%A1%B9%E7%9B%AE/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="孤桜懶契">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/qq.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="孤桜懶契">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h2 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2021/07/19/%E3%80%90GITHUB%E3%80%91Github%E4%B8%8A%E4%BC%A0%E6%9C%AC%E5%9C%B0%E9%A1%B9%E7%9B%AE/" itemprop="url">【GITHUB】Github上传本地项目</a></h2>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-             
-
-             
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2021-07-19T15:45:21+08:00">
-                2021-07-19
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Github/" itemprop="url" rel="index">
-                    <span itemprop="name">Github</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2021/07/19/%E3%80%90GITHUB%E3%80%91Github%E4%B8%8A%E4%BC%A0%E6%9C%AC%E5%9C%B0%E9%A1%B9%E7%9B%AE/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2021/07/19/%E3%80%90GITHUB%E3%80%91Github%E4%B8%8A%E4%BC%A0%E6%9C%AC%E5%9C%B0%E9%A1%B9%E7%9B%AE/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-             <span id="/2021/07/19/%E3%80%90GITHUB%E3%80%91Github%E4%B8%8A%E4%BC%A0%E6%9C%AC%E5%9C%B0%E9%A1%B9%E7%9B%AE/" class="leancloud_visitors" data-flag-title="【GITHUB】Github上传本地项目">
-               <span class="post-meta-divider">|</span>
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               
-                 <span class="leancloud-visitors-count"></span>
-             </span>
-          
-
-          <!--
-          
-          -->
-
-          
-            <span class="post-wordcount">
-              
-                
-                  <span class="post-meta-divider">|</span>
-                
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                <span title="字数">
-                  590
-                </span>
-              
-
-              
-
-              
-            </span>
-          
-
-          <!-- 隐藏文章内标题下，内容描述
-          
-          -->
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-          Github简介
-GitHub是基于git实现的代码托管。git是目前最好用的版本控制系统了，非常受欢迎，比之svn更好。
-GitHub可以免费使用，并且快速稳定。即使是付费帐户，每个月不超过10美刀的费用也非常便宜。
-利用GitHub，你可以将项目存档，与其他人分享交流，并让其他开发者帮助你一起完
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2021/07/19/%E3%80%90GITHUB%E3%80%91Github%E4%B8%8A%E4%BC%A0%E6%9C%AC%E5%9C%B0%E9%A1%B9%E7%9B%AE/" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-      <!-- 相关文章推荐 -->
-     
-
-    
-    
-    
-
-    <div>
-          
-    </div>
-
-    
-
-    <div>
-      
-    </div>
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://gylq.gitee.io/2021/07/18/%E3%80%90PHP%E3%80%91%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E6%95%B4%E7%90%86/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="孤桜懶契">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/qq.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="孤桜懶契">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h2 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2021/07/18/%E3%80%90PHP%E3%80%91%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E6%95%B4%E7%90%86/" itemprop="url">【PHP】基础知识整理</a></h2>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-             
-
-             
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2021-07-18T17:56:34+08:00">
-                2021-07-18
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/php/" itemprop="url" rel="index">
-                    <span itemprop="name">php</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2021/07/18/%E3%80%90PHP%E3%80%91%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E6%95%B4%E7%90%86/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2021/07/18/%E3%80%90PHP%E3%80%91%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E6%95%B4%E7%90%86/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-             <span id="/2021/07/18/%E3%80%90PHP%E3%80%91%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E6%95%B4%E7%90%86/" class="leancloud_visitors" data-flag-title="【PHP】基础知识整理">
-               <span class="post-meta-divider">|</span>
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               
-                 <span class="leancloud-visitors-count"></span>
-             </span>
-          
-
-          <!--
-          
-          -->
-
-          
-            <span class="post-wordcount">
-              
-                
-                  <span class="post-meta-divider">|</span>
-                
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                <span title="字数">
-                  2.7k
-                </span>
-              
-
-              
-
-              
-            </span>
-          
-
-          <!-- 隐藏文章内标题下，内容描述
-          
-          -->
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-          变量基本类型测试代码12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152&lt;?php	//echo "Hello World!";	#单行注释	/*	多行注释
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2021/07/18/%E3%80%90PHP%E3%80%91%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E6%95%B4%E7%90%86/" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-      <!-- 相关文章推荐 -->
-     
-
-    
-    
-    
-
-    <div>
-          
-    </div>
-
-    
-
-    <div>
-      
-    </div>
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://gylq.gitee.io/2021/07/13/%E3%80%90HTML%E3%80%91%E5%AE%9E%E6%88%98%E9%98%BF%E9%87%8C%E4%BA%91src%E9%A1%B5%E9%9D%A2css%E6%A8%A1%E4%BB%BF%E5%9F%BA%E7%A1%80%E5%AD%A6%E4%B9%A0/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="孤桜懶契">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/qq.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="孤桜懶契">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h2 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2021/07/13/%E3%80%90HTML%E3%80%91%E5%AE%9E%E6%88%98%E9%98%BF%E9%87%8C%E4%BA%91src%E9%A1%B5%E9%9D%A2css%E6%A8%A1%E4%BB%BF%E5%9F%BA%E7%A1%80%E5%AD%A6%E4%B9%A0/" itemprop="url">【HTML】实战阿里云src页面css模仿基础学习</a></h2>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-             
-
-             
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2021-07-13T05:21:39+08:00">
-                2021-07-13
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/HTML/" itemprop="url" rel="index">
-                    <span itemprop="name">HTML</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2021/07/13/%E3%80%90HTML%E3%80%91%E5%AE%9E%E6%88%98%E9%98%BF%E9%87%8C%E4%BA%91src%E9%A1%B5%E9%9D%A2css%E6%A8%A1%E4%BB%BF%E5%9F%BA%E7%A1%80%E5%AD%A6%E4%B9%A0/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2021/07/13/%E3%80%90HTML%E3%80%91%E5%AE%9E%E6%88%98%E9%98%BF%E9%87%8C%E4%BA%91src%E9%A1%B5%E9%9D%A2css%E6%A8%A1%E4%BB%BF%E5%9F%BA%E7%A1%80%E5%AD%A6%E4%B9%A0/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-             <span id="/2021/07/13/%E3%80%90HTML%E3%80%91%E5%AE%9E%E6%88%98%E9%98%BF%E9%87%8C%E4%BA%91src%E9%A1%B5%E9%9D%A2css%E6%A8%A1%E4%BB%BF%E5%9F%BA%E7%A1%80%E5%AD%A6%E4%B9%A0/" class="leancloud_visitors" data-flag-title="【HTML】实战阿里云src页面css模仿基础学习">
-               <span class="post-meta-divider">|</span>
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               
-                 <span class="leancloud-visitors-count"></span>
-             </span>
-          
-
-          <!--
-          
-          -->
-
-          
-            <span class="post-wordcount">
-              
-                
-                  <span class="post-meta-divider">|</span>
-                
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                <span title="字数">
-                  3.4k
-                </span>
-              
-
-              
-
-              
-            </span>
-          
-
-          <!-- 隐藏文章内标题下，内容描述
-          
-          -->
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-          实战结果页面gif图片去我博客园看：https://www.cnblogs.com/GYLQ/p/15004744.html
-阿里云src首页模仿完整代码（500行左右）12345678910111213141516171819202122232425262728293031323334353637
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2021/07/13/%E3%80%90HTML%E3%80%91%E5%AE%9E%E6%88%98%E9%98%BF%E9%87%8C%E4%BA%91src%E9%A1%B5%E9%9D%A2css%E6%A8%A1%E4%BB%BF%E5%9F%BA%E7%A1%80%E5%AD%A6%E4%B9%A0/" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-      <!-- 相关文章推荐 -->
-     
-
-    
-    
-    
-
-    <div>
-          
-    </div>
-
-    
-
-    <div>
-      
-    </div>
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://gylq.gitee.io/2021/07/09/%E3%80%90HTML%E3%80%91CSS%E5%9F%BA%E7%A1%80%E5%AD%A6%E4%B9%A0%E4%B9%8Bfloat%E6%B5%AE%E5%8A%A8%E5%9D%97%E7%BA%A7%E5%85%83%E7%B4%A0%E8%A1%8C%E5%86%85%E5%85%83%E7%B4%A0/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="孤桜懶契">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/qq.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="孤桜懶契">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h2 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2021/07/09/%E3%80%90HTML%E3%80%91CSS%E5%9F%BA%E7%A1%80%E5%AD%A6%E4%B9%A0%E4%B9%8Bfloat%E6%B5%AE%E5%8A%A8%E5%9D%97%E7%BA%A7%E5%85%83%E7%B4%A0%E8%A1%8C%E5%86%85%E5%85%83%E7%B4%A0/" itemprop="url">【HTML】CSS基础学习之float浮动块级元素行内元素</a></h2>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-             
-
-             
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2021-07-09T11:48:07+08:00">
-                2021-07-09
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/HTML/" itemprop="url" rel="index">
-                    <span itemprop="name">HTML</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2021/07/09/%E3%80%90HTML%E3%80%91CSS%E5%9F%BA%E7%A1%80%E5%AD%A6%E4%B9%A0%E4%B9%8Bfloat%E6%B5%AE%E5%8A%A8%E5%9D%97%E7%BA%A7%E5%85%83%E7%B4%A0%E8%A1%8C%E5%86%85%E5%85%83%E7%B4%A0/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2021/07/09/%E3%80%90HTML%E3%80%91CSS%E5%9F%BA%E7%A1%80%E5%AD%A6%E4%B9%A0%E4%B9%8Bfloat%E6%B5%AE%E5%8A%A8%E5%9D%97%E7%BA%A7%E5%85%83%E7%B4%A0%E8%A1%8C%E5%86%85%E5%85%83%E7%B4%A0/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-             <span id="/2021/07/09/%E3%80%90HTML%E3%80%91CSS%E5%9F%BA%E7%A1%80%E5%AD%A6%E4%B9%A0%E4%B9%8Bfloat%E6%B5%AE%E5%8A%A8%E5%9D%97%E7%BA%A7%E5%85%83%E7%B4%A0%E8%A1%8C%E5%86%85%E5%85%83%E7%B4%A0/" class="leancloud_visitors" data-flag-title="【HTML】CSS基础学习之float浮动块级元素行内元素">
-               <span class="post-meta-divider">|</span>
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               
-                 <span class="leancloud-visitors-count"></span>
-             </span>
-          
-
-          <!--
-          
-          -->
-
-          
-            <span class="post-wordcount">
-              
-                
-                  <span class="post-meta-divider">|</span>
-                
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                <span title="字数">
-                  426
-                </span>
-              
-
-              
-
-              
-            </span>
-          
-
-          <!-- 隐藏文章内标题下，内容描述
-          
-          -->
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-          CSS基础学习之float浮动块级元素行内元素
-demo8（margin设置代码）1234567891011121314151617181920212223242526272829303132333435363738394041&lt;!DOCTYPE html&gt;&lt;html&gt; &l
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2021/07/09/%E3%80%90HTML%E3%80%91CSS%E5%9F%BA%E7%A1%80%E5%AD%A6%E4%B9%A0%E4%B9%8Bfloat%E6%B5%AE%E5%8A%A8%E5%9D%97%E7%BA%A7%E5%85%83%E7%B4%A0%E8%A1%8C%E5%86%85%E5%85%83%E7%B4%A0/" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-      <!-- 相关文章推荐 -->
-     
-
-    
-    
-    
-
-    <div>
-          
-    </div>
-
-    
-
-    <div>
-      
-    </div>
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://gylq.gitee.io/2021/07/09/%E3%80%90HTML%E3%80%91CSS%E5%9F%BA%E7%A1%80%E5%AD%A6%E4%B9%A0%E4%B9%8B%E7%9B%92%E5%AD%90%E6%A8%A1%E5%9E%8Bmargin%E5%92%8Cpadding%E7%9A%84%E4%BD%BF%E7%94%A8/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="孤桜懶契">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/qq.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="孤桜懶契">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h2 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2021/07/09/%E3%80%90HTML%E3%80%91CSS%E5%9F%BA%E7%A1%80%E5%AD%A6%E4%B9%A0%E4%B9%8B%E7%9B%92%E5%AD%90%E6%A8%A1%E5%9E%8Bmargin%E5%92%8Cpadding%E7%9A%84%E4%BD%BF%E7%94%A8/" itemprop="url">【HTML】CSS基础学习之盒子模型margin和padding的使用</a></h2>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-             
-
-             
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2021-07-09T10:45:02+08:00">
-                2021-07-09
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/HTML/" itemprop="url" rel="index">
-                    <span itemprop="name">HTML</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2021/07/09/%E3%80%90HTML%E3%80%91CSS%E5%9F%BA%E7%A1%80%E5%AD%A6%E4%B9%A0%E4%B9%8B%E7%9B%92%E5%AD%90%E6%A8%A1%E5%9E%8Bmargin%E5%92%8Cpadding%E7%9A%84%E4%BD%BF%E7%94%A8/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2021/07/09/%E3%80%90HTML%E3%80%91CSS%E5%9F%BA%E7%A1%80%E5%AD%A6%E4%B9%A0%E4%B9%8B%E7%9B%92%E5%AD%90%E6%A8%A1%E5%9E%8Bmargin%E5%92%8Cpadding%E7%9A%84%E4%BD%BF%E7%94%A8/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-             <span id="/2021/07/09/%E3%80%90HTML%E3%80%91CSS%E5%9F%BA%E7%A1%80%E5%AD%A6%E4%B9%A0%E4%B9%8B%E7%9B%92%E5%AD%90%E6%A8%A1%E5%9E%8Bmargin%E5%92%8Cpadding%E7%9A%84%E4%BD%BF%E7%94%A8/" class="leancloud_visitors" data-flag-title="【HTML】CSS基础学习之盒子模型margin和padding的使用">
-               <span class="post-meta-divider">|</span>
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               
-                 <span class="leancloud-visitors-count"></span>
-             </span>
-          
-
-          <!--
-          
-          -->
-
-          
-            <span class="post-wordcount">
-              
-                
-                  <span class="post-meta-divider">|</span>
-                
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                <span title="字数">
-                  267
-                </span>
-              
-
-              
-
-              
-            </span>
-          
-
-          <!-- 隐藏文章内标题下，内容描述
-          
-          -->
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-          CSS基础学习四盒子模型margin和padding的使用
-demo5（margin设置代码）12345678910111213141516171819202122232425262728293031323334353637383940&lt;!DOCTYPE html&gt;&lt;html&gt
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2021/07/09/%E3%80%90HTML%E3%80%91CSS%E5%9F%BA%E7%A1%80%E5%AD%A6%E4%B9%A0%E4%B9%8B%E7%9B%92%E5%AD%90%E6%A8%A1%E5%9E%8Bmargin%E5%92%8Cpadding%E7%9A%84%E4%BD%BF%E7%94%A8/" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-      <!-- 相关文章推荐 -->
-     
-
-    
-    
-    
-
-    <div>
-          
-    </div>
-
-    
-
-    <div>
-      
-    </div>
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-  </section>
-
-  
-  <nav class="pagination">
-    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><span class="space">&hellip;</span><a class="page-number" href="/page/10/">10</a><a class="extend next" rel="next" href="/page/2/">下一页</a>
-  </nav>
-
 
 
           </div>
@@ -2976,6 +739,13 @@ demo5（margin设置代码）123456789101112131415161718192021222324252627282930
 
 
           
+
+  
+    <div class="comments" id="comments">
+    </div>
+  
+
+
 
 
 
@@ -3000,8 +770,17 @@ demo5（margin设置代码）123456789101112131415161718192021222324252627282930
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -3481,6 +1260,22 @@ demo5（margin设置代码）123456789101112131415161718192021222324252627282930
       </section>
 
       
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#我的个人博客"><span class="nav-number">1.</span> <span class="nav-text">我的个人博客</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#孤桜懶契：http-gylq-github-io"><span class="nav-number">1.1.</span> <span class="nav-text">孤桜懶契：http:&#x2F;&#x2F;gylq.github.io</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#链表实现栈的接口"><span class="nav-number">2.</span> <span class="nav-text">链表实现栈的接口</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#链表实现栈操作执行结果"><span class="nav-number">3.</span> <span class="nav-text">链表实现栈操作执行结果</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#链表实现栈的完整代码"><span class="nav-number">4.</span> <span class="nav-text">链表实现栈的完整代码</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Stack-java"><span class="nav-number">4.1.</span> <span class="nav-text">Stack.java</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#LinkedList-java-上一个发的文章实现链表的内容"><span class="nav-number">4.2.</span> <span class="nav-text">LinkedList.java(上一个发的文章实现链表的内容)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#LinkedListStack-java（链表实现栈代码）"><span class="nav-number">4.3.</span> <span class="nav-text">LinkedListStack.java（链表实现栈代码）</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#我对比了一下动态数组栈和链表栈的时间输出结果截图"><span class="nav-number">5.</span> <span class="nav-text">我对比了一下动态数组栈和链表栈的时间输出结果截图</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#链表的操作中包含更多的new操作，在数值大的时候，会比动态数组的栈速度慢个1-x倍"><span class="nav-number">5.1.</span> <span class="nav-text">链表的操作中包含更多的new操作，在数值大的时候，会比动态数组的栈速度慢个1.x倍</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#测试时间代码"><span class="nav-number">6.</span> <span class="nav-text">测试时间代码</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
 
       
 
@@ -3680,6 +1475,10 @@ demo5（margin设置代码）123456789101112131415161718192021222324252627282930
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
@@ -4076,7 +1875,7 @@ demo5（margin设置代码）123456789101112131415161718192021222324252627282930
 
 
 
-    <script> function showTime(Counter){var entries=[];var $visitors=$('.leancloud_visitors');$visitors.each(function(){entries.push($(this).attr('id').trim());});Counter('get','/classes/Counter',{where:JSON.stringify({url:{'$in':entries}})}).done(function({results}){var COUNT_CONTAINER_REF='.leancloud-visitors-count';if(results.length===0){$visitors.find(COUNT_CONTAINER_REF).text(0);return;}for(var i=0;i<results.length;i++){var item=results[i];var url=item.url;var time=item.time;var element=document.getElementById(url);$(element).find(COUNT_CONTAINER_REF).text(time);}for(var i=0;i<entries.length;i++){var url=entries[i];var element=document.getElementById(url);var countSpan=$(element).find(COUNT_CONTAINER_REF);if(countSpan.text()==''){countSpan.text(0);}}}).fail(function({responseJSON}){console.log('LeanCloud Counter Error: '+responseJSON.code+' '+responseJSON.error);});}$(function(){$.get('https://app-router.leancloud.cn/2/route?appId='+'HzU5gDhBUYHF8QTF8DmbGhjD-gzGzoHsz').done(function({api_server}){var Counter=function(method,url,data){return $.ajax({method:method,url:'https://'+api_server+'/1.1'+url,headers:{'X-LC-Id':'HzU5gDhBUYHF8QTF8DmbGhjD-gzGzoHsz','X-LC-Key':'wp1HNJ17SdpnE0wIFq99eTKH','Content-Type':'application/json',},data:data});}; if($('.post-title-link').length>=1){showTime(Counter);}});});</script>
+    <script>  function addCount(Counter){var $visitors=$('.leancloud_visitors');var url=$visitors.attr('id').trim();var title=$visitors.attr('data-flag-title').trim();Counter('get','/classes/Counter',{where:JSON.stringify({url})}).done(function({results}){if(results.length>0){var counter=results[0]; var $element=$(document.getElementById(url));$element.find('.leancloud-visitors-count').text(counter.time+1);Counter('put','/classes/Counter/'+counter.objectId,JSON.stringify({time:{'__op':'Increment','amount':1}})) .fail(function({responseJSON}){console.log('Failed to save Visitor num, with error message: '+responseJSON.error);})}else{ Counter('post','/classes/Counter',JSON.stringify({title:title,url:url,time:1})).done(function(){var $element=$(document.getElementById(url));$element.find('.leancloud-visitors-count').text(1);}).fail(function(){console.log('Failed to create');});}}).fail(function({responseJSON}){console.log('LeanCloud Counter Error: '+responseJSON.code+' '+responseJSON.error);});}$(function(){$.get('https://app-router.leancloud.cn/2/route?appId='+'HzU5gDhBUYHF8QTF8DmbGhjD-gzGzoHsz').done(function({api_server}){var Counter=function(method,url,data){return $.ajax({method:method,url:'https://'+api_server+'/1.1'+url,headers:{'X-LC-Id':'HzU5gDhBUYHF8QTF8DmbGhjD-gzGzoHsz','X-LC-Key':'wp1HNJ17SdpnE0wIFq99eTKH','Content-Type':'application/json',},data:data});};  const localhost=/http:\/\/(localhost|127.0.0.1|0.0.0.0)/;if(localhost.test(document.URL))return;addCount(Counter);});});</script>
 
   
 

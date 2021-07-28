@@ -89,7 +89,7 @@
 
 
 
-  <meta name="keywords" content="Hexo个人博客,NexT美化优化,哈林摇,Mac Panel特效,Leaf,北宸,Java程序员,北京,旅行,摄像,Github Pages,搭建教程,demo,博客相册,文章排行榜,网站SEO" />
+  <meta name="keywords" content="知识拓展," />
 
 
 
@@ -102,14 +102,16 @@
 
 
 
-<meta name="description" content="生活分享">
-<meta property="og:type" content="website">
-<meta property="og:title" content="孤桜懶契">
-<meta property="og:url" content="https://gylq.gitee.io/index.html">
+<meta name="description" content="1、取得每个部门最高薪水的人员名称第一步：取得每个部门最高薪水(按照部门编号分组找出每一个部门最大值) select      deptno,max(sal) maxsal  from      emp  group by      deptno;+——–+———-+| deptno | maxsal   |+——–+———-+|     10 |  5000.00 ||     20 |  30">
+<meta property="og:type" content="article">
+<meta property="og:title" content="MYSQL——27道练习题">
+<meta property="og:url" content="https://gylq.gitee.io/2020/10/15/MYSQL%E2%80%94%E2%80%9427%E9%81%93%E7%BB%83%E4%B9%A0%E9%A2%98/index.html">
 <meta property="og:site_name" content="孤桜懶契">
-<meta property="og:description" content="生活分享">
+<meta property="og:description" content="1、取得每个部门最高薪水的人员名称第一步：取得每个部门最高薪水(按照部门编号分组找出每一个部门最大值) select      deptno,max(sal) maxsal  from      emp  group by      deptno;+——–+———-+| deptno | maxsal   |+——–+———-+|     10 |  5000.00 ||     20 |  30">
+<meta property="article:published_time" content="2020-10-14T21:46:24.328Z">
+<meta property="article:modified_time" content="2020-10-21T13:09:37.086Z">
 <meta property="article:author" content="孤桜懶契">
-<meta property="article:tag" content="孤桜懶契 技术 知识">
+<meta property="article:tag" content="知识拓展">
 <meta name="twitter:card" content="summary">
 
 
@@ -140,7 +142,7 @@
 
 
 
-  <link rel="canonical" href="https://gylq.gitee.io/"/>
+  <link rel="canonical" href="https://gylq.gitee.io/2020/10/15/MYSQL——27道练习题/"/>
 
 
 
@@ -158,7 +160,7 @@
     })();
 </script>
 
-  <title>孤桜懶契 - Run</title>
+  <title>MYSQL——27道练习题 | 孤桜懶契</title>
   
 
 
@@ -200,8 +202,7 @@ var _hmt = _hmt || [];
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <!--fork me from github-->
@@ -388,2587 +389,433 @@ var _hmt = _hmt || [];
           <div id="content" class="content">
             
 
-  <!--轮播图-->
+  <div id="posts" class="posts-expand">
+    
+
   
 
-<!--
-<script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
-<script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
--->
+  
+  
+  
 
-<script src="https://cdn.jsdelivr.net/npm/jquery@2.1.3/dist/jquery.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap.min.js@3.3.5/bootstrap.min.js"></script>
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://gylq.gitee.io/2020/10/15/MYSQL%E2%80%94%E2%80%9427%E9%81%93%E7%BB%83%E4%B9%A0%E9%A2%98/">
 
-<style type="text/css">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="孤桜懶契">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/qq.png">
+    </span>
 
-.glyphicon-chevron-left:before{
-	/* content: "《" */
-}
-.glyphicon-chevron-right:before{
-	/* content: "》" */
-}
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="孤桜懶契">
+    </span>
 
-.right-siders{
-   border-radius: 5px;
-   /*margin-top: 5px;
-   margin-bottom: 10px;*/
-}
+    
+      <header class="post-header">
 
-.my-carousel{
-    /*height: 10%;*/
-    margin-bottom: 12px;
-}
-
-.my-carousel:hover{
-  margin-left: 5px;
-  //padding: 5px 1px;
-  border-radius: 5px;
-  transform: scale(1.1);
-  box-shadow: 10px 10px 15px 2px rgba(0,0,0,.12), 0 0 6px 0 rgba(104, 104, 105, 0.1);
-}
-
-@media (max-width: 767px){
-	.rights{
-		display: none;
-	}
-	.carousel{
-		width: 100% !important;
-		height: 100% !important;
-	}
-	.slide{
-		width: 100% !important;
-		height: 100% !important;
-	}
-
-	.carousel-control .glyphicon-chevron-left,
-  .carousel-control .glyphicon-chevron-right,
-  .carousel-control .icon-prev,
-  .carousel-control .icon-next {
-    width: 30px;
-    height: 30px;
-    margin-top: -10px;
-    font-size: 30px;
-  }
-  .carousel-control .glyphicon-chevron-left,
-  .carousel-control .icon-prev {
-    margin-left: -10px;
-  }
-  .carousel-control .glyphicon-chevron-right,
-  .carousel-control .icon-next {
-   /* margin-right: -10px; */
-  }
-
-}
-
-.carousel{
-	width: 65%;
-	height: 100%;
-	position: relative;
-}
-
-.carousel-inner {
-  position: relative;
-  overflow: hidden;
-  width: 100%;
-}
-.carousel-inner > .item {
-  display: none;
-  position: relative;
-  -webkit-transition: 0.6s ease-in-out left;
-  -o-transition: 0.6s ease-in-out left;
-  transition: 0.6s ease-in-out left;
-}
-.carousel-inner > .item > img,
-.carousel-inner > .item > a > img {
-  line-height: 1;
-}
-@media all and (transform-3d), (-webkit-transform-3d) {
-  .carousel-inner > .item {
-    -webkit-transition: -webkit-transform 0.6s ease-in-out;
-    -moz-transition: -moz-transform 0.6s ease-in-out;
-    -o-transition: -o-transform 0.6s ease-in-out;
-    transition: transform 0.6s ease-in-out;
-    -webkit-backface-visibility: hidden;
-    -moz-backface-visibility: hidden;
-    backface-visibility: hidden;
-    -webkit-perspective: 1000px;
-    -moz-perspective: 1000px;
-    perspective: 1000px;
-  }
-  .carousel-inner > .item.next,
-  .carousel-inner > .item.active.right {
-    -webkit-transform: translate3d(100%, 0, 0);
-    transform: translate3d(100%, 0, 0);
-    left: 0;
-  }
-  .carousel-inner > .item.prev,
-  .carousel-inner > .item.active.left {
-    -webkit-transform: translate3d(-100%, 0, 0);
-    transform: translate3d(-100%, 0, 0);
-    left: 0;
-  }
-  .carousel-inner > .item.next.left,
-  .carousel-inner > .item.prev.right,
-  .carousel-inner > .item.active {
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-    left: 0;
-  }
-}
-.carousel-inner > .active,
-.carousel-inner > .next,
-.carousel-inner > .prev {
-  display: block;
-}
-.carousel-inner > .active {
-  left: 0;
-}
-.carousel-inner > .next,
-.carousel-inner > .prev {
-  position: absolute;
-  top: 0;
-  width: 100%;
-}
-.carousel-inner > .next {
-  left: 100%;
-}
-.carousel-inner > .prev {
-  left: -100%;
-}
-.carousel-inner > .next.left,
-.carousel-inner > .prev.right {
-  left: 0;
-}
-.carousel-inner > .active.left {
-  left: -100%;
-}
-.carousel-inner > .active.right {
-  left: 100%;
-}
-.carousel-control {
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  /*width: 5%;*/
-  opacity: 0.5;
-  filter: alpha(opacity=50);
-  font-size: 20px;
-  color: #fff;
-  text-align: center;
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
-  background-color: rgba(0, 0, 0, 0);
-}
-.carousel-control.left {
-  background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.0001) 100%);
-  background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.0001) 100%);
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.0001) 100%);
-  background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#80000000, endColorstr=#00000000, GradientType=1);
-}
-.carousel-control.right {
-  left: auto;
-  right: 0;
-  background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.5) 100%);
-  background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.5) 100%);
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.5) 100%);
-  background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#00000000, endColorstr=#80000000, GradientType=1);
-}
-.carousel-control:hover,
-.carousel-control:focus {
-  outline: 0;
-  color: #fff;
-  text-decoration: none;
-  opacity: 0.9;
-  filter: alpha(opacity=90);
-}
-.carousel-control .icon-prev,
-.carousel-control .icon-next,
-.carousel-control .glyphicon-chevron-left,
-.carousel-control .glyphicon-chevron-right {
-  position: absolute;
-  top: 50%;
-  margin-top: -10px;
-  z-index: 5;
-  display: inline-block;
-}
-/*
-.carousel-control .icon-prev,
-.carousel-control .glyphicon-chevron-left {
-  left: 50%;
-  margin-left: -10px;
-}
-*/
-
-.carousel-control .icon-prev,
-.carousel-control .glyphicon-chevron-left {
-  background: url('/images/icon-slides.png');
-  background-position-y: -20px;
-  left: 9px;
-}
-
-/*
-.carousel-control .icon-next,
-.carousel-control .glyphicon-chevron-right {
-  right: 50%;
-  margin-right: -10px;
-}
-*/
-
-.carousel-control .icon-next,
-.carousel-control .glyphicon-chevron-right {
-  background: url('/images/icon-slides.png');
-  background-position-x: -50px;
-  background-position-y: -20px;
-  right: 0px;
-}
-
-.carousel-control .icon-prev,
-.carousel-control .icon-next {
-  width: 20px;
-  height: 20px;
-  line-height: 1;
-  font-family: serif;
-}
-
-.carousel-control .icon-prev:before {
-  content: 2039;
-}
-.carousel-control .icon-next:before {
-  content: 203a;
-}
-
-.carousel-indicators {
-  opacity: 0.5;
-  position: absolute;
-  bottom: -15px;
-  left: 50%;
-  z-index: 15;
-  width: 60%;
-  margin-left: -30%;
-  padding-left: 0;
-  list-style: none;
-  text-align: center;
-}
-.carousel-indicators li {
-  display: inline-block;
-  width: 30px;
-  height: 3px;
-  margin: 5px;
-  text-indent: -999px;
-  border: 1px solid #bbb;
-  border-radius: 10px;
-  cursor: pointer;
-  background-color: rgba(0, 0, 0, .24);
-}
-.carousel-indicators .active {
-  width: 30px;
-  height: 3px;
-  background-color: #fff;
-}
-.carousel-caption {
-  position: absolute;
-  left: 15%;
-  right: 15%;
-  bottom: 20px;
-  z-index: 10;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  color: #fff;
-  text-align: center;
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
-}
-.carousel-caption .btn {
-  text-shadow: none;
-}
-@media screen and (min-width: 768px) {
-  .carousel-control .glyphicon-chevron-left,
-  .carousel-control .glyphicon-chevron-right,
-  .carousel-control .icon-prev,
-  .carousel-control .icon-next {
-    width: 30px;
-    height: 30px;
-    margin-top: -10px;
-    font-size: 30px;
-  }
-  .carousel-control .glyphicon-chevron-left,
-  .carousel-control .icon-prev {
-    margin-left: -10px;
-  }
-  .carousel-control .glyphicon-chevron-right,
-  .carousel-control .icon-next {
-   /* margin-right: -10px; */
-  }
-  .carousel-caption {
-    left: 20%;
-    right: 20%;
-    padding-bottom: 30px;
-  }
-  .carousel-indicators {
-    bottom: -20px;
-  }
-}
-</style>
-
-<div width="100%" height="24%" style="border: 0px; overflow: hidden; border-radius: 10px; margin-bottom: 25px;" scrolling="no">
-
-	<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="3500" style="float:left">
-
-      <!-- 轮播（Carousel）指标 -->
-      <ol class="carousel-indicators">
-      
-      
-        <li data-target="#myCarousel" data-slide-to="0"></li>
         
-      
-        <li data-target="#myCarousel" data-slide-to="1"></li>
         
-      
-        <li data-target="#myCarousel" data-slide-to="2"></li>
+          <h2 class="post-title" itemprop="name headline">MYSQL——27道练习题</h2>
         
-      
-      </ol>
 
-      <!-- 轮播（Carousel）项目 -->
-      <div class="carousel-inner" style="height: 24%; border-radius: 10px; width: 100%;">
-       
-       
-          
-          <a class="item active" href="https://gylq.gitee.io/" target="_blank" style="height: 100%;">
+        <div class="post-meta">
+          <span class="post-time">
+
+             
+
+             
+
             
-            <img src="https://s1.ax1x.com/2020/10/05/0JH77T.png" class="nofancybox"  style="width: 100%; height: 100%" >
-          </a>
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-10-15T05:46:24+08:00">
+                2020-10-15
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/MySQL/" itemprop="url" rel="index">
+                    <span itemprop="name">MySQL</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2020/10/15/MYSQL%E2%80%94%E2%80%9427%E9%81%93%E7%BB%83%E4%B9%A0%E9%A2%98/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2020/10/15/MYSQL%E2%80%94%E2%80%9427%E9%81%93%E7%BB%83%E4%B9%A0%E9%A2%98/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
           
           
+             <span id="/2020/10/15/MYSQL%E2%80%94%E2%80%9427%E9%81%93%E7%BB%83%E4%B9%A0%E9%A2%98/" class="leancloud_visitors" data-flag-title="MYSQL——27道练习题">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          <!--
+          
+          -->
+
+          
+            <span class="post-wordcount">
+              
+                
+                  <span class="post-meta-divider">|</span>
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                <span title="字数">
+                  3.3k
+                </span>
+              
+
+              
+
+              
+            </span>
+          
+
+          <!-- 隐藏文章内标题下，内容描述
+          
+          -->
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
       
-          
-            <a class="item" href="https://gylq.gitee.io/time/" target="_blank" style="height: 100%;">
-              <img src="https://s1.ax1x.com/2020/10/05/0J76JJ.png" class="nofancybox"  style="width: 100%; height: 100%;" >
-            </a>
+      
+
+      
+        <h1 id="1、取得每个部门最高薪水的人员名称"><a href="#1、取得每个部门最高薪水的人员名称" class="headerlink" title="1、取得每个部门最高薪水的人员名称"></a>1、取得每个部门最高薪水的人员名称</h1><p><em>第一步：取得每个部门最高薪水</em>(按照部门编号分组找出每一个部门最大值)</p>
+<pre><code>select 
+    deptno,max(sal) maxsal 
+from 
+    emp 
+group by 
+    deptno;</code></pre><p>+——–+———-+<br>| deptno | maxsal   |<br>+——–+———-+<br>|     10 |  5000.00 |<br>|     20 |  3000.00 |<br>|     30 |  2850.00 |<br>+——–+———-+<br>第二步：自连接（将以上的查询结果当做一张临时表t，t和emp表连接，条件:t.deptno=e.deptno and t.maxsal = e.sal)</p>
+<pre><code>select 
+    e.ename,t.* 
+from 
+    emp e 
+join 
+    (select deptno,max(sal) maxsal from emp group by deptno) t 
+on 
+    t.maxsal=e.sal and t.deptno=e.deptno;</code></pre><p>+——-+——–+———+<br>| ename | deptno | maxsal  |<br>+——-+——–+———+<br>| BLAKE |     30 | 2850.00 |<br>| SCOTT |     20 | 3000.00 |<br>| KING  |     10 | 5000.00 |<br>| FORD  |     20 | 3000.00 |<br>+——-+——–+———+</p>
+<h1 id="2、哪些人的薪水在部门的平均薪资之上"><a href="#2、哪些人的薪水在部门的平均薪资之上" class="headerlink" title="2、哪些人的薪水在部门的平均薪资之上"></a>2、哪些人的薪水在部门的平均薪资之上</h1><p><em>第一步:找出每个部门的平均薪资</em></p>
+<pre><code>select 
+    deptno,avg(sal) avgsal
+from 
+    emp
+group by
+    deptno;</code></pre><p>+——–+————-+<br>| deptno | avgsal      |<br>+——–+————-+<br>|     10 | 2916.666667 |<br>|     20 | 2175.000000 |<br>|     30 | 1566.666667 |<br>+——–+————-+</p>
+<p><em>第二步：将以上查询结果当做t表，t和emp表连接</em><br><strong>条件：部门编号相同，并且emp的sal大于t表的avgsal</strong></p>
+<pre><code>select 
+    e.ename,t.deptno,e.sal
+from 
+    emp e 
+join
+    (select deptno,avg(sal) avgsal from emp group by deptno) t
+on
+    e.sal&gt;t.avgsal and e.deptno=t.deptno;</code></pre><p>+——-+——–+———+<br>| ename | deptno | sal     |<br>+——-+——–+———+<br>| ALLEN |     30 | 1600.00 |<br>| JONES |     20 | 2975.00 |<br>| BLAKE |     30 | 2850.00 |<br>| SCOTT |     20 | 3000.00 |<br>| KING  |     10 | 5000.00 |<br>| FORD  |     20 | 3000.00 |<br>+——-+——–+———+</p>
+<h1 id="3、取得部门中（所有人的）平均的薪资等级"><a href="#3、取得部门中（所有人的）平均的薪资等级" class="headerlink" title="3、取得部门中（所有人的）平均的薪资等级"></a>3、取得部门中（所有人的）平均的薪资等级</h1><blockquote>
+<p>平均的薪水等级：先计算每一个薪水的等级，然后找出薪水等级的平均值。<br>平均薪水的等级：先计算平均薪水，然后找出每个平均薪水的等级值。</p>
+</blockquote>
+<p><em>第一步：找出每个人的薪水等级</em></p>
+<pre><code>select
+    e.ename,e.sal,e.deptno,s.grade
+from
+    emp e
+join
+    salgrade s
+on
+    e.sal between s.losal and s.hisal
+order by
+    deptno;</code></pre><p>+——–+———+——–+——-+<br>| ename  | sal     | deptno | grade |<br>+——–+———+——–+——-+<br>| CLARK  | 2450.00 |     10 |     4 |<br>| KING   | 5000.00 |     10 |     5 |<br>| MILLER | 1300.00 |     10 |     2 |<br>| ADAMS  | 1100.00 |     20 |     1 |<br>| SCOTT  | 3000.00 |     20 |     4 |<br>| FORD   | 3000.00 |     20 |     4 |<br>| JONES  | 2975.00 |     20 |     4 |<br>| SMITH  |  800.00 |     20 |     1 |<br>| ALLEN  | 1600.00 |     30 |     3 |<br>| JAMES  |  950.00 |     30 |     1 |<br>| WARD   | 1250.00 |     30 |     2 |<br>| MARTIN | 1250.00 |     30 |     2 |<br>| TURNER | 1500.00 |     30 |     3 |<br>| BLAKE  | 2850.00 |     30 |     4 |<br>+——–+———+——–+——-+</p>
+<p><em>基于以上的结果继续按照deptno分组，求grade的平均值</em></p>
+<pre><code>select
+    e.deptno,avg(s.grade) avggrade
+from
+    emp e
+join
+    salgrade s
+on
+    e.sal between s.losal and s.hisal
+group by
+    e.deptno;</code></pre><p>+——–+———-+<br>| deptno | avggrade |<br>+——–+———-+<br>|     10 |   3.6667 |<br>|     20 |   2.8000 |<br>|     30 |   2.5000 |<br>+——–+———-+</p>
+<h1 id="4、不准用组函数（MAX），取得最高薪水"><a href="#4、不准用组函数（MAX），取得最高薪水" class="headerlink" title="4、不准用组函数（MAX），取得最高薪水"></a>4、不准用组函数（MAX），取得最高薪水</h1><p><em>第一种，降序，limit 1</em></p>
+<pre><code>select ename,sal from emp order by sal desc limit 1;</code></pre><p>+——-+———+<br>| ename | sal     |<br>+——-+———+<br>| KING  | 5000.00 |<br>+——-+———+</p>
+<p><em>第二种，表的自连接</em></p>
+<blockquote>
+<p>select sal from emp where sal not in(select distinct a.sal from (select sal from emp) a join (select sal from emp) b on a.sal&lt;b.sal);<br>+———+<br>| sal     |<br>+———+<br>| 5000.00 |<br>+———+<br>select distinct a.sal from (select sal from emp) a join (select sal from emp) b on a.sal&lt;b.sal;<br>a表<br>+———+<br>|  800.00 |<br>| 1600.00 |<br>| 1250.00 |<br>| 2975.00 |<br>| 1250.00 |<br>| 2850.00 |<br>| 2450.00 |<br>| 3000.00 |<br>| 5000.00 |<br>| 1500.00 |<br>| 1100.00 |<br>|  950.00 |<br>| 3000.00 |<br>| 1300.00 |<br>+———+<br>b表<br>+———+<br>|  800.00 |<br>| 1600.00 |<br>| 1250.00 |<br>| 2975.00 |<br>| 1250.00 |<br>| 2850.00 |<br>| 2450.00 |<br>| 3000.00 |<br>| 5000.00 |<br>| 1500.00 |<br>| 1100.00 |<br>|  950.00 |<br>| 3000.00 |<br>| 1300.00 |<br>+———+</p>
+</blockquote>
+<h1 id="5、取得平均薪水最高的部门的部门编号"><a href="#5、取得平均薪水最高的部门的部门编号" class="headerlink" title="5、取得平均薪水最高的部门的部门编号"></a>5、取得平均薪水最高的部门的部门编号</h1><p><em>第一种方案 //max</em><br><strong>第一步：取得每个部门的平均薪水</strong></p>
+<pre><code>select deptno,avg(sal) avgsal from emp group by deptno;</code></pre><p>+——–+————-+<br>| deptno | avgsal      |<br>+——–+————-+<br>|     10 | 2916.666667 |<br>|     20 | 2175.000000 |<br>|     30 | 1566.666667 |<br>+——–+————-+<br><strong>第二步把上表当做临时表，然后用max进行求最大值的部门编号</strong><br>        select t.deptno,max(t.avgsal) maxavgsal from (select deptno,avg(sal) avgsal from emp group by deptno) t;<br>+——–+————-+<br>| deptno | maxavgsal   |<br>+——–+————-+<br>|     10 | 2916.666667 |<br>+——–+————-+</p>
+<p><em>第二个方案 //降序取第一个</em><br><strong>第一步：取得每个部门的平均薪水</strong><br><strong>第二步：将上表当做临时表，通过avgsal进行降序排序，然后limit 1取第一行</strong></p>
+<pre><code>select deptno,avg(sal) avgsal from emp group by deptno order by avgsal desc limit 1;</code></pre><p>+——–+————-+<br>| deptno | avgsal      |<br>+——–+————-+<br>|     10 | 2916.666667 |<br>+——–+————-+</p>
+<h1 id="6、取得平均薪水最高的部门的部门名称"><a href="#6、取得平均薪水最高的部门的部门名称" class="headerlink" title="6、取得平均薪水最高的部门的部门名称"></a>6、取得平均薪水最高的部门的部门名称</h1><p><em>第一步，取得平均薪水最高的部门</em></p>
+<pre><code>select avg(sal) 平均薪水, deptno from emp group by deptno order by 平均薪水 desc limit 1;</code></pre><p>+————-+——–+<br>| 平均薪水    | deptno |<br>+————-+——–+<br>| 2916.666667 |     10 |<br>+————-+——–+</p>
+<p><em>第二步，取得最高的部门名称</em></p>
+<pre><code>select d.dname,t.平均薪水 from dept d join (select avg(sal) 平均薪水, deptno from emp group by deptno order by 平均薪水 desc limit 1) t on d.deptno=t.deptno;</code></pre><p>+————+————-+<br>| dname      | 平均薪水    |<br>+————+————-+<br>| ACCOUNTING | 2916.666667 |<br>+————+————-+</p>
+<h1 id="7、求平均薪水的等级最低的部门的部门名称"><a href="#7、求平均薪水的等级最低的部门的部门名称" class="headerlink" title="7、求平均薪水的等级最低的部门的部门名称"></a>7、求平均薪水的等级最低的部门的部门名称</h1><p><em>第一步，求平均薪水的等级最低的部门</em></p>
+<pre><code>select t.*,s.grade from salgrade s join (select avg(sal) avgsal, deptno from emp group by deptno) t on t.avgsal between losal and hisal order by grade asc limit 1;</code></pre><p>+————-+——–+——-+<br>| avgsal      | deptno | grade |<br>+————-+——–+——-+<br>| 1566.666667 |     30 |     3 |<br>+————-+——–+——-+</p>
+<p><em>第二步，找出部门名称</em><br>        select d.dname, p.grade from dept d join(select t.*,s.grade from salgrade s join (select avg(sal) avgsal, deptno from emp group by deptno) t on t.avgsal between losal and hisal order by grade asc limit 1) p on d.deptno = p.deptno;<br>+——-+——-+<br>| dname | grade |<br>+——-+——-+<br>| SALES |     3 |<br>+——-+——-+</p>
+<h1 id="8、取得比普通员工（员工代码没有在mgr字段上出现的）的最高薪水还要高的领导人姓名"><a href="#8、取得比普通员工（员工代码没有在mgr字段上出现的）的最高薪水还要高的领导人姓名" class="headerlink" title="8、取得比普通员工（员工代码没有在mgr字段上出现的）的最高薪水还要高的领导人姓名"></a>8、取得比普通员工（员工代码没有在mgr字段上出现的）的最高薪水还要高的领导人姓名</h1><p><strong>领导</strong><br>        mysql&gt; select distinct mgr from emp;<br>        +——+<br>        | mgr  |<br>        +——+<br>        | 7902 |<br>        | 7698 |<br>        | 7839 |<br>        | 7566 |<br>        | NULL |<br>        | 7788 |<br>        | 7782 |<br>        +——+</p>
+<p><em>第一步，求出普通员工的最高薪水</em></p>
+<pre><code>select max(sal) from emp where empno not in(select distinct mgr from emp where mgr is not NULL);</code></pre><p>+———-+<br>| max(sal) |<br>+———-+<br>|  1600.00 |<br>+———-+</p>
+<p><em>第二步，求出比普通员工最高薪水还高的领导</em><br><strong>比普通员工薪水最高薪水还高的就是领导</strong><br>         select ename,sal from emp where sal&gt;(select max(sal) from emp where empno not in(select distinct mgr from emp where mgr is not NULL));<br>+——-+———+<br>| ename | sal     |<br>+——-+———+<br>| JONES | 2975.00 |<br>| BLAKE | 2850.00 |<br>| CLARK | 2450.00 |<br>| SCOTT | 3000.00 |<br>| KING  | 5000.00 |<br>| FORD  | 3000.00 |<br>+——-+———+</p>
+<h1 id="9、取得薪水最高的前五名员工"><a href="#9、取得薪水最高的前五名员工" class="headerlink" title="9、取得薪水最高的前五名员工"></a>9、取得薪水最高的前五名员工</h1><pre><code>select ename,sal from emp order by sal desc limit 0,5;</code></pre><p>+——-+———+<br>| ename | sal     |<br>+——-+———+<br>| KING  | 5000.00 |<br>| FORD  | 3000.00 |<br>| SCOTT | 3000.00 |<br>| JONES | 2975.00 |<br>| BLAKE | 2850.00 |<br>+——-+———+</p>
+<h1 id="10、取得薪水最高的第六到第十名员工"><a href="#10、取得薪水最高的第六到第十名员工" class="headerlink" title="10、取得薪水最高的第六到第十名员工"></a>10、取得薪水最高的第六到第十名员工</h1><pre><code>select ename,sal from emp order by sal desc limit 5,5;</code></pre><p>+——–+———+<br>| ename  | sal     |<br>+——–+———+<br>| CLARK  | 2450.00 |<br>| ALLEN  | 1600.00 |<br>| TURNER | 1500.00 |<br>| MILLER | 1300.00 |<br>| WARD   | 1250.00 |<br>+——–+———+</p>
+<h1 id="11、取得最后入职的5名员工"><a href="#11、取得最后入职的5名员工" class="headerlink" title="11、取得最后入职的5名员工"></a>11、取得最后入职的5名员工</h1><pre><code>select ename,hiredate from emp order by hiredate desc limit 5;</code></pre><p>+——–+————+<br>| ename  | hiredate   |<br>+——–+————+<br>| ADAMS  | 1987-05-23 |<br>| SCOTT  | 1987-04-19 |<br>| MILLER | 1982-01-23 |<br>| JAMES  | 1981-12-03 |<br>| FORD   | 1981-12-03 |<br>+——–+————+</p>
+<h1 id="12、取得每个薪水等级有多少员工"><a href="#12、取得每个薪水等级有多少员工" class="headerlink" title="12、取得每个薪水等级有多少员工"></a>12、取得每个薪水等级有多少员工</h1><p><em>第一步，找出每个员工的薪水等级</em></p>
+<pre><code>select e.ename, s.grade from emp e join salgrade s on e.sal between losal and hisal;</code></pre><p>+——–+——-+<br>| ename  | grade |<br>+——–+——-+<br>| SMITH  |     1 |<br>| ALLEN  |     3 |<br>| WARD   |     2 |<br>| JONES  |     4 |<br>| MARTIN |     2 |<br>| BLAKE  |     4 |<br>| CLARK  |     4 |<br>| SCOTT  |     4 |<br>| KING   |     5 |<br>| TURNER |     3 |<br>| ADAMS  |     1 |<br>| JAMES  |     1 |<br>| FORD   |     4 |<br>| MILLER |     2 |<br>+——–+——-+</p>
+<p><em>第二步：继续按照grade分组统计数量</em></p>
+<pre><code>select count(*), s.grade from emp e join salgrade s on e.sal between losal and hisal group by s.grade;</code></pre><p>+———-+——-+<br>| count(*) | grade |<br>+———-+——-+<br>|        3 |     1 |<br>|        3 |     2 |<br>|        2 |     3 |<br>|        5 |     4 |<br>|        1 |     5 |<br>+———-+——-+</p>
+<h1 id="13、面试题"><a href="#13、面试题" class="headerlink" title="13、面试题"></a>13、面试题</h1><blockquote>
+<p><strong>有3给表 S（学生表）,C（课程表），SC（学生选课表）S（SNO，SNAME）代号（学号，姓名）</strong><br><strong>C（CNO，CNAME，CTEACHER）代表（课号，课名，教师）</strong><br><strong>SC（SNO，CNO，SCGRADE）代表（学号，课号，成绩）</strong><br><strong>问题：</strong><br><em>1、找出没选过“黎明”老师的所有学生姓名。</em><br><em>2、列出2门以上（含两门）不及格学生姓名及平均成绩。</em><br><em>3、即学过1号课程又学过2号课所有学生的姓名。</em><br><strong>请用标准SQL语言写出答案，方言也行（请说明是使用说明方言）。</strong></p>
+</blockquote>
+<h1 id="14、列出所有员工及领导的姓名"><a href="#14、列出所有员工及领导的姓名" class="headerlink" title="14、列出所有员工及领导的姓名"></a>14、列出所有员工及领导的姓名</h1><pre><code>select a.ename 员工, b.ename 领导 from emp a left join emp b on a.mgr = b.empno;</code></pre><p>+——–+——-+<br>| 员工   | 领导  |<br>+——–+——-+<br>| SMITH  | FORD  |<br>| ALLEN  | BLAKE |<br>| WARD   | BLAKE |<br>| JONES  | KING  |<br>| MARTIN | BLAKE |<br>| BLAKE  | KING  |<br>| CLARK  | KING  |<br>| SCOTT  | JONES |<br>| KING   | NULL  |<br>| TURNER | BLAKE |<br>| ADAMS  | SCOTT |<br>| JAMES  | BLAKE |<br>| FORD   | JONES |<br>| MILLER | CLARK |<br>+——–+——-+</p>
+<h1 id="15、列出受雇日期早于其直接上级的所有员工的编号，姓名，部门名称"><a href="#15、列出受雇日期早于其直接上级的所有员工的编号，姓名，部门名称" class="headerlink" title="15、列出受雇日期早于其直接上级的所有员工的编号，姓名，部门名称"></a>15、列出受雇日期早于其直接上级的所有员工的编号，姓名，部门名称</h1><p><em>第一步，求出员工与其上级员工</em></p>
+<pre><code>select a.ename,b.ename from emp a join emp b on a.mgr = b.empno;</code></pre><p>+——–+——-+<br>| ename  | ename |<br>+——–+——-+<br>| SMITH  | FORD  |<br>| ALLEN  | BLAKE |<br>| WARD   | BLAKE |<br>| JONES  | KING  |<br>| MARTIN | BLAKE |<br>| BLAKE  | KING  |<br>| CLARK  | KING  |<br>| SCOTT  | JONES |<br>| TURNER | BLAKE |<br>| ADAMS  | SCOTT |<br>| JAMES  | BLAKE |<br>| FORD   | JONES |<br>| MILLER | CLARK |<br>+——–+——-+</p>
+<p><em>第二步，对比a,b两个表hiredate的大小，找出受雇日期早于其领导的人员</em></p>
+<pre><code>select a.ename from emp a join emp b on a.mgr = b.empno where a.hiredate&lt;b.hiredate;</code></pre><p>+——-+<br>| ename |<br>+——-+<br>| SMITH |<br>| ALLEN |<br>| WARD  |<br>| JONES |<br>| BLAKE |<br>| CLARK |<br>+——-+</p>
+<p><em>第三步，利用自连接dept进行输出dname</em></p>
+<pre><code>select a.ename,a.empno,d.dname from emp a join emp b on a.mgr = b.empno join dept d on a.deptno = d.deptno where a.hiredate&lt;b.hiredate;</code></pre><p>+——-+——-+————+<br>| ename | empno | dname      |<br>+——-+——-+————+<br>| SMITH |  7369 | RESEARCH   |<br>| ALLEN |  7499 | SALES      |<br>| WARD  |  7521 | SALES      |<br>| JONES |  7566 | RESEARCH   |<br>| BLAKE |  7698 | SALES      |<br>| CLARK |  7782 | ACCOUNTING |<br>+——-+——-+————+</p>
+<h1 id="16、列出部门名称和这些部门的员工信息，同时列出那些没有员工的部门"><a href="#16、列出部门名称和这些部门的员工信息，同时列出那些没有员工的部门" class="headerlink" title="16、列出部门名称和这些部门的员工信息，同时列出那些没有员工的部门"></a>16、列出部门名称和这些部门的员工信息，同时列出那些没有员工的部门</h1><pre><code>select d.dname, e.* from emp e right join dept d on e.deptno = d.deptno;</code></pre><p>+————+——-+——–+———–+——+————+———+———+——–+<br>| dname      | EMPNO | ENAME  | JOB       | MGR  | HIREDATE   | SAL     | COMM    | DEPTNO |<br>+————+——-+——–+———–+——+————+———+———+——–+<br>| RESEARCH   |  7369 | SMITH  | CLERK     | 7902 | 1980-12-17 |  800.00 |    NULL |     20 |<br>| SALES      |  7499 | ALLEN  | SALESMAN  | 7698 | 1981-02-20 | 1600.00 |  300.00 |     30 |<br>| SALES      |  7521 | WARD   | SALESMAN  | 7698 | 1981-02-22 | 1250.00 |  500.00 |     30 |<br>| RESEARCH   |  7566 | JONES  | MANAGER   | 7839 | 1981-04-02 | 2975.00 |    NULL |     20 |<br>| SALES      |  7654 | MARTIN | SALESMAN  | 7698 | 1981-09-28 | 1250.00 | 1400.00 |     30 |<br>| SALES      |  7698 | BLAKE  | MANAGER   | 7839 | 1981-05-01 | 2850.00 |    NULL |     30 |<br>| ACCOUNTING |  7782 | CLARK  | MANAGER   | 7839 | 1981-06-09 | 2450.00 |    NULL |     10 |<br>| RESEARCH   |  7788 | SCOTT  | ANALYST   | 7566 | 1987-04-19 | 3000.00 |    NULL |     20 |<br>| ACCOUNTING |  7839 | KING   | PRESIDENT | NULL | 1981-11-17 | 5000.00 |    NULL |     10 |<br>| SALES      |  7844 | TURNER | SALESMAN  | 7698 | 1981-09-08 | 1500.00 |    0.00 |     30 |<br>| RESEARCH   |  7876 | ADAMS  | CLERK     | 7788 | 1987-05-23 | 1100.00 |    NULL |     20 |<br>| SALES      |  7900 | JAMES  | CLERK     | 7698 | 1981-12-03 |  950.00 |    NULL |     30 |<br>| RESEARCH   |  7902 | FORD   | ANALYST   | 7566 | 1981-12-03 | 3000.00 |    NULL |     20 |<br>| ACCOUNTING |  7934 | MILLER | CLERK     | 7782 | 1982-01-23 | 1300.00 |    NULL |     10 |<br>| OPERATIONS |  NULL | NULL   | NULL      | NULL | NULL       |    NULL |    NULL |   NULL |<br>+————+——-+——–+———–+——+————+———+———+——–+</p>
+<h1 id="17、列出至少有5给员工的所有部门"><a href="#17、列出至少有5给员工的所有部门" class="headerlink" title="17、列出至少有5给员工的所有部门"></a>17、列出至少有5给员工的所有部门</h1><pre><code>mysql&gt; select count(*),d.dname from emp e join dept d on e.deptno = d.deptno group by d.dname having count(*)&gt;=5;</code></pre><p>+———-+———-+<br>| count(*) | dname    |<br>+———-+———-+<br>|        5 | RESEARCH |<br>|        6 | SALES    |<br>+———-+———-+</p>
+<h1 id="18、列出薪金比“SMITH”多的所有员工信息"><a href="#18、列出薪金比“SMITH”多的所有员工信息" class="headerlink" title="18、列出薪金比“SMITH”多的所有员工信息"></a>18、列出薪金比“SMITH”多的所有员工信息</h1><pre><code>select * from emp where sal&gt;(select sal from emp where ename=&apos;smith&apos;);</code></pre><p>+——-+——–+———–+——+————+———+———+——–+<br>| EMPNO | ENAME  | JOB       | MGR  | HIREDATE   | SAL     | COMM    | DEPTNO |<br>+——-+——–+———–+——+————+———+———+——–+<br>|  7499 | ALLEN  | SALESMAN  | 7698 | 1981-02-20 | 1600.00 |  300.00 |     30 |<br>|  7521 | WARD   | SALESMAN  | 7698 | 1981-02-22 | 1250.00 |  500.00 |     30 |<br>|  7566 | JONES  | MANAGER   | 7839 | 1981-04-02 | 2975.00 |    NULL |     20 |<br>|  7654 | MARTIN | SALESMAN  | 7698 | 1981-09-28 | 1250.00 | 1400.00 |     30 |<br>|  7698 | BLAKE  | MANAGER   | 7839 | 1981-05-01 | 2850.00 |    NULL |     30 |<br>|  7782 | CLARK  | MANAGER   | 7839 | 1981-06-09 | 2450.00 |    NULL |     10 |<br>|  7788 | SCOTT  | ANALYST   | 7566 | 1987-04-19 | 3000.00 |    NULL |     20 |<br>|  7839 | KING   | PRESIDENT | NULL | 1981-11-17 | 5000.00 |    NULL |     10 |<br>|  7844 | TURNER | SALESMAN  | 7698 | 1981-09-08 | 1500.00 |    0.00 |     30 |<br>|  7876 | ADAMS  | CLERK     | 7788 | 1987-05-23 | 1100.00 |    NULL |     20 |<br>|  7900 | JAMES  | CLERK     | 7698 | 1981-12-03 |  950.00 |    NULL |     30 |<br>|  7902 | FORD   | ANALYST   | 7566 | 1981-12-03 | 3000.00 |    NULL |     20 |<br>|  7934 | MILLER | CLERK     | 7782 | 1982-01-23 | 1300.00 |    NULL |     10 |<br>+——-+——–+———–+——+————+———+———+——–+</p>
+<h1 id="19、列出所有“CLERK”（办事员）的姓名及其部门名称，部门的人数。"><a href="#19、列出所有“CLERK”（办事员）的姓名及其部门名称，部门的人数。" class="headerlink" title="19、列出所有“CLERK”（办事员）的姓名及其部门名称，部门的人数。"></a>19、列出所有“CLERK”（办事员）的姓名及其部门名称，部门的人数。</h1><p><em>第一步，列出所有“CLERK”的人员</em></p>
+<pre><code>select e.ename,e.job,d.dname from emp e join dept d on d.deptno = e.deptno where e.job=&apos;CLERK&apos;;</code></pre><p>+——–+——-+————+<br>| ename  | job   | dname      |<br>+——–+——-+————+<br>| SMITH  | CLERK | RESEARCH   |<br>| ADAMS  | CLERK | RESEARCH   |<br>| JAMES  | CLERK | SALES      |<br>| MILLER | CLERK | ACCOUNTING |<br>+——–+——-+————+</p>
+<p><em>第二步，找出每个部门的部门人数作为t2表，上表作为t1表进行内连接</em></p>
+<pre><code>select count(*), d.dname from emp e join dept d on e.deptno = d.deptno group by d.dname;</code></pre><p>+———-+————+<br>| count(*) | dname      |<br>+———-+————+<br>|        3 | ACCOUNTING |<br>|        5 | RESEARCH   |<br>|        6 | SALES      |<br>+———-+————+</p>
+<p><em>第三步，自连接t1和t2表</em></p>
+<pre><code>select t1.ename,t1.dname,t2.count from (select e.ename,e.job,d.dname from emp e join dept d on d.deptno = e.deptno where e.job=&apos;CLERK&apos;) t1 join (select count(*) count, d.dname from emp e join dept d on e.deptno = d.deptno group by d.dname) t2 on t1.dname = t2.dname;</code></pre><p>+——–+————+——-+<br>| ename  | dname      | count |<br>+——–+————+——-+<br>| SMITH  | RESEARCH   |     5 |<br>| ADAMS  | RESEARCH   |     5 |<br>| JAMES  | SALES      |     6 |<br>| MILLER | ACCOUNTING |     3 |<br>+——–+————+——-+</p>
+<h1 id="20、列出最低薪金大于1500的各种工作及从事此工作的全部雇员人数。"><a href="#20、列出最低薪金大于1500的各种工作及从事此工作的全部雇员人数。" class="headerlink" title="20、列出最低薪金大于1500的各种工作及从事此工作的全部雇员人数。"></a>20、列出最低薪金大于1500的各种工作及从事此工作的全部雇员人数。</h1><p><em>按照工作岗位分组求最小值。</em></p>
+<pre><code>select job, count(*) from emp group by job having min(sal)&gt;1500;</code></pre><p>+———–+———-+<br>| job       | count(*) |<br>+———–+———-+<br>| ANALYST   |        2 |<br>| MANAGER   |        3 |<br>| PRESIDENT |        1 |<br>+———–+———-+</p>
+<h1 id="21、列出在部门“SALES”-销售部-工作的员工的姓名，假定不知道销售部的部门编号。"><a href="#21、列出在部门“SALES”-销售部-工作的员工的姓名，假定不知道销售部的部门编号。" class="headerlink" title="21、列出在部门“SALES”(销售部)工作的员工的姓名，假定不知道销售部的部门编号。"></a>21、列出在部门“SALES”(销售部)工作的员工的姓名，假定不知道销售部的部门编号。</h1><pre><code>select deptno from dept where dname=&apos;SALES&apos;;</code></pre><p>+——–+<br>| deptno |<br>+——–+<br>|     30 |<br>+——–+<br>        select ename from emp where deptno =(select deptno from dept where dname=’SALES’);<br>+——–+<br>| ename  |<br>+——–+<br>| ALLEN  |<br>| WARD   |<br>| MARTIN |<br>| BLAKE  |<br>| TURNER |<br>| JAMES  |<br>+——–+</p>
+<h1 id="22、列出薪金高于公司平均薪金的所有员工，所在部门，上级领导，雇员的工资等级。"><a href="#22、列出薪金高于公司平均薪金的所有员工，所在部门，上级领导，雇员的工资等级。" class="headerlink" title="22、列出薪金高于公司平均薪金的所有员工，所在部门，上级领导，雇员的工资等级。"></a>22、列出薪金高于公司平均薪金的所有员工，所在部门，上级领导，雇员的工资等级。</h1><p><em>第一步，列出薪金高于公司平均薪资的所有员工</em></p>
+<pre><code>select e.* from emp e where sal&gt;(select avg(sal) avgsal from emp);</code></pre><p>+——-+——-+———–+——+————+———+——+——–+<br>| EMPNO | ENAME | JOB       | MGR  | HIREDATE   | SAL     | COMM | DEPTNO |<br>+——-+——-+———–+——+————+———+——+——–+<br>|  7566 | JONES | MANAGER   | 7839 | 1981-04-02 | 2975.00 | NULL |     20 |<br>|  7698 | BLAKE | MANAGER   | 7839 | 1981-05-01 | 2850.00 | NULL |     30 |<br>|  7782 | CLARK | MANAGER   | 7839 | 1981-06-09 | 2450.00 | NULL |     10 |<br>|  7788 | SCOTT | ANALYST   | 7566 | 1987-04-19 | 3000.00 | NULL |     20 |<br>|  7839 | KING  | PRESIDENT | NULL | 1981-11-17 | 5000.00 | NULL |     10 |<br>|  7902 | FORD  | ANALYST   | 7566 | 1981-12-03 | 3000.00 | NULL |     20 |<br>+——-+——-+———–+——+————+———+——+——–+</p>
+<p><em>第二步，列出所在部门，上级领导，薪资等级</em></p>
+<pre><code>select d.dname 部门,t2.ename 上级领导, t1.ename 员工姓名,s.grade from (select e.* from emp e where sal&gt;(select avg(sal) avgsal from emp)) t1 left join dept d on t1.deptno = d.deptno left join (select e.* from emp e where sal&gt;(select avg(sal) avgsal from emp)) t2 on t1.mgr=t2.empno left join salgrade s on t1.sal between losal and hisal;</code></pre><p>+————+———-+———-+——-+<br>| 部门       | 上级领导 | 员工姓名 | grade |<br>+————+———-+———-+——-+<br>| ACCOUNTING | KING     | CLARK    |     4 |<br>| RESEARCH   | KING     | JONES    |     4 |<br>| RESEARCH   | JONES    | SCOTT    |     4 |<br>| RESEARCH   | JONES    | FORD     |     4 |<br>| SALES      | KING     | BLAKE    |     4 |<br>| ACCOUNTING | NULL     | KING     |     5 |<br>+————+———-+———-+——-+</p>
+<h1 id="23、列出各个部门的MANAGER（领导）最低薪金"><a href="#23、列出各个部门的MANAGER（领导）最低薪金" class="headerlink" title="23、列出各个部门的MANAGER（领导）最低薪金"></a>23、列出各个部门的MANAGER（领导）最低薪金</h1><pre><code>select min(sal),deptno from emp where job=&apos;MANAGER&apos; group by deptno;</code></pre><p>+———-+——–+<br>| min(sal) | deptno |<br>+———-+——–+<br>|  2450.00 |     10 |<br>|  2975.00 |     20 |<br>|  2850.00 |     30 |<br>+———-+——–+</p>
+<h1 id="24、列出所有员工的年工资，按年薪从低到高排序"><a href="#24、列出所有员工的年工资，按年薪从低到高排序" class="headerlink" title="24、列出所有员工的年工资，按年薪从低到高排序"></a>24、列出所有员工的年工资，按年薪从低到高排序</h1><pre><code>select ename, (sal+ifnull(comm,0))*12 yearsal from emp order by yearsal;</code></pre><p>+——–+———-+<br>| ename  | yearsal  |<br>+——–+———-+<br>| SMITH  |  9600.00 |<br>| JAMES  | 11400.00 |<br>| ADAMS  | 13200.00 |<br>| MILLER | 15600.00 |<br>| TURNER | 18000.00 |<br>| WARD   | 21000.00 |<br>| ALLEN  | 22800.00 |<br>| CLARK  | 29400.00 |<br>| MARTIN | 31800.00 |<br>| BLAKE  | 34200.00 |<br>| JONES  | 35700.00 |<br>| SCOTT  | 36000.00 |<br>| FORD   | 36000.00 |<br>| KING   | 60000.00 |<br>+——–+———-+</p>
+<h1 id="25、求出员工领导的薪水超过3000的员工名称与领导名称"><a href="#25、求出员工领导的薪水超过3000的员工名称与领导名称" class="headerlink" title="25、求出员工领导的薪水超过3000的员工名称与领导名称"></a>25、求出员工领导的薪水超过3000的员工名称与领导名称</h1><pre><code>select a.ename, b.ename from emp a join emp b on a.mgr = b.empno where b.sal&gt;3000;</code></pre><p>+——-+——-+<br>| ename | ename |<br>+——-+——-+<br>| JONES | KING  |<br>| BLAKE | KING  |<br>| CLARK | KING  |<br>+——-+——-+</p>
+<h1 id="26、求出部门名称中，带‘S’字符的部门员工的工资合计、部门人数"><a href="#26、求出部门名称中，带‘S’字符的部门员工的工资合计、部门人数" class="headerlink" title="26、求出部门名称中，带‘S’字符的部门员工的工资合计、部门人数"></a>26、求出部门名称中，带‘S’字符的部门员工的工资合计、部门人数</h1><pre><code>select d.dname, ifnull(sum(e.sal),&apos; &apos;),count(e.ename) from emp e right join (select * from dept where dname like &apos;%s%&apos;) d on e.deptno = d.deptno group by d.dname;</code></pre><p>+————+————————+—————-+<br>| DNAME      | ifnull(sum(e.sal),’ ‘) | count(e.ename) |<br>+————+————————+—————-+<br>| OPERATIONS |                        |              0 |<br>| RESEARCH   | 10875.00               |              5 |<br>| SALES      | 9400.00                |              6 |<br>+————+————————+—————-+</p>
+<h1 id="27、给任职日期超过30年的员工加薪10"><a href="#27、给任职日期超过30年的员工加薪10" class="headerlink" title="27、给任职日期超过30年的员工加薪10%"></a>27、给任职日期超过30年的员工加薪10%</h1><pre><code>update emp set sal = sal * 1.1 where timestampdiff(year,hiredate,now());</code></pre><p>Query OK, 14 rows affected (0.02 sec)<br>Rows matched: 14  Changed: 14  Warnings: 0</p>
+
+
         
+
       
+    </div>
+
+      <!-- 相关文章推荐 -->
+     
           
-            <a class="item" href="http://gylq.gitee.io/daily/" target="_blank" style="height: 100%;">
-              <img src="https://s1.ax1x.com/2020/10/05/0J7yi4.png" class="nofancybox"  style="width: 100%; height: 100%;" >
-            </a>
-        
+
+
+     
+
+    
+    
+    
+
+    <div>
+          
+            
+<div class="my_post_copyright">
+  <script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
+
+  <!-- JS库 sweetalert 可修改路径 -->
+  <script src="https://cdn.bootcss.com/jquery/2.0.0/jquery.min.js"></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <p><span>本文标题:</span><a href="/2020/10/15/MYSQL%E2%80%94%E2%80%9427%E9%81%93%E7%BB%83%E4%B9%A0%E9%A2%98/">MYSQL——27道练习题</a></p>
+  <p><span>文章作者:</span><a href="/" title="访问 孤桜懶契 的个人博客">孤桜懶契</a></p>
+  <p><span>发布时间:</span>2020年10月15日 - 05:46:24</p>
+  <p><span>最后更新:</span>2020年10月21日 - 21:09:37</p>
+  <p><span>原始链接:</span><a href="/2020/10/15/MYSQL%E2%80%94%E2%80%9427%E9%81%93%E7%BB%83%E4%B9%A0%E9%A2%98/" title="MYSQL——27道练习题">https://gylq.gitee.io/2020/10/15/MYSQL%E2%80%94%E2%80%9427%E9%81%93%E7%BB%83%E4%B9%A0%E9%A2%98/</a>
+    <span class="copy-path"  title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="https://gylq.gitee.io/2020/10/15/MYSQL%E2%80%94%E2%80%9427%E9%81%93%E7%BB%83%E4%B9%A0%E9%A2%98/"  aria-label="复制成功！"></i></span>
+  </p>
+  <p><span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" title="Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)">署名-非商业性使用-禁止演绎 4.0 国际</a> 转载请保留原文链接及作者。</p>
+</div>
+<script>
+    var clipboard = new Clipboard('.fa-clipboard');
+    $(".fa-clipboard").click(function(){
+      clipboard.on('success', function(){
+        swal({
+          title: "",
+          text: '复制成功',
+          icon: "success",
+          showConfirmButton: true
+          });
+    });
+    });
+</script>
+
+
+          
+    </div>
+
+    
+
+    <div>
       
+        <div>
+    
+        <div class="read-over">-------------------本文结束 <i class="fa fa-paw"></i> 感谢您的阅读-------------------</div>
+    
+</div>
+
+      
+    </div>
+
+    
+      <div>
+        <div class="share_reward">
+  <div>坚持原创技术分享，感谢您的支持和鼓励！</div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>打赏</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="/images/wechatpay.jpg" alt="孤桜懶契 微信支付"/>
+        <p>微信支付</p>
       </div>
+    
 
-      <!-- 轮播（Carousel）导航 -->
-      <a class="left carousel-control" data-target="#myCarousel" href="javascript:void(0);" role="button" data-slide="prev">
-          <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-      </a>
-      <a class="right carousel-control" data-target="#myCarousel" href="javascript:void(0);" role="button" data-slide="next">
-          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-      </a>
+    
+      <div id="alipay" style="display: inline-block">
+        <img id="alipay_qr" src="/images/alipay.jpg" alt="孤桜懶契 支付宝"/>
+        <p>支付宝</p>
+      </div>
+    
 
-	  </div>
+    
 
-	<div  class="rights" style="width: 30%; height: 24%; margin-right: 15px;margin-left: 0px;float: right;">
+  </div>
+</div>
 
-  	   <!-- 天气插件 -->
-  	   <!-- 会有http的链接
-       <iframe width="300px" scrolling="no" height="50px" frameborder="0" allowtransparency="true" src="https://i.tianqi.com/index.php?c=code&id=12&color=%23&bdc=%23&icon=1&py=beijing&num=2&site=12"></iframe>
-       -->
+      </div>
+    
 
-       <!-- https://tianqi.2345.com/plugin/setting.htm -->
-       <!-- <iframe allowtransparency="true" frameborder="0" width="290" height="75" scrolling="no" src="//tianqi.2345.com/plugin/widget/index.htm?s=2&z=2&t=0&v=0&d=2&bd=0&k=000000&f=&ltf=009944&htf=cc0000&q=1&e=1&a=1&c=54511&w=290&h=75&align=left"></iframe> -->
-       <iframe allowtransparency="true" frameborder="0" width="300" height="55" scrolling="no" src="//tianqi.2345.com/plugin/widget/index.htm?s=2&z=3&t=1&v=2&d=1&bd=0&k=000000&f=&ltf=009944&htf=cc0000&q=1&e=1&a=1&c=54511&w=300&h=55&align=left"></iframe>
+    
 
-  	   <!-- 时光留影 -->
-  	   <div class="my-carousel">
-         <a href="http://gylq.gitee.io/time/" target="_blank">
-            <img class="right-siders nofancybox" src="https://s1.ax1x.com/2020/07/26/apz9mD.jpg" width="100%"/>
-         </a>
-  	   </div>
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/%E7%9F%A5%E8%AF%86%E6%8B%93%E5%B1%95/" rel="tag"> <i class="fa fa-tag"></i> 知识拓展</a>
+          
+        </div>
+      
 
-  	   <!-- 个人日志-->
-  	   <div class="my-carousel">
-         <a href="http://gylq.gitee.io/daily/" target="_blank">
-           <img class="right-siders nofancybox" src="https://s1.ax1x.com/2020/10/05/0JoB60.png"/>
-         </a>
-  	   </div>
+      
+      
+      
 
-  	  <!-- 每日一句 -->
-  	  <div class="my-carousel">
-        <a href="http://gylq.gitee.io/blog/" target="_blank">
-          <img class="right-siders nofancybox" src="https://s1.ax1x.com/2020/07/26/apzC0e.png"/>
-        </a>
-  	  </div>
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2020/10/26/Monster%E7%9A%84%E5%8F%A3%E8%AF%AD%E6%96%B9%E6%B3%95/" rel="prev" title="Monster的口语方法">
+                <i class="fa fa-chevron-left"></i> Monster的口语方法
+              </a>
+            
+          </div>
 
-      <!-- 知识技术 -->
-      <div class="my-carousel">
-        <a href="https://gylq.gitee.io/"_blank">
-          <img class="right-siders nofancybox" src="https://s1.ax1x.com/2020/07/26/a96lZQ.png"/>
-        </a>
-     </div>
+          <span class="post-nav-divider"></span>
 
-   </div>
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2020/10/12/MYSQL%E8%A1%A8%E7%9A%84%E4%BD%BF%E7%94%A8/" rel="next" title="MYSQL表的使用">
+                MYSQL表的使用 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
 
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+         <div
+  data-weibo-title="分享到微博"
+  data-qq-title="分享到QQ"
+  data-douban-title="分享到豆瓣"
+  class="social-share"
+  class="share-component"
+
+
+
+  data-disabled="qzone,google+,linkedin"
+  data-description="Share.js - 一键分享到微博，QQ空间，腾讯微博，人人，豆瓣...">
+   分享到：
 </div>
 
 
-
-
-  <section id="posts" class="posts-expand">
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://gylq.gitee.io/2021/07/13/%E3%80%90ctfshow%E3%80%91web%E7%AF%87wp%E8%AE%B0%E5%BD%95%EF%BC%88%E6%8C%81%E7%BB%AD%E6%9B%B4%E6%96%B0%EF%BC%89/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="孤桜懶契">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/qq.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="孤桜懶契">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h2 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2021/07/13/%E3%80%90ctfshow%E3%80%91web%E7%AF%87wp%E8%AE%B0%E5%BD%95%EF%BC%88%E6%8C%81%E7%BB%AD%E6%9B%B4%E6%96%B0%EF%BC%89/" itemprop="url">【ctfshow】web篇wp记录（持续更新）</a></h2>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-             
-                 <i class="fa fa-thumb-tack"></i>
-                 <font color=7D26CD>置顶</font>
-                 <span class="post-meta-divider">|</span>
-             
-
-             
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2021-07-13T08:18:08+08:00">
-                2021-07-13
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/CTF/" itemprop="url" rel="index">
-                    <span itemprop="name">CTF</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2021/07/13/%E3%80%90ctfshow%E3%80%91web%E7%AF%87wp%E8%AE%B0%E5%BD%95%EF%BC%88%E6%8C%81%E7%BB%AD%E6%9B%B4%E6%96%B0%EF%BC%89/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2021/07/13/%E3%80%90ctfshow%E3%80%91web%E7%AF%87wp%E8%AE%B0%E5%BD%95%EF%BC%88%E6%8C%81%E7%BB%AD%E6%9B%B4%E6%96%B0%EF%BC%89/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-             <span id="/2021/07/13/%E3%80%90ctfshow%E3%80%91web%E7%AF%87wp%E8%AE%B0%E5%BD%95%EF%BC%88%E6%8C%81%E7%BB%AD%E6%9B%B4%E6%96%B0%EF%BC%89/" class="leancloud_visitors" data-flag-title="【ctfshow】web篇wp记录（持续更新）">
-               <span class="post-meta-divider">|</span>
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               
-                 <span class="leancloud-visitors-count"></span>
-             </span>
-          
-
-          <!--
-          
-          -->
-
-          
-            <span class="post-wordcount">
-              
-                
-                  <span class="post-meta-divider">|</span>
-                
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                <span title="字数">
-                  5.4k
-                </span>
-              
-
-              
-
-              
-            </span>
-          
-
-          <!-- 隐藏文章内标题下，内容描述
-          
-          -->
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-        <div class="post-gallery" itemscope itemtype="http://schema.org/ImageGallery">
-          
-          
-            <div class="post-gallery-row">
-              <a class="post-gallery-img fancybox"
-                 href="https://gitee.com/gylq/cloudimages/raw/master/img/image-20210706204027073~1.jpg" rel="gallery_ckra7euqs004j68u3g1ithxmw"
-                 itemscope itemtype="http://schema.org/ImageObject" itemprop="url">
-                <img src="https://gitee.com/gylq/cloudimages/raw/master/img/image-20210706204027073~1.jpg" itemprop="contentUrl"/>
-              </a>
-            
-          
-
-          
-          </div>
-        </div>
-      
-
-      
-        
-          
-          前言
-记录web的题目wp，慢慢变强，铸剑。
-
-信息搜集web1
-右键查看源代码即可
-ctrl+u
-
-web2
-1、关掉javascript然后查看源码
-2、ctrl+shift+i
-3、view-source:
-4、点击更过工具，开发者工具查看元素获得页面注释通过开发者工具查看网络response
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2021/07/13/%E3%80%90ctfshow%E3%80%91web%E7%AF%87wp%E8%AE%B0%E5%BD%95%EF%BC%88%E6%8C%81%E7%BB%AD%E6%9B%B4%E6%96%B0%EF%BC%89/" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
       
     </div>
-
-      <!-- 相关文章推荐 -->
-     
-
-    
-    
-    
-
-    <div>
-          
-    </div>
-
-    
-
-    <div>
-      
-    </div>
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
   </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://gylq.gitee.io/2021/07/25/%E3%80%90%E5%B0%81%E7%A5%9E%E5%8F%B0%E3%80%91%E6%95%B0%E6%8D%AE%E5%BA%93%E6%B3%A8%E5%85%A5%20wp/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="孤桜懶契">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/qq.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="孤桜懶契">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h2 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2021/07/25/%E3%80%90%E5%B0%81%E7%A5%9E%E5%8F%B0%E3%80%91%E6%95%B0%E6%8D%AE%E5%BA%93%E6%B3%A8%E5%85%A5%20wp/" itemprop="url">【封神台】数据库注入 wp</a></h2>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-             
-
-             
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2021-07-25T19:32:12+08:00">
-                2021-07-25
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/CTF/" itemprop="url" rel="index">
-                    <span itemprop="name">CTF</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2021/07/25/%E3%80%90%E5%B0%81%E7%A5%9E%E5%8F%B0%E3%80%91%E6%95%B0%E6%8D%AE%E5%BA%93%E6%B3%A8%E5%85%A5%20wp/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2021/07/25/%E3%80%90%E5%B0%81%E7%A5%9E%E5%8F%B0%E3%80%91%E6%95%B0%E6%8D%AE%E5%BA%93%E6%B3%A8%E5%85%A5%20wp/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-             <span id="/2021/07/25/%E3%80%90%E5%B0%81%E7%A5%9E%E5%8F%B0%E3%80%91%E6%95%B0%E6%8D%AE%E5%BA%93%E6%B3%A8%E5%85%A5%20wp/" class="leancloud_visitors" data-flag-title="【封神台】数据库注入 wp">
-               <span class="post-meta-divider">|</span>
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               
-                 <span class="leancloud-visitors-count"></span>
-             </span>
-          
-
-          <!--
-          
-          -->
-
-          
-            <span class="post-wordcount">
-              
-                
-                  <span class="post-meta-divider">|</span>
-                
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                <span title="字数">
-                  2.6k
-                </span>
-              
-
-              
-
-              
-            </span>
-          
-
-          <!-- 隐藏文章内标题下，内容描述
-          
-          -->
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-          前言
-
-掌控安全里面的靶场数据库注入，练练手！
-
-
-Access——Cookie注入
-
-环境http://59.63.200.79:8004/
-
-
-
-正常情况Cookie注入是可以通过post传参测试的
-
-
-
-
-
-上面通过改id的参数发现可以cookie注入，废话不多说，抓包，sqlmap走起
-
-
-
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2021/07/25/%E3%80%90%E5%B0%81%E7%A5%9E%E5%8F%B0%E3%80%91%E6%95%B0%E6%8D%AE%E5%BA%93%E6%B3%A8%E5%85%A5%20wp/" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-      <!-- 相关文章推荐 -->
-     
-
-    
-    
-    
-
-    <div>
-          
-    </div>
-
-    
-
-    <div>
-      
-    </div>
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://gylq.gitee.io/2021/07/25/%E3%80%90%E5%B0%81%E7%A5%9E%E5%8F%B0%E3%80%91Sql-Labs%20wp/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="孤桜懶契">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/qq.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="孤桜懶契">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h2 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2021/07/25/%E3%80%90%E5%B0%81%E7%A5%9E%E5%8F%B0%E3%80%91Sql-Labs%20wp/" itemprop="url">【封神台】Sql-Labs wp</a></h2>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-             
-
-             
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2021-07-25T13:14:05+08:00">
-                2021-07-25
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/CTF/" itemprop="url" rel="index">
-                    <span itemprop="name">CTF</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2021/07/25/%E3%80%90%E5%B0%81%E7%A5%9E%E5%8F%B0%E3%80%91Sql-Labs%20wp/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2021/07/25/%E3%80%90%E5%B0%81%E7%A5%9E%E5%8F%B0%E3%80%91Sql-Labs%20wp/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-             <span id="/2021/07/25/%E3%80%90%E5%B0%81%E7%A5%9E%E5%8F%B0%E3%80%91Sql-Labs%20wp/" class="leancloud_visitors" data-flag-title="【封神台】Sql-Labs wp">
-               <span class="post-meta-divider">|</span>
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               
-                 <span class="leancloud-visitors-count"></span>
-             </span>
-          
-
-          <!--
-          
-          -->
-
-          
-            <span class="post-wordcount">
-              
-                
-                  <span class="post-meta-divider">|</span>
-                
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                <span title="字数">
-                  2.7k
-                </span>
-              
-
-              
-
-              
-            </span>
-          
-
-          <!-- 隐藏文章内标题下，内容描述
-          
-          -->
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-        <div class="post-gallery" itemscope itemtype="http://schema.org/ImageGallery">
-          
-          
-            <div class="post-gallery-row">
-              <a class="post-gallery-img fancybox"
-                 href="https://gitee.com/gylq/cloudimages/raw/master/img/image-20210725191329168.png" rel="gallery_ckrj3sryw00002wu31kba97nr"
-                 itemscope itemtype="http://schema.org/ImageObject" itemprop="url">
-                <img src="https://gitee.com/gylq/cloudimages/raw/master/img/image-20210725191329168.png" itemprop="contentUrl"/>
-              </a>
-            
-          
-
-          
-          </div>
-        </div>
-      
-
-      
-        
-          
-          前言
-
-掌控安全里面的靶场Sql-Labs，练练手！
-环境：http://inject2.lab.aqlab.cn:81/
-
-
-pass-01123456789101112$username = '';$password = '';@$id = $_GET['id'];@$sql = 'select
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2021/07/25/%E3%80%90%E5%B0%81%E7%A5%9E%E5%8F%B0%E3%80%91Sql-Labs%20wp/" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-      <!-- 相关文章推荐 -->
-     
-
-    
-    
-    
-
-    <div>
-          
-    </div>
-
-    
-
-    <div>
-      
-    </div>
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://gylq.gitee.io/2021/07/21/%E3%80%90%E5%B0%81%E7%A5%9E%E5%8F%B0%E3%80%91Upload-Labs%20wp/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="孤桜懶契">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/qq.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="孤桜懶契">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h2 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2021/07/21/%E3%80%90%E5%B0%81%E7%A5%9E%E5%8F%B0%E3%80%91Upload-Labs%20wp/" itemprop="url">【封神台】Upload-Labs wp</a></h2>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-             
-
-             
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2021-07-21T18:04:55+08:00">
-                2021-07-21
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/CTF/" itemprop="url" rel="index">
-                    <span itemprop="name">CTF</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2021/07/21/%E3%80%90%E5%B0%81%E7%A5%9E%E5%8F%B0%E3%80%91Upload-Labs%20wp/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2021/07/21/%E3%80%90%E5%B0%81%E7%A5%9E%E5%8F%B0%E3%80%91Upload-Labs%20wp/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-             <span id="/2021/07/21/%E3%80%90%E5%B0%81%E7%A5%9E%E5%8F%B0%E3%80%91Upload-Labs%20wp/" class="leancloud_visitors" data-flag-title="【封神台】Upload-Labs wp">
-               <span class="post-meta-divider">|</span>
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               
-                 <span class="leancloud-visitors-count"></span>
-             </span>
-          
-
-          <!--
-          
-          -->
-
-          
-            <span class="post-wordcount">
-              
-                
-                  <span class="post-meta-divider">|</span>
-                
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                <span title="字数">
-                  4.2k
-                </span>
-              
-
-              
-
-              
-            </span>
-          
-
-          <!-- 隐藏文章内标题下，内容描述
-          
-          -->
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-        <div class="post-gallery" itemscope itemtype="http://schema.org/ImageGallery">
-          
-          
-            <div class="post-gallery-row">
-              <a class="post-gallery-img fancybox"
-                 href="https://gitee.com/gylq/cloudimages/raw/master/img/image-20210723113705017.png" rel="gallery_ckrj3ss1k00052wu3gz2bh9ua"
-                 itemscope itemtype="http://schema.org/ImageObject" itemprop="url">
-                <img src="https://gitee.com/gylq/cloudimages/raw/master/img/image-20210723113705017.png" itemprop="contentUrl"/>
-              </a>
-            
-          
-
-          
-          </div>
-        </div>
-      
-
-      
-        
-          
-          前言
-
-掌控安全里面的靶场upload-labs，练练手！
-环境：http://59.63.200.79:8016/
-
-
-pass-011234567891011121314151617function checkFile() &#123;    var file = document.getEle
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2021/07/21/%E3%80%90%E5%B0%81%E7%A5%9E%E5%8F%B0%E3%80%91Upload-Labs%20wp/" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-      <!-- 相关文章推荐 -->
-     
-
-    
-    
-    
-
-    <div>
-          
-    </div>
-
-    
-
-    <div>
-      
-    </div>
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://gylq.gitee.io/2021/07/19/%E3%80%90%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E3%80%91%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86-%E5%A4%87%E5%BF%98%E5%8D%95/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="孤桜懶契">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/qq.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="孤桜懶契">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h2 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2021/07/19/%E3%80%90%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E3%80%91%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86-%E5%A4%87%E5%BF%98%E5%8D%95/" itemprop="url">【渗透测试】信息收集-备忘单</a></h2>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-             
-
-             
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2021-07-19T21:49:46+08:00">
-                2021-07-19
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E9%BB%91%E5%AE%A2%E5%B7%A5%E5%85%B7/" itemprop="url" rel="index">
-                    <span itemprop="name">黑客工具</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2021/07/19/%E3%80%90%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E3%80%91%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86-%E5%A4%87%E5%BF%98%E5%8D%95/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2021/07/19/%E3%80%90%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E3%80%91%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86-%E5%A4%87%E5%BF%98%E5%8D%95/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-             <span id="/2021/07/19/%E3%80%90%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E3%80%91%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86-%E5%A4%87%E5%BF%98%E5%8D%95/" class="leancloud_visitors" data-flag-title="【渗透测试】信息收集-备忘单">
-               <span class="post-meta-divider">|</span>
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               
-                 <span class="leancloud-visitors-count"></span>
-             </span>
-          
-
-          <!--
-          
-          -->
-
-          
-            <span class="post-wordcount">
-              
-                
-                  <span class="post-meta-divider">|</span>
-                
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                <span title="字数">
-                  178
-                </span>
-              
-
-              
-
-              
-            </span>
-          
-
-          <!-- 隐藏文章内标题下，内容描述
-          
-          -->
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-          信息收集
-
-目录扫描
-御剑目录扫描
-kali dirbuster
-
-
-子域名收集
-Layer子域名挖掘机
-
-subDomainsBrute
-
-
-
-
-1python2 subDomainsBrute.py qq.com -f subnames_full.txt -o qq.com.csv
-
-常用的子域
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2021/07/19/%E3%80%90%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E3%80%91%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86-%E5%A4%87%E5%BF%98%E5%8D%95/" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-      <!-- 相关文章推荐 -->
-     
-
-    
-    
-    
-
-    <div>
-          
-    </div>
-
-    
-
-    <div>
-      
-    </div>
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://gylq.gitee.io/2021/07/19/%E3%80%90GITHUB%E3%80%91Github%E4%B8%8A%E4%BC%A0%E6%9C%AC%E5%9C%B0%E9%A1%B9%E7%9B%AE/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="孤桜懶契">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/qq.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="孤桜懶契">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h2 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2021/07/19/%E3%80%90GITHUB%E3%80%91Github%E4%B8%8A%E4%BC%A0%E6%9C%AC%E5%9C%B0%E9%A1%B9%E7%9B%AE/" itemprop="url">【GITHUB】Github上传本地项目</a></h2>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-             
-
-             
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2021-07-19T15:45:21+08:00">
-                2021-07-19
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Github/" itemprop="url" rel="index">
-                    <span itemprop="name">Github</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2021/07/19/%E3%80%90GITHUB%E3%80%91Github%E4%B8%8A%E4%BC%A0%E6%9C%AC%E5%9C%B0%E9%A1%B9%E7%9B%AE/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2021/07/19/%E3%80%90GITHUB%E3%80%91Github%E4%B8%8A%E4%BC%A0%E6%9C%AC%E5%9C%B0%E9%A1%B9%E7%9B%AE/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-             <span id="/2021/07/19/%E3%80%90GITHUB%E3%80%91Github%E4%B8%8A%E4%BC%A0%E6%9C%AC%E5%9C%B0%E9%A1%B9%E7%9B%AE/" class="leancloud_visitors" data-flag-title="【GITHUB】Github上传本地项目">
-               <span class="post-meta-divider">|</span>
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               
-                 <span class="leancloud-visitors-count"></span>
-             </span>
-          
-
-          <!--
-          
-          -->
-
-          
-            <span class="post-wordcount">
-              
-                
-                  <span class="post-meta-divider">|</span>
-                
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                <span title="字数">
-                  590
-                </span>
-              
-
-              
-
-              
-            </span>
-          
-
-          <!-- 隐藏文章内标题下，内容描述
-          
-          -->
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-          Github简介
-GitHub是基于git实现的代码托管。git是目前最好用的版本控制系统了，非常受欢迎，比之svn更好。
-GitHub可以免费使用，并且快速稳定。即使是付费帐户，每个月不超过10美刀的费用也非常便宜。
-利用GitHub，你可以将项目存档，与其他人分享交流，并让其他开发者帮助你一起完
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2021/07/19/%E3%80%90GITHUB%E3%80%91Github%E4%B8%8A%E4%BC%A0%E6%9C%AC%E5%9C%B0%E9%A1%B9%E7%9B%AE/" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-      <!-- 相关文章推荐 -->
-     
-
-    
-    
-    
-
-    <div>
-          
-    </div>
-
-    
-
-    <div>
-      
-    </div>
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://gylq.gitee.io/2021/07/18/%E3%80%90PHP%E3%80%91%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E6%95%B4%E7%90%86/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="孤桜懶契">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/qq.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="孤桜懶契">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h2 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2021/07/18/%E3%80%90PHP%E3%80%91%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E6%95%B4%E7%90%86/" itemprop="url">【PHP】基础知识整理</a></h2>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-             
-
-             
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2021-07-18T17:56:34+08:00">
-                2021-07-18
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/php/" itemprop="url" rel="index">
-                    <span itemprop="name">php</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2021/07/18/%E3%80%90PHP%E3%80%91%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E6%95%B4%E7%90%86/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2021/07/18/%E3%80%90PHP%E3%80%91%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E6%95%B4%E7%90%86/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-             <span id="/2021/07/18/%E3%80%90PHP%E3%80%91%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E6%95%B4%E7%90%86/" class="leancloud_visitors" data-flag-title="【PHP】基础知识整理">
-               <span class="post-meta-divider">|</span>
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               
-                 <span class="leancloud-visitors-count"></span>
-             </span>
-          
-
-          <!--
-          
-          -->
-
-          
-            <span class="post-wordcount">
-              
-                
-                  <span class="post-meta-divider">|</span>
-                
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                <span title="字数">
-                  2.7k
-                </span>
-              
-
-              
-
-              
-            </span>
-          
-
-          <!-- 隐藏文章内标题下，内容描述
-          
-          -->
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-          变量基本类型测试代码12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152&lt;?php	//echo "Hello World!";	#单行注释	/*	多行注释
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2021/07/18/%E3%80%90PHP%E3%80%91%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E6%95%B4%E7%90%86/" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-      <!-- 相关文章推荐 -->
-     
-
-    
-    
-    
-
-    <div>
-          
-    </div>
-
-    
-
-    <div>
-      
-    </div>
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://gylq.gitee.io/2021/07/13/%E3%80%90HTML%E3%80%91%E5%AE%9E%E6%88%98%E9%98%BF%E9%87%8C%E4%BA%91src%E9%A1%B5%E9%9D%A2css%E6%A8%A1%E4%BB%BF%E5%9F%BA%E7%A1%80%E5%AD%A6%E4%B9%A0/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="孤桜懶契">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/qq.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="孤桜懶契">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h2 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2021/07/13/%E3%80%90HTML%E3%80%91%E5%AE%9E%E6%88%98%E9%98%BF%E9%87%8C%E4%BA%91src%E9%A1%B5%E9%9D%A2css%E6%A8%A1%E4%BB%BF%E5%9F%BA%E7%A1%80%E5%AD%A6%E4%B9%A0/" itemprop="url">【HTML】实战阿里云src页面css模仿基础学习</a></h2>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-             
-
-             
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2021-07-13T05:21:39+08:00">
-                2021-07-13
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/HTML/" itemprop="url" rel="index">
-                    <span itemprop="name">HTML</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2021/07/13/%E3%80%90HTML%E3%80%91%E5%AE%9E%E6%88%98%E9%98%BF%E9%87%8C%E4%BA%91src%E9%A1%B5%E9%9D%A2css%E6%A8%A1%E4%BB%BF%E5%9F%BA%E7%A1%80%E5%AD%A6%E4%B9%A0/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2021/07/13/%E3%80%90HTML%E3%80%91%E5%AE%9E%E6%88%98%E9%98%BF%E9%87%8C%E4%BA%91src%E9%A1%B5%E9%9D%A2css%E6%A8%A1%E4%BB%BF%E5%9F%BA%E7%A1%80%E5%AD%A6%E4%B9%A0/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-             <span id="/2021/07/13/%E3%80%90HTML%E3%80%91%E5%AE%9E%E6%88%98%E9%98%BF%E9%87%8C%E4%BA%91src%E9%A1%B5%E9%9D%A2css%E6%A8%A1%E4%BB%BF%E5%9F%BA%E7%A1%80%E5%AD%A6%E4%B9%A0/" class="leancloud_visitors" data-flag-title="【HTML】实战阿里云src页面css模仿基础学习">
-               <span class="post-meta-divider">|</span>
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               
-                 <span class="leancloud-visitors-count"></span>
-             </span>
-          
-
-          <!--
-          
-          -->
-
-          
-            <span class="post-wordcount">
-              
-                
-                  <span class="post-meta-divider">|</span>
-                
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                <span title="字数">
-                  3.4k
-                </span>
-              
-
-              
-
-              
-            </span>
-          
-
-          <!-- 隐藏文章内标题下，内容描述
-          
-          -->
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-          实战结果页面gif图片去我博客园看：https://www.cnblogs.com/GYLQ/p/15004744.html
-阿里云src首页模仿完整代码（500行左右）12345678910111213141516171819202122232425262728293031323334353637
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2021/07/13/%E3%80%90HTML%E3%80%91%E5%AE%9E%E6%88%98%E9%98%BF%E9%87%8C%E4%BA%91src%E9%A1%B5%E9%9D%A2css%E6%A8%A1%E4%BB%BF%E5%9F%BA%E7%A1%80%E5%AD%A6%E4%B9%A0/" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-      <!-- 相关文章推荐 -->
-     
-
-    
-    
-    
-
-    <div>
-          
-    </div>
-
-    
-
-    <div>
-      
-    </div>
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://gylq.gitee.io/2021/07/09/%E3%80%90HTML%E3%80%91CSS%E5%9F%BA%E7%A1%80%E5%AD%A6%E4%B9%A0%E4%B9%8Bfloat%E6%B5%AE%E5%8A%A8%E5%9D%97%E7%BA%A7%E5%85%83%E7%B4%A0%E8%A1%8C%E5%86%85%E5%85%83%E7%B4%A0/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="孤桜懶契">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/qq.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="孤桜懶契">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h2 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2021/07/09/%E3%80%90HTML%E3%80%91CSS%E5%9F%BA%E7%A1%80%E5%AD%A6%E4%B9%A0%E4%B9%8Bfloat%E6%B5%AE%E5%8A%A8%E5%9D%97%E7%BA%A7%E5%85%83%E7%B4%A0%E8%A1%8C%E5%86%85%E5%85%83%E7%B4%A0/" itemprop="url">【HTML】CSS基础学习之float浮动块级元素行内元素</a></h2>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-             
-
-             
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2021-07-09T11:48:07+08:00">
-                2021-07-09
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/HTML/" itemprop="url" rel="index">
-                    <span itemprop="name">HTML</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2021/07/09/%E3%80%90HTML%E3%80%91CSS%E5%9F%BA%E7%A1%80%E5%AD%A6%E4%B9%A0%E4%B9%8Bfloat%E6%B5%AE%E5%8A%A8%E5%9D%97%E7%BA%A7%E5%85%83%E7%B4%A0%E8%A1%8C%E5%86%85%E5%85%83%E7%B4%A0/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2021/07/09/%E3%80%90HTML%E3%80%91CSS%E5%9F%BA%E7%A1%80%E5%AD%A6%E4%B9%A0%E4%B9%8Bfloat%E6%B5%AE%E5%8A%A8%E5%9D%97%E7%BA%A7%E5%85%83%E7%B4%A0%E8%A1%8C%E5%86%85%E5%85%83%E7%B4%A0/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-             <span id="/2021/07/09/%E3%80%90HTML%E3%80%91CSS%E5%9F%BA%E7%A1%80%E5%AD%A6%E4%B9%A0%E4%B9%8Bfloat%E6%B5%AE%E5%8A%A8%E5%9D%97%E7%BA%A7%E5%85%83%E7%B4%A0%E8%A1%8C%E5%86%85%E5%85%83%E7%B4%A0/" class="leancloud_visitors" data-flag-title="【HTML】CSS基础学习之float浮动块级元素行内元素">
-               <span class="post-meta-divider">|</span>
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               
-                 <span class="leancloud-visitors-count"></span>
-             </span>
-          
-
-          <!--
-          
-          -->
-
-          
-            <span class="post-wordcount">
-              
-                
-                  <span class="post-meta-divider">|</span>
-                
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                <span title="字数">
-                  426
-                </span>
-              
-
-              
-
-              
-            </span>
-          
-
-          <!-- 隐藏文章内标题下，内容描述
-          
-          -->
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-          CSS基础学习之float浮动块级元素行内元素
-demo8（margin设置代码）1234567891011121314151617181920212223242526272829303132333435363738394041&lt;!DOCTYPE html&gt;&lt;html&gt; &l
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2021/07/09/%E3%80%90HTML%E3%80%91CSS%E5%9F%BA%E7%A1%80%E5%AD%A6%E4%B9%A0%E4%B9%8Bfloat%E6%B5%AE%E5%8A%A8%E5%9D%97%E7%BA%A7%E5%85%83%E7%B4%A0%E8%A1%8C%E5%86%85%E5%85%83%E7%B4%A0/" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-      <!-- 相关文章推荐 -->
-     
-
-    
-    
-    
-
-    <div>
-          
-    </div>
-
-    
-
-    <div>
-      
-    </div>
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://gylq.gitee.io/2021/07/09/%E3%80%90HTML%E3%80%91CSS%E5%9F%BA%E7%A1%80%E5%AD%A6%E4%B9%A0%E4%B9%8B%E7%9B%92%E5%AD%90%E6%A8%A1%E5%9E%8Bmargin%E5%92%8Cpadding%E7%9A%84%E4%BD%BF%E7%94%A8/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="孤桜懶契">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/qq.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="孤桜懶契">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h2 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2021/07/09/%E3%80%90HTML%E3%80%91CSS%E5%9F%BA%E7%A1%80%E5%AD%A6%E4%B9%A0%E4%B9%8B%E7%9B%92%E5%AD%90%E6%A8%A1%E5%9E%8Bmargin%E5%92%8Cpadding%E7%9A%84%E4%BD%BF%E7%94%A8/" itemprop="url">【HTML】CSS基础学习之盒子模型margin和padding的使用</a></h2>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-             
-
-             
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2021-07-09T10:45:02+08:00">
-                2021-07-09
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/HTML/" itemprop="url" rel="index">
-                    <span itemprop="name">HTML</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2021/07/09/%E3%80%90HTML%E3%80%91CSS%E5%9F%BA%E7%A1%80%E5%AD%A6%E4%B9%A0%E4%B9%8B%E7%9B%92%E5%AD%90%E6%A8%A1%E5%9E%8Bmargin%E5%92%8Cpadding%E7%9A%84%E4%BD%BF%E7%94%A8/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2021/07/09/%E3%80%90HTML%E3%80%91CSS%E5%9F%BA%E7%A1%80%E5%AD%A6%E4%B9%A0%E4%B9%8B%E7%9B%92%E5%AD%90%E6%A8%A1%E5%9E%8Bmargin%E5%92%8Cpadding%E7%9A%84%E4%BD%BF%E7%94%A8/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-             <span id="/2021/07/09/%E3%80%90HTML%E3%80%91CSS%E5%9F%BA%E7%A1%80%E5%AD%A6%E4%B9%A0%E4%B9%8B%E7%9B%92%E5%AD%90%E6%A8%A1%E5%9E%8Bmargin%E5%92%8Cpadding%E7%9A%84%E4%BD%BF%E7%94%A8/" class="leancloud_visitors" data-flag-title="【HTML】CSS基础学习之盒子模型margin和padding的使用">
-               <span class="post-meta-divider">|</span>
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               
-                 <span class="leancloud-visitors-count"></span>
-             </span>
-          
-
-          <!--
-          
-          -->
-
-          
-            <span class="post-wordcount">
-              
-                
-                  <span class="post-meta-divider">|</span>
-                
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                <span title="字数">
-                  267
-                </span>
-              
-
-              
-
-              
-            </span>
-          
-
-          <!-- 隐藏文章内标题下，内容描述
-          
-          -->
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-          CSS基础学习四盒子模型margin和padding的使用
-demo5（margin设置代码）12345678910111213141516171819202122232425262728293031323334353637383940&lt;!DOCTYPE html&gt;&lt;html&gt
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2021/07/09/%E3%80%90HTML%E3%80%91CSS%E5%9F%BA%E7%A1%80%E5%AD%A6%E4%B9%A0%E4%B9%8B%E7%9B%92%E5%AD%90%E6%A8%A1%E5%9E%8Bmargin%E5%92%8Cpadding%E7%9A%84%E4%BD%BF%E7%94%A8/" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-      <!-- 相关文章推荐 -->
-     
-
-    
-    
-    
-
-    <div>
-          
-    </div>
-
-    
-
-    <div>
-      
-    </div>
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-  </section>
-
-  
-  <nav class="pagination">
-    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><span class="space">&hellip;</span><a class="page-number" href="/page/10/">10</a><a class="extend next" rel="next" href="/page/2/">下一页</a>
-  </nav>
-
 
 
           </div>
@@ -2976,6 +823,13 @@ demo5（margin设置代码）123456789101112131415161718192021222324252627282930
 
 
           
+
+  
+    <div class="comments" id="comments">
+    </div>
+  
+
+
 
 
 
@@ -3000,8 +854,17 @@ demo5（margin设置代码）123456789101112131415161718192021222324252627282930
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -3481,6 +1344,22 @@ demo5（margin设置代码）123456789101112131415161718192021222324252627282930
       </section>
 
       
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#1、取得每个部门最高薪水的人员名称"><span class="nav-number">1.</span> <span class="nav-text">1、取得每个部门最高薪水的人员名称</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#2、哪些人的薪水在部门的平均薪资之上"><span class="nav-number">2.</span> <span class="nav-text">2、哪些人的薪水在部门的平均薪资之上</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#3、取得部门中（所有人的）平均的薪资等级"><span class="nav-number">3.</span> <span class="nav-text">3、取得部门中（所有人的）平均的薪资等级</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#4、不准用组函数（MAX），取得最高薪水"><span class="nav-number">4.</span> <span class="nav-text">4、不准用组函数（MAX），取得最高薪水</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#5、取得平均薪水最高的部门的部门编号"><span class="nav-number">5.</span> <span class="nav-text">5、取得平均薪水最高的部门的部门编号</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#6、取得平均薪水最高的部门的部门名称"><span class="nav-number">6.</span> <span class="nav-text">6、取得平均薪水最高的部门的部门名称</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#7、求平均薪水的等级最低的部门的部门名称"><span class="nav-number">7.</span> <span class="nav-text">7、求平均薪水的等级最低的部门的部门名称</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#8、取得比普通员工（员工代码没有在mgr字段上出现的）的最高薪水还要高的领导人姓名"><span class="nav-number">8.</span> <span class="nav-text">8、取得比普通员工（员工代码没有在mgr字段上出现的）的最高薪水还要高的领导人姓名</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#9、取得薪水最高的前五名员工"><span class="nav-number">9.</span> <span class="nav-text">9、取得薪水最高的前五名员工</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#10、取得薪水最高的第六到第十名员工"><span class="nav-number">10.</span> <span class="nav-text">10、取得薪水最高的第六到第十名员工</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#11、取得最后入职的5名员工"><span class="nav-number">11.</span> <span class="nav-text">11、取得最后入职的5名员工</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#12、取得每个薪水等级有多少员工"><span class="nav-number">12.</span> <span class="nav-text">12、取得每个薪水等级有多少员工</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#13、面试题"><span class="nav-number">13.</span> <span class="nav-text">13、面试题</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#14、列出所有员工及领导的姓名"><span class="nav-number">14.</span> <span class="nav-text">14、列出所有员工及领导的姓名</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#15、列出受雇日期早于其直接上级的所有员工的编号，姓名，部门名称"><span class="nav-number">15.</span> <span class="nav-text">15、列出受雇日期早于其直接上级的所有员工的编号，姓名，部门名称</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#16、列出部门名称和这些部门的员工信息，同时列出那些没有员工的部门"><span class="nav-number">16.</span> <span class="nav-text">16、列出部门名称和这些部门的员工信息，同时列出那些没有员工的部门</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#17、列出至少有5给员工的所有部门"><span class="nav-number">17.</span> <span class="nav-text">17、列出至少有5给员工的所有部门</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#18、列出薪金比“SMITH”多的所有员工信息"><span class="nav-number">18.</span> <span class="nav-text">18、列出薪金比“SMITH”多的所有员工信息</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#19、列出所有“CLERK”（办事员）的姓名及其部门名称，部门的人数。"><span class="nav-number">19.</span> <span class="nav-text">19、列出所有“CLERK”（办事员）的姓名及其部门名称，部门的人数。</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#20、列出最低薪金大于1500的各种工作及从事此工作的全部雇员人数。"><span class="nav-number">20.</span> <span class="nav-text">20、列出最低薪金大于1500的各种工作及从事此工作的全部雇员人数。</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#21、列出在部门“SALES”-销售部-工作的员工的姓名，假定不知道销售部的部门编号。"><span class="nav-number">21.</span> <span class="nav-text">21、列出在部门“SALES”(销售部)工作的员工的姓名，假定不知道销售部的部门编号。</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#22、列出薪金高于公司平均薪金的所有员工，所在部门，上级领导，雇员的工资等级。"><span class="nav-number">22.</span> <span class="nav-text">22、列出薪金高于公司平均薪金的所有员工，所在部门，上级领导，雇员的工资等级。</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#23、列出各个部门的MANAGER（领导）最低薪金"><span class="nav-number">23.</span> <span class="nav-text">23、列出各个部门的MANAGER（领导）最低薪金</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#24、列出所有员工的年工资，按年薪从低到高排序"><span class="nav-number">24.</span> <span class="nav-text">24、列出所有员工的年工资，按年薪从低到高排序</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#25、求出员工领导的薪水超过3000的员工名称与领导名称"><span class="nav-number">25.</span> <span class="nav-text">25、求出员工领导的薪水超过3000的员工名称与领导名称</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#26、求出部门名称中，带‘S’字符的部门员工的工资合计、部门人数"><span class="nav-number">26.</span> <span class="nav-text">26、求出部门名称中，带‘S’字符的部门员工的工资合计、部门人数</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#27、给任职日期超过30年的员工加薪10"><span class="nav-number">27.</span> <span class="nav-text">27、给任职日期超过30年的员工加薪10%</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
 
       
 
@@ -3680,6 +1559,10 @@ demo5（margin设置代码）123456789101112131415161718192021222324252627282930
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
@@ -4076,7 +1959,7 @@ demo5（margin设置代码）123456789101112131415161718192021222324252627282930
 
 
 
-    <script> function showTime(Counter){var entries=[];var $visitors=$('.leancloud_visitors');$visitors.each(function(){entries.push($(this).attr('id').trim());});Counter('get','/classes/Counter',{where:JSON.stringify({url:{'$in':entries}})}).done(function({results}){var COUNT_CONTAINER_REF='.leancloud-visitors-count';if(results.length===0){$visitors.find(COUNT_CONTAINER_REF).text(0);return;}for(var i=0;i<results.length;i++){var item=results[i];var url=item.url;var time=item.time;var element=document.getElementById(url);$(element).find(COUNT_CONTAINER_REF).text(time);}for(var i=0;i<entries.length;i++){var url=entries[i];var element=document.getElementById(url);var countSpan=$(element).find(COUNT_CONTAINER_REF);if(countSpan.text()==''){countSpan.text(0);}}}).fail(function({responseJSON}){console.log('LeanCloud Counter Error: '+responseJSON.code+' '+responseJSON.error);});}$(function(){$.get('https://app-router.leancloud.cn/2/route?appId='+'HzU5gDhBUYHF8QTF8DmbGhjD-gzGzoHsz').done(function({api_server}){var Counter=function(method,url,data){return $.ajax({method:method,url:'https://'+api_server+'/1.1'+url,headers:{'X-LC-Id':'HzU5gDhBUYHF8QTF8DmbGhjD-gzGzoHsz','X-LC-Key':'wp1HNJ17SdpnE0wIFq99eTKH','Content-Type':'application/json',},data:data});}; if($('.post-title-link').length>=1){showTime(Counter);}});});</script>
+    <script>  function addCount(Counter){var $visitors=$('.leancloud_visitors');var url=$visitors.attr('id').trim();var title=$visitors.attr('data-flag-title').trim();Counter('get','/classes/Counter',{where:JSON.stringify({url})}).done(function({results}){if(results.length>0){var counter=results[0]; var $element=$(document.getElementById(url));$element.find('.leancloud-visitors-count').text(counter.time+1);Counter('put','/classes/Counter/'+counter.objectId,JSON.stringify({time:{'__op':'Increment','amount':1}})) .fail(function({responseJSON}){console.log('Failed to save Visitor num, with error message: '+responseJSON.error);})}else{ Counter('post','/classes/Counter',JSON.stringify({title:title,url:url,time:1})).done(function(){var $element=$(document.getElementById(url));$element.find('.leancloud-visitors-count').text(1);}).fail(function(){console.log('Failed to create');});}}).fail(function({responseJSON}){console.log('LeanCloud Counter Error: '+responseJSON.code+' '+responseJSON.error);});}$(function(){$.get('https://app-router.leancloud.cn/2/route?appId='+'HzU5gDhBUYHF8QTF8DmbGhjD-gzGzoHsz').done(function({api_server}){var Counter=function(method,url,data){return $.ajax({method:method,url:'https://'+api_server+'/1.1'+url,headers:{'X-LC-Id':'HzU5gDhBUYHF8QTF8DmbGhjD-gzGzoHsz','X-LC-Key':'wp1HNJ17SdpnE0wIFq99eTKH','Content-Type':'application/json',},data:data});};  const localhost=/http:\/\/(localhost|127.0.0.1|0.0.0.0)/;if(localhost.test(document.URL))return;addCount(Counter);});});</script>
 
   
 
